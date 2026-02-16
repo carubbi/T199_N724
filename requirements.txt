@@ -1,0 +1,8 @@
+numpy
+pandas
+gdown
+ipykernel
+matplotlib
+seaborn
+scipy
+statsmodels
