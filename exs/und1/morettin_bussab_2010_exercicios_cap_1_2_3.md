@@ -8,8 +8,6 @@ Este arquivo reúne uma extração expandida dos capítulos 1, 2 e 3 com foco em
 - exemplos computacionais;
 - problemas e complementos.
 
-As expressões matemáticas foram mantidas em notação LaTeX com `$...$` e `$$...$$` quando pertinente.
-
 ## Capítulo 1 — Preliminares
 
 ### Exemplos

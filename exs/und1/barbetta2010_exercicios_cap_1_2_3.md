@@ -2,8 +2,6 @@
 
 Fonte: `livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf`
 
-Observação: interpretei capítulos $1,23$ como capítulos $1$, $2$ e $3$, porque o livro tem 11 capítulos.
-
 ## Fórmulas úteis para resolver os exercícios
 
 ### Medidas descritivas básicas
