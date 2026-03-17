@@ -12,11 +12,24 @@ $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
 $$
 
+em que:
+
+- $\bar{x}$ é a média amostral;
+- $n$ é o número de observações da amostra;
+- $x_i$ é o valor da $i$-ésima observação;
+- $i$ é o índice das observações, com $i=1,\ldots,n$.
+
 - Variância amostral:
 
 $$
 s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
 $$
+
+em que:
+
+- $s^2$ é a variância amostral;
+- $n-1$ é o número de graus de liberdade da variância amostral;
+- $x_i-\bar{x}$ é o desvio da $i$-ésima observação em relação à média.
 
 - Forma computacional da variância:
 
@@ -24,11 +37,22 @@ $$
 s^2 = \frac{\sum_{i=1}^{n} x_i^2 - n\bar{x}^2}{n-1}
 $$
 
+em que:
+
+- $\sum_{i=1}^{n} x_i^2$ é a soma dos quadrados das observações;
+- $n\bar{x}^2$ é o termo de correção baseado na média amostral;
+- os demais símbolos já foram definidos acima.
+
 - Desvio-padrão:
 
 $$
 s = \sqrt{s^2}
 $$
+
+em que:
+
+- $s$ é o desvio-padrão amostral;
+- $s^2$ é a variância amostral.
 
 - Mediana:
 
@@ -42,17 +66,34 @@ x_{\left(\frac{n+1}{2}\right)}, & \text{se } n \text{ é ímpar} \\
 \end{cases}
 $$
 
+em que:
+
+- $x_{(k)}$ representa a $k$-ésima observação após ordenar os dados em ordem crescente;
+- a mediana é o valor central quando $n$ é ímpar;
+- quando $n$ é par, a mediana é a média dos dois valores centrais.
+
 - Quartis:
 
 $$
 Q_1,\quad Q_2 = \text{Mediana},\quad Q_3
 $$
 
+em que:
+
+- $Q_1$ é o primeiro quartil, que deixa aproximadamente 25% dos dados abaixo dele;
+- $Q_2$ coincide com a mediana;
+- $Q_3$ é o terceiro quartil, que deixa aproximadamente 75% dos dados abaixo dele.
+
 - Distância interquartil:
 
 $$
 DIQ = Q_3 - Q_1
 $$
+
+em que:
+
+- $DIQ$ é a distância interquartil;
+- $Q_3-Q_1$ mede a dispersão da metade central dos dados.
 
 - Coeficiente de variação:
 
@@ -66,6 +107,12 @@ $$
 CV\% = 100\cdot \frac{s}{\bar{x}}
 $$
 
+em que:
+
+- $CV$ é o coeficiente de variação em escala relativa;
+- $CV\%$ é o coeficiente de variação expresso em porcentagem;
+- a razão $\frac{s}{\bar{x}}$ compara a dispersão com o nível médio da variável.
+
 ### Freqüências e distribuições
 
 - Freqüência relativa:
@@ -74,17 +121,33 @@ $$
 fr_i = \frac{f_i}{n}
 $$
 
+em que:
+
+- $fr_i$ é a frequência relativa da categoria ou classe $i$;
+- $f_i$ é a frequência absoluta da categoria ou classe $i$;
+- $n$ é o total de observações.
+
 - Freqüência acumulada:
 
 $$
 F_i = \sum_{j=1}^{i} f_j
 $$
 
+em que:
+
+- $F_i$ é a frequência acumulada até a classe $i$;
+- $j$ é o índice usado na soma das frequências desde a primeira classe até a classe $i$.
+
 - Freqüência relativa acumulada:
 
 $$
 FR_i = \frac{F_i}{n}
 $$
+
+em que:
+
+- $FR_i$ é a frequência relativa acumulada até a classe $i$;
+- $F_i$ é a frequência acumulada correspondente.
 
 ### Dados agrupados em classes
 
@@ -96,17 +159,34 @@ $$
 \bar{x} = \frac{\sum_{j=1}^{J} f_j x_j}{n}
 $$
 
+em que:
+
+- $x_j$ é o ponto médio da $j$-ésima classe;
+- $f_j$ é a frequência absoluta da $j$-ésima classe;
+- $J$ é o número total de classes;
+- $\sum_{j=1}^{J} f_j x_j$ é a soma ponderada dos pontos médios pelas frequências.
+
 - Variância aproximada:
 
 $$
 s^2 = \frac{\sum_{j=1}^{J} f_j x_j^2 - n\bar{x}^2}{n-1}
 $$
 
+em que:
+
+- $\sum_{j=1}^{J} f_j x_j^2$ é a soma ponderada dos quadrados dos pontos médios;
+- a expressão fornece uma aproximação da variância amostral quando os dados foram agrupados em classes;
+- os demais símbolos já foram definidos acima.
+
 - Desvio-padrão aproximado:
 
 $$
 s = \sqrt{s^2}
 $$
+
+em que:
+
+- $s$ é o desvio-padrão aproximado obtido a partir da variância aproximada.
 
 ### Quartis por interpolação em classes
 
@@ -116,11 +196,24 @@ $$
 Q_p = L + h \cdot \frac{pn - F_{\text{ant}}}{f_{\text{classe}}}
 $$
 
+em que:
+
+- $Q_p$ é o quantil de ordem $p$;
+- $L$ é o limite inferior da classe que contém o quantil;
+- $h$ é a amplitude da classe;
+- $pn$ é a posição teórica do quantil na amostra agrupada;
+- $F_{\text{ant}}$ é a frequência acumulada antes da classe do quantil;
+- $f_{\text{classe}}$ é a frequência absoluta da classe que contém o quantil.
+
 Em particular:
 
 $$
 Q_1 = Q_{0{,}25}, \qquad Q_2 = Q_{0{,}50}, \qquad Q_3 = Q_{0{,}75}
 $$
+
+em que:
+
+- $Q_1$, $Q_2$ e $Q_3$ correspondem, respectivamente, aos quantis de ordem $0{,}25$, $0{,}50$ e $0{,}75$.
 
 ### Planejamento amostral
 
@@ -130,13 +223,22 @@ $$
 p = \frac{n}{N}
 $$
 
-onde $N$ é o tamanho da população e $n$ o tamanho da amostra.
+em que:
+
+- $p$ é a probabilidade de um elemento específico ser selecionado;
+- $N$ é o tamanho da população;
+- $n$ é o tamanho da amostra.
 
 - Intervalo de seleção na amostragem sistemática:
 
 $$
 I = \frac{N}{n}
 $$
+
+em que:
+
+- $I$ é o intervalo de seleção;
+- a cada $I$ elementos, em média, um elemento é selecionado.
 
 ### Experimentos com um fator
 
@@ -148,11 +250,22 @@ $$
 \bar{y}_i = \frac{1}{n}\sum_{j=1}^{n} y_{ij}
 $$
 
+em que:
+
+- $\bar{y}_i$ é a média das respostas no tratamento $i$;
+- $y_{ij}$ é a resposta da $j$-ésima replicação do tratamento $i$;
+- $n$ é o número de replicações por tratamento no caso balanceado.
+
 - Variância no tratamento $i$:
 
 $$
 s_i^2 = \frac{1}{n-1}\sum_{j=1}^{n}(y_{ij}-\bar{y}_i)^2
 $$
+
+em que:
+
+- $s_i^2$ é a variância amostral dentro do tratamento $i$;
+- $y_{ij}-\bar{y}_i$ é o desvio da observação em relação à média do tratamento.
 
 - Variância agregada:
 
@@ -160,11 +273,22 @@ $$
 s_p^2 = \frac{\sum_{i=1}^{g}(n-1)s_i^2}{g(n-1)}
 $$
 
+em que:
+
+- $s_p^2$ é a variância agregada ou combinada dos tratamentos;
+- $g$ é o número de tratamentos;
+- $(n-1)s_i^2$ é a soma de quadrados dentro do tratamento $i$ dividida pelo respectivo grau de liberdade.
+
 Mais geralmente, se os números de replicações forem $n_i$:
 
 $$
 s_p^2 = \frac{\sum_{i=1}^{g}(n_i-1)s_i^2}{\sum_{i=1}^{g}(n_i-1)}
 $$
+
+em que:
+
+- $n_i$ é o número de replicações do tratamento $i$;
+- a ponderação pelos termos $(n_i-1)$ ajusta a contribuição de cada tratamento aos seus graus de liberdade.
 
 - Graus de liberdade da variância agregada:
 
@@ -178,6 +302,11 @@ $$
 gl = g(n-1)
 $$
 
+em que:
+
+- $gl$ é o número total de graus de liberdade associados à variância agregada;
+- a segunda expressão vale no caso balanceado, em que todos os tratamentos têm o mesmo número de replicações.
+
 ### Projetos fatoriais $2^k$
 
 - Efeito principal ou interação:
@@ -186,7 +315,11 @@ $$
 ef = \bar{y}_{+} - \bar{y}_{-}
 $$
 
-onde $\bar{y}_{+}$ é a média das respostas nas combinações com sinal positivo na coluna correspondente e $\bar{y}_{-}$ é a média das respostas com sinal negativo.
+em que:
+
+- $ef$ é o efeito estimado do fator ou da interação;
+- $\bar{y}_{+}$ é a média das respostas nas combinações com sinal positivo na coluna correspondente;
+- $\bar{y}_{-}$ é a média das respostas nas combinações com sinal negativo.
 
 - Em projetos com replicações, a média em cada condição experimental é:
 
@@ -194,7 +327,11 @@ $$
 \bar{y} = \frac{1}{r}\sum_{l=1}^{r} y_l
 $$
 
-onde $r$ é o número de replicações da condição.
+em que:
+
+- $\bar{y}$ é a média das respostas na condição experimental considerada;
+- $r$ é o número de replicações da condição;
+- $y_l$ é a resposta observada na $l$-ésima replicação.
 
 ### Transformações lineares
 
@@ -208,6 +345,14 @@ $$
 \text{Mediana}(Y) = c\,\text{Mediana}(X), \qquad DIQ(Y) = |c|DIQ(X)
 $$
 
+em que:
+
+- $X$ é a variável original e $Y$ é a variável transformada por multiplicação por uma constante $c$;
+- $\bar{X}$ e $\bar{Y}$ são as médias de $X$ e $Y$;
+- $s_X^2$ e $s_Y^2$ são as variâncias de $X$ e $Y$;
+- $s_X$ e $s_Y$ são os desvios-padrão de $X$ e $Y$;
+- $DIQ(X)$ e $DIQ(Y)$ são as distâncias interquartis de $X$ e $Y$.
+
 Se $Z = c + X$:
 
 $$
@@ -217,6 +362,11 @@ $$
 $$
 \text{Mediana}(Z) = c + \text{Mediana}(X), \qquad DIQ(Z) = DIQ(X)
 $$
+
+em que:
+
+- $Z$ é a variável obtida ao somar a constante $c$ à variável original $X$;
+- a adição de uma constante desloca medidas de posição, mas preserva medidas de dispersão como variância, desvio-padrão e distância interquartil.
 
 ### Valores discrepantes
 

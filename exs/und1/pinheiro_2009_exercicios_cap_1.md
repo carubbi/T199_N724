@@ -14,6 +14,13 @@ $$
 \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
 $$
 
+em que:
+
+- $\bar{x}$ é a média amostral;
+- $n$ é o número de observações;
+- $x_i$ é o valor da $i$-ésima observação;
+- $i$ é o índice das observações, com $i=1,\ldots,n$.
+
 - Mediana:
 
 Se os dados ordenados são $x_{(1)} \le x_{(2)} \le \cdots \le x_{(n)}$:
@@ -26,11 +33,23 @@ x_{\left(\frac{n+1}{2}\right)}, & \text{se } n \text{ é ímpar} \\
 \end{cases}
 $$
 
+em que:
+
+- $x_{(k)}$ representa a $k$-ésima observação após ordenar os dados;
+- a mediana coincide com a observação central quando $n$ é ímpar;
+- quando $n$ é par, a mediana é a média aritmética das duas observações centrais.
+
 - Quartis:
 
 $$
 Q_1 = \text{primeiro quartil}, \qquad Q_2 = \text{mediana}, \qquad Q_3 = \text{terceiro quartil}
 $$
+
+em que:
+
+- $Q_1$ é o valor abaixo do qual ficam aproximadamente 25% das observações;
+- $Q_2$ coincide com a mediana;
+- $Q_3$ é o valor abaixo do qual ficam aproximadamente 75% das observações.
 
 ### Medidas de dispersão
 
@@ -40,17 +59,34 @@ $$
 s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2
 $$
 
+em que:
+
+- $s^2$ é a variância amostral;
+- $x_i-\bar{x}$ é o desvio da observação $x_i$ em relação à média;
+- $n-1$ é o número de graus de liberdade associado à variância amostral.
+
 - Forma computacional da variância:
 
 $$
 s^2 = \frac{\sum_{i=1}^{n} x_i^2 - n\bar{x}^2}{n-1}
 $$
 
+em que:
+
+- $\sum_{i=1}^{n} x_i^2$ é a soma dos quadrados das observações;
+- $n\bar{x}^2$ é o termo de correção baseado na média amostral;
+- os demais símbolos já foram definidos acima.
+
 - Desvio-padrão amostral:
 
 $$
 s = \sqrt{s^2}
 $$
+
+em que:
+
+- $s$ é o desvio-padrão amostral;
+- $s^2$ é a variância amostral.
 
 - Coeficiente de variação:
 
@@ -64,11 +100,22 @@ $$
 cv\% = 100\cdot \frac{s}{\bar{x}}
 $$
 
+em que:
+
+- $cv$ é o coeficiente de variação em escala relativa;
+- $cv\%$ é o coeficiente de variação expresso em porcentagem;
+- a razão $\frac{s}{\bar{x}}$ compara a dispersão com o nível médio da variável.
+
 - Distância interquartil:
 
 $$
 DIQ = Q_3 - Q_1
 $$
+
+em que:
+
+- $DIQ$ é a distância interquartil;
+- $Q_3-Q_1$ mede a amplitude da metade central dos dados.
 
 ### Dados agrupados em distribuição de freqüências
 
@@ -80,17 +127,34 @@ $$
 \bar{x} = \frac{\sum_{j=1}^{J} f_j x_j}{n}
 $$
 
+em que:
+
+- $x_j$ é o ponto médio da $j$-ésima classe;
+- $f_j$ é a frequência absoluta da $j$-ésima classe;
+- $J$ é o número total de classes;
+- $\sum_{j=1}^{J} f_j x_j$ é a soma ponderada dos pontos médios pelas frequências.
+
 - Variância amostral aproximada:
 
 $$
 s^2 = \frac{\sum_{j=1}^{J} f_j x_j^2 - n\bar{x}^2}{n-1}
 $$
 
+em que:
+
+- $\sum_{j=1}^{J} f_j x_j^2$ é a soma ponderada dos quadrados dos pontos médios;
+- a expressão fornece uma aproximação da variância amostral para dados agrupados em classes;
+- os demais símbolos já foram definidos acima.
+
 - Desvio-padrão aproximado:
 
 $$
 s = \sqrt{s^2}
 $$
+
+em que:
+
+- $s$ é o desvio-padrão aproximado obtido a partir da variância aproximada.
 
 ### Quartis e mediana por interpolação em classes
 
@@ -109,11 +173,24 @@ $$
 Q_p = L + h \cdot \frac{pn - F_{\text{ant}}}{f_{\text{classe}}}
 $$
 
+em que:
+
+- $Q_p$ é o quantil de ordem $p$;
+- $L$ é o limite inferior da classe que contém o quantil;
+- $h$ é a amplitude da classe;
+- $pn$ é a posição teórica do quantil na distribuição agrupada;
+- $F_{\text{ant}}$ é a frequência acumulada anterior à classe do quantil;
+- $f_{\text{classe}}$ é a frequência da classe que contém o quantil.
+
 Casos particulares:
 
 $$
 Q_1 = Q_{0{,}25}, \qquad Q_2 = Q_{0{,}50}, \qquad Q_3 = Q_{0{,}75}
 $$
+
+em que:
+
+- $Q_1$, $Q_2$ e $Q_3$ correspondem, respectivamente, aos quantis de ordem $0{,}25$, $0{,}50$ e $0{,}75$.
 
 ### Transformações lineares
 
@@ -127,6 +204,14 @@ $$
 \text{Mediana}(Y) = c\,\text{Mediana}(X), \qquad DIQ(Y) = |c|DIQ(X)
 $$
 
+em que:
+
+- $X$ é a variável original e $Y$ é a variável obtida pela multiplicação por uma constante $c$;
+- $\bar{X}$ e $\bar{Y}$ são as médias de $X$ e $Y$;
+- $s_X^2$ e $s_Y^2$ são as variâncias de $X$ e $Y$;
+- $s_X$ e $s_Y$ são os desvios-padrão de $X$ e $Y$;
+- $DIQ(X)$ e $DIQ(Y)$ são as distâncias interquartis de $X$ e $Y$.
+
 Se $Z = c + X$:
 
 $$
@@ -136,6 +221,11 @@ $$
 $$
 \text{Mediana}(Z) = c + \text{Mediana}(X), \qquad DIQ(Z) = DIQ(X)
 $$
+
+em que:
+
+- $Z$ é a variável transformada por adição da constante $c$ à variável original $X$;
+- a soma de uma constante desloca medidas de posição, mas não altera variância, desvio-padrão nem distância interquartil.
 
 ### Critérios usuais para valores discrepantes
 
@@ -149,6 +239,11 @@ $$
 \text{Limite superior} = Q_3 + 1{,}5 \cdot DIQ
 $$
 
+em que:
+
+- os limites definem a faixa usual de observações segundo a regra do boxplot;
+- valores abaixo do limite inferior ou acima do limite superior são candidatos a discrepantes.
+
 - Critério baseado em média e desvio-padrão:
 
 um valor $x$ pode ser considerado discrepante se
@@ -156,6 +251,12 @@ um valor $x$ pode ser considerado discrepante se
 $$
 |x - \bar{x}| > 3s
 $$
+
+em que:
+
+- $x$ é a observação sob avaliação;
+- $|x-\bar{x}|$ é a distância absoluta entre a observação e a média;
+- $3s$ é o limiar de três desvios-padrão em torno da média.
 
 ### Freqüência relativa e acumulada
 
@@ -165,17 +266,33 @@ $$
 fr_j = \frac{f_j}{n}
 $$
 
+em que:
+
+- $fr_j$ é a frequência relativa da classe $j$;
+- $f_j$ é a frequência absoluta da classe $j$;
+- $n$ é o total de observações.
+
 - Freqüência acumulada:
 
 $$
 F_j = \sum_{k=1}^{j} f_k
 $$
 
+em que:
+
+- $F_j$ é a frequência acumulada até a classe $j$;
+- $k$ é o índice de soma das classes da primeira até a classe $j$.
+
 - Freqüência relativa acumulada:
 
 $$
 FR_j = \frac{F_j}{n}
 $$
+
+em que:
+
+- $FR_j$ é a frequência relativa acumulada até a classe $j$;
+- $F_j$ é a frequência acumulada correspondente.
 
 ### Observações finais
 
