@@ -44,3 +44,10 @@ O projeto também inclui bibliotecas de apoio para leitura e extração de conte
 - `pypdf`
 - `rapidfuzz`
 - `ocrmypdf`
+
+## Referências bibliográficas
+- BARBETTA, Pedro Alberto; REIS, Marcelo Menezes; BORNIA, Antonio Cezar. *Estatística para cursos de engenharia e informática*. 3. ed. São Paulo: Atlas, 2010.
+- BRUCE, Peter; BRUCE, Andrew. *Estatística prática para cientistas de dados: 50 conceitos essenciais*. 1. ed. Rio de Janeiro: Alta Books, 2019.
+- MORETTIN, Pedro Alberto; BUSSAB, Wilton de Oliveira. *Estatística básica*. São Paulo: Saraiva, 2010.
+- NAVIDI, William. *Statistics for engineers and scientists*. 6. ed. New York: McGraw-Hill, 2024.
+- PINHEIRO, João Ismael D. et al. *Estatística básica: a arte de trabalhar com dados*. Rio de Janeiro: Elsevier, 2009.
