@@ -15,7 +15,7 @@ Este repositório reúne materiais da disciplina **Métodos Quantitativos para C
 ## Materiais atualmente destacados
 - [barbetta2010_exercicios_cap_1_2_3.md](/Users/carubbi/Documents/aulas/T199/exs/und1/barbetta2010_exercicios_cap_1_2_3.md): enunciados transcritos de Barbetta.
 - [barbetta2010_exercicios_cap_1_2_3_respostas.md](/Users/carubbi/Documents/aulas/T199/exs/und1/respostas/barbetta2010_exercicios_cap_1_2_3_respostas.md): respostas revisadas com foco em rigor estatístico e didático.
-- [Fundamentos de Estatística.xlsx](/Users/carubbi/Documents/aulas/T199/aulas/planilhas/Fundamentos%20de%20Estati%CC%81stica.xlsx): planilha de apoio com fórmulas, gráficos e tabelas dinâmicas para exemplos de aula.
+- [Fundamentos de Estatística.xlsx](/Users/carubbi/Documents/aulas/T199/aulas/planilhas/Fundamentos%20de%20Estati%CC%81stica.xlsx): planilha de apoio com fórmulas, gráficos e tabelas dinâmicas para exemplos de aula; o material foi originalmente preparado para turmas de engenharia fora da computação.
 
 ## Como executar
 1. Criar e ativar um ambiente virtual.
