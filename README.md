@@ -46,8 +46,8 @@ O projeto também inclui bibliotecas de apoio para leitura e extração de conte
 - `ocrmypdf`
 
 ## Referências bibliográficas
-- BARBETTA, Pedro Alberto; REIS, Marcelo Menezes; BORNIA, Antonio Cezar. *Estatística para cursos de engenharia e informática*. 3. ed. São Paulo: Atlas, 2010.
-- BRUCE, Peter; BRUCE, Andrew. *Estatística prática para cientistas de dados: 50 conceitos essenciais*. 1. ed. Rio de Janeiro: Alta Books, 2019.
-- MORETTIN, Pedro Alberto; BUSSAB, Wilton de Oliveira. *Estatística básica*. São Paulo: Saraiva, 2010.
-- NAVIDI, William. *Statistics for engineers and scientists*. 6. ed. New York: McGraw-Hill, 2024.
-- PINHEIRO, João Ismael D. et al. *Estatística básica: a arte de trabalhar com dados*. Rio de Janeiro: Elsevier, 2009.
+- BARBETTA, Pedro Alberto; REIS, Marcelo Menezes; BORNIA, Antonio Cezar. *Estatística para cursos de engenharia e informática*. 3. ed. São Paulo: Atlas, 2010. Link: [Amazon](https://www.amazon.com.br/s?k=Estat%C3%ADstica+para+cursos+de+engenharia+e+inform%C3%A1tica+Barbetta).
+- BRUCE, Peter; BRUCE, Andrew. *Estatística prática para cientistas de dados: 50 conceitos essenciais*. 1. ed. Rio de Janeiro: Alta Books, 2019. Link: [Amazon](https://www.amazon.com.br/s?k=Estat%C3%ADstica+pr%C3%A1tica+para+cientistas+de+dados+Bruce).
+- MORETTIN, Pedro Alberto; BUSSAB, Wilton de Oliveira. *Estatística básica*. São Paulo: Saraiva, 2010. Link: [Amazon](https://www.amazon.com.br/s?k=Estat%C3%ADstica+b%C3%A1sica+Morettin+Bussab).
+- NAVIDI, William. *Statistics for engineers and scientists*. 6. ed. New York: McGraw-Hill, 2024. Link: [Amazon](https://www.amazon.com.br/s?k=Statistics+for+Engineers+and+Scientists+William+Navidi).
+- PINHEIRO, João Ismael D. et al. *Estatística básica: a arte de trabalhar com dados*. Rio de Janeiro: Elsevier, 2009. Link: [Amazon](https://www.amazon.com.br/s?k=Estat%C3%ADstica+b%C3%A1sica+a+arte+de+trabalhar+com+dados+Pinheiro).
