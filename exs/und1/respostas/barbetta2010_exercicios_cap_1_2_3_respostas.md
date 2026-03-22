@@ -2,33 +2,27 @@
 
 Fonte dos enunciados: `exs/und1/barbetta2010_exercicios_cap_1_2_3.md`
 
-## Observações de rigor
-
-- As respostas abaixo usam apenas as informações transcritas no arquivo de exercícios.
-- Quando o enunciado depende de uma **tabela de números aleatórios não transcrita**, não existe resposta numérica única. Nesses casos, a resposta correta é o **procedimento**.
-- No exercício complementar 8 do capítulo 3, o texto menciona **50 observações**, mas a tabela transcrita contém **40 observações** ($8$ condições $\times$ $5$ ensaios). Os cálculos abaixo usam as **40 observações efetivamente transcritas**.
-- Nos exercícios com quartis, adotei a mesma convenção sugerida no documento: posição baseada em $p(n+1)$ com interpolação linear quando necessário.
-
 ## Capítulo 1
 
 ### Exercício 1
 
-**Enunciado**
+#### Enunciado
 
 Dê um exemplo de uma situação prática em que é mais razoável um modelo empírico do que um modelo determinístico.
 
-**Resposta**
+#### Resposta
 
 Exemplo de situação em que um modelo empírico é mais razoável que um modelo determinístico:
 
 - um exemplo adequado, na computação, é o estudo do tempo de carregamento de um aplicativo em uma rede compartilhada;
 - um exemplo análogo, na engenharia, é o estudo da resistência à compressão de corpos de prova de concreto produzidos sob as mesmas condições nominais de dosagem.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - um **modelo determinístico** é apropriado quando, dadas as mesmas condições de entrada, o resultado é sempre exatamente o mesmo;
 - um **modelo empírico** é apropriado quando o fenômeno observado apresenta variabilidade, de modo que, mesmo sob condições aparentemente semelhantes, os resultados mudam de uma observação para outra;
-- nesse caso, o objetivo deixa de ser obter um valor exato por fórmula e passa a ser **descrever e explicar a variação observada nos dados**.
+- nesse caso, o objetivo não é supor uma relação exata e invariável entre entradas e saída, mas **descrever e explicar a variação observada nos dados**;
+- isso não exclui o uso de relações matemáticas: em modelos empíricos, elas são tipicamente **ajustadas com base em dados observados** e interpretadas levando em conta a variabilidade aleatória.
 
 Por que esse exemplo é empírico:
 
@@ -39,7 +33,7 @@ Por que esse exemplo é empírico:
 
 Consequência metodológica:
 
-- em vez de escrever uma relação exata do tipo “dadas essas entradas, o resultado será precisamente tal valor”, é mais rigoroso coletar observações e resumir o comportamento por medidas como média, mediana, variância e desvio-padrão;
+- em vez de assumir uma relação exata do tipo “dadas essas entradas, o resultado será precisamente tal valor”, é mais rigoroso coletar observações e resumir o comportamento por medidas como média, mediana, variância e desvio-padrão;
 - além disso, pode-se estudar a distribuição dos tempos de resposta ou das resistências e verificar como ela muda conforme os fatores de interesse.
 
 Conclusão:
@@ -48,21 +42,27 @@ Conclusão:
 
 ### Exercício 2
 
-**Enunciado**
+#### Enunciado
 
 Apresente, em uma situação prática, qual é a população, uma forma de amostragem e uma possível amostra.
 
-**Resposta**
+#### Resposta
 
 Exemplo:
 
 - população: todos os estudantes matriculados em uma universidade no semestre atual;
-- forma de amostragem: amostragem aleatória simples a partir da lista de matrícula;
+- forma de amostragem: amostragem aleatória simples a partir da lista completa de matrícula, de modo que cada estudante tenha a mesma probabilidade de ser selecionado;
 - possível amostra: $80$ estudantes sorteados dessa lista.
+
+Nesse exemplo:
+
+- a população é o conjunto total de interesse;
+- a amostragem é o procedimento usado para selecionar os elementos;
+- a amostra é o subconjunto efetivamente observado.
 
 ### Exercício 3
 
-**Enunciado**
+#### Enunciado
 
 Dada a seguinte amostra: $\{7, 8, 6, 5, 9, 4\}$, calcule:
 
@@ -70,80 +70,88 @@ Dada a seguinte amostra: $\{7, 8, 6, 5, 9, 4\}$, calcule:
 - a variância;
 - o desvio padrão.
 
-**Resposta**
+#### Resposta
 
 Dada a amostra $\{7, 8, 6, 5, 9, 4\}$, com $n = 6$:
 
 $$
-\bar{x} = \frac{7+8+6+5+9+4}{6} = \frac{39}{6} = 6{,}5
+\bar{x} = \frac{7+8+6+5+9+4}{6} = \frac{39}{6} = 6,5
 $$
 
 $$
-s^2 = \frac{(7-6{,}5)^2+(8-6{,}5)^2+(6-6{,}5)^2+(5-6{,}5)^2+(9-6{,}5)^2+(4-6{,}5)^2}{5}
+s^2 = \frac{(7-6,5)^2+(8-6,5)^2+(6-6,5)^2+(5-6,5)^2+(9-6,5)^2+(4-6,5)^2}{5}
 $$
 
 $$
-s^2 = \frac{0{,}25+2{,}25+0{,}25+2{,}25+6{,}25+6{,}25}{5} = \frac{17{,}5}{5} = 3{,}5
+s^2 = \frac{0,25+2,25+0,25+2,25+6,25+6,25}{5} = \frac{17,5}{5} = 3,5
 $$
 
 $$
-s = \sqrt{3{,}5} \approx 1{,}871
+s = \sqrt{3,5} \approx 1,871
 $$
 
 Resposta:
 
-- média: $6{,}5$
-- variância amostral: $3{,}5$
-- desvio-padrão amostral: $1{,}871$
+- média: $6,5$
+- variância amostral: $3,5$
+- desvio-padrão amostral: $1,871$
+
+#### Observações
+
+- o uso de $n-1$ no denominador corresponde à **correção de Bessel**;
+- essa correção é necessária porque a média amostral $\bar{x}$ é estimada com os próprios dados, o que consome um grau de liberdade e faz com que apenas $n-1$ desvios em relação à média possam variar livremente;
+- seu significado estatístico é compensar a tendência de a variância calculada com denominador $n$ subestimar a variabilidade populacional quando se trabalha com uma amostra;
+- seu impacto é produzir uma estimativa de variância amostral maior do que a obtida com denominador $n$, reduzindo esse viés de subestimação;
+- se os seis valores fossem tratados como a população completa de interesse, a variância populacional seria calculada com denominador $n$, produzindo valor diferente.
 
 ### Exercício 4
 
-**Enunciado**
+#### Enunciado
 
-Para avaliar a qualidade de três empacotadoras $(A, B, C)$ de uma indústria de torrefação de café, realizou-se uma amostra de dez pacotes de café de cada empacotadora e mediu-se o peso líquido. O valor declarado é de $500\,g$. A empacotadora $A$ apresentou peso médio igual a $500{,}1\,g$ e variância $6{,}2$; a $B$ resultou em peso médio igual a $499{,}9\,g$ e variância $40{,}5$; e a $C$, peso médio igual a $530{,}3\,g$ e variância $5{,}8$. O que se pode dizer sobre as empacotadoras?
+Para avaliar a qualidade de três empacotadoras $(A, B, C)$ de uma indústria de torrefação de café, realizou-se uma amostra de dez pacotes de café de cada empacotadora e mediu-se o peso líquido. O valor declarado é de $500\,g$. A empacotadora $A$ apresentou peso médio igual a $500,1\,g$ e variância $6,2$; a $B$ resultou em peso médio igual a $499,9\,g$ e variância $40,5$; e a $C$, peso médio igual a $530,3\,g$ e variância $5,8$. O que se pode dizer sobre as empacotadoras?
 
-**Resposta**
+#### Resposta
 
 Comparando as três empacotadoras com o valor declarado de $500\,g$:
 
-- A: média $500{,}1\,g$ e variância $6{,}2$. Está muito próxima do alvo e com baixa variabilidade.
-- B: média $499{,}9\,g$ e variância $40{,}5$. Está próxima do alvo, mas com variabilidade muito alta.
-- C: média $530{,}3\,g$ e variância $5{,}8$. É precisa, porém fortemente descalibrada, pois está muito acima do valor declarado.
+- A: média amostral $500,1\,g$ e variância $6,2$. Na amostra observada, ficou muito próxima do alvo e com baixa variabilidade.
+- B: média amostral $499,9\,g$ e variância $40,5$. Na amostra observada, ficou próxima do alvo, mas com variabilidade muito alta.
+- C: média amostral $530,3\,g$ e variância $5,8$. Na amostra observada, apresentou baixa variabilidade, porém forte afastamento positivo em relação ao valor declarado.
 
 Conclusão:
 
 - a empacotadora **A** é a melhor;
-- a **B** é centrada, mas imprecisa;
-- a **C** é precisa, porém **tendenciosa** e inadequada do ponto de vista de conformidade.
+- a **B** apresentou média amostral próxima do valor nominal, mas grande dispersão;
+- a **C** mostrou-se pouco dispersa, porém fortemente **descalibrada** em relação ao alvo e inadequada do ponto de vista de conformidade.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
-- esse exercício distingue duas ideias que não devem ser confundidas: **centragem** e **variabilidade**;
-- uma empacotadora pode ter média próxima do valor nominal e, ainda assim, produzir valores muito dispersos, o que compromete a qualidade;
+- uma empacotadora pode ter média amostral próxima do valor nominal e, ainda assim, produzir valores muito dispersos, o que compromete a qualidade;
 - também pode ocorrer o oposto: baixa variabilidade, mas média deslocada do alvo, caracterizando um processo estável porém mal regulado;
-- em controle de qualidade, o desempenho desejável combina **exatidão** em relação ao valor declarado e **precisão** na produção.
+- em controle de qualidade, o desempenho desejável combina **proximidade do alvo** em relação ao valor declarado e **baixa variabilidade** na produção.
 
 ### Exercício 5
 
-**Enunciado**
+#### Enunciado
 
 Ao calcular a variância de um conjunto de valores, encontrou-se o valor $s^2 = 0$. O que se pode dizer sobre o conjunto de valores?
 
-**Resposta**
+#### Resposta
 
 Se $s^2 = 0$, então todos os valores do conjunto são iguais entre si. Logo, não há dispersão.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - a variância mede o grau de afastamento dos valores em relação à média;
-- se ela é nula, todos os desvios em relação à média também são nulos;
+- se ela é nula, então a soma dos quadrados dos desvios em relação à média também é nula;
+- como quadrados não podem assumir valores negativos, isso só é possível se todos os desvios em relação à média forem nulos;
 - portanto, a única possibilidade é que todas as observações coincidam exatamente.
 
 ## Capítulo 2
 
 ### Exercício 1
 
-**Enunciado**
+#### Enunciado
 
 Considerando a população apresentada a seguir, extraia uma amostra aleatória simples de $n = 6$ funcionários. Use a segunda linha da tabela de números aleatórios.
 
@@ -201,7 +209,7 @@ Tabela-base da população:
 | 15 | Fabrício | 31 | Paula |
 | 16 | Geraldo | 32 | Paulo César |
 
-**Resposta**
+#### Resposta
 
 Consultando o livro original, a segunda linha da tabela de números aleatórios é:
 
@@ -238,6 +246,11 @@ Correspondendo aos funcionários:
 - $21$: Joana
 - $01$: Aristóteles
 
+Observação:
+
+- a ordem acima reflete a sequência de aceitação dos códigos na leitura da tabela de números aleatórios;
+- como amostra aleatória simples, o ponto essencial é o conjunto dos elementos selecionados, e não uma ordenação alfabética ou numérica posterior dos sorteados.
+
 Procedimento correto:
 
 1. numerar os $32$ funcionários de $01$ a $32$;
@@ -248,11 +261,11 @@ Procedimento correto:
 
 ### Exercício 2
 
-**Enunciado**
+#### Enunciado
 
 Usando a terceira linha da tabela de números aleatórios, extraia uma amostra aleatória simples de quatro letras do alfabeto da língua portuguesa.
 
-**Resposta**
+#### Resposta
 
 Consultando o livro original, a terceira linha da tabela de números aleatórios é:
 
@@ -260,7 +273,7 @@ $$
 37,\ 18,\ 35,\ 56,\ 91,\ 02,\ 46,\ 60,\ 42,\ 61,\ 30,\ 39,\ 97,\ 56,\ 80,\ 66,\ 99,\ 11,\ 25,\ 62,\ 85,\ 03,\ 55,\ 70,\ 87,\ 30,\ 44,\ 10,\ 21,\ 77
 $$
 
-Adotando a codificação usual do alfabeto com $26$ letras,
+Adotando a convenção atual do alfabeto da língua portuguesa, com $26$ letras,
 
 $$
 01=A,\ 02=B,\ 03=C,\ \ldots,\ 26=Z,
@@ -301,6 +314,12 @@ Correspondendo a:
 - $11$: K
 - $25$: Y
 
+Observação de rigor:
+
+- essa resposta depende da convenção adotada para o alfabeto;
+- sob a convenção atual, com $26$ letras, $K$, $W$ e $Y$ pertencem ao alfabeto e a codificação acima é válida;
+- se fosse adotada uma convenção antiga, com menos letras, a amostra obtida a partir da mesma linha da tabela poderia ser diferente.
+
 Procedimento:
 
 1. numerar as letras do alfabeto;
@@ -310,11 +329,11 @@ Procedimento:
 
 ### Exercício 3
 
-**Enunciado**
+#### Enunciado
 
 Os elementos de certa população estão dispostos numa lista, cuja numeração vai de $1.650$ a $8.840$. Descreva como você usaria uma tabela de números aleatórios para obter uma amostra de 100 elementos. Seria necessário efetuar nova numeração?
 
-**Resposta**
+#### Resposta
 
 Não é necessário efetuar nova numeração. Basta usar a própria numeração de $1650$ a $8840$.
 
@@ -353,7 +372,7 @@ Logo, a resposta conceitualmente correta é:
 - a numeração de $1650$ a $8840$ já permite o sorteio direto por blocos de quatro dígitos;
 - o cuidado necessário é apenas rejeitar valores fora do intervalo e valores repetidos.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - a renumeração só seria necessária se a codificação existente não permitisse aplicar diretamente o mecanismo de sorteio;
 - aqui isso não ocorre, porque todos os elementos já estão identificados por códigos numéricos de quatro algarismos;
@@ -361,24 +380,31 @@ Logo, a resposta conceitualmente correta é:
 
 ### Exercício 4
 
-**Enunciado**
+#### Enunciado
 
 Seja um conjunto de 20 corpos de prova numerados de 1 a 20. Usando uma tabela de números aleatórios, divida aleatoriamente esses corpos de prova em dois grupos de dez elementos.
 
-**Resposta**
+#### Resposta
 
 Adotando a leitura da tabela de números aleatórios em pares de dígitos, e aceitando apenas valores entre $01$ e $20$ sem repetição, podemos proceder da seguinte forma.
 
-Começando pela segunda linha da tabela do livro e prosseguindo para as seguintes quando necessário, os primeiros códigos válidos obtidos são:
+Começando pela segunda linha da tabela do livro e prosseguindo para as seguintes quando necessário, os códigos válidos vão surgindo na seguinte ordem:
+
+- 2ª linha: $04,\ 03,\ 16,\ 01,\ 13$
+- 3ª linha: $18,\ 02,\ 11$
+- 4ª linha: $05,\ 01,\ 14$
+- 5ª linha: $07,\ 19,\ 06,\ 04,\ 07,\ 11,\ 10$
+
+Aplicando a regra de aceitar apenas valores entre $01$ e $20$ sem repetição, os $10$ primeiros códigos válidos são:
 
 $$
-04,\ 03,\ 16,\ 01,\ 13,\ 18,\ 02,\ 11,\ 10,\ 05
+04,\ 03,\ 16,\ 01,\ 13,\ 18,\ 02,\ 11,\ 05,\ 14
 $$
 
 Assim, podemos formar:
 
-- Grupo 1: $04,\ 03,\ 16,\ 01,\ 13,\ 18,\ 02,\ 11,\ 10,\ 05$
-- Grupo 2: $06,\ 07,\ 08,\ 09,\ 12,\ 14,\ 15,\ 17,\ 19,\ 20$
+- Grupo 1: $04,\ 03,\ 16,\ 01,\ 13,\ 18,\ 02,\ 11,\ 05,\ 14$
+- Grupo 2: $06,\ 07,\ 08,\ 09,\ 10,\ 12,\ 15,\ 17,\ 19,\ 20$
 
 Procedimento geral:
 
@@ -388,19 +414,20 @@ Procedimento geral:
 4. formar o grupo 1 com os $10$ primeiros códigos válidos;
 5. colocar os $10$ códigos restantes no grupo 2.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - a aleatorização serve para evitar que a divisão em grupos seja influenciada por ordem, posição ou preferência do pesquisador;
-- quando os $10$ primeiros códigos válidos são escolhidos aleatoriamente, cada corpo de prova tem a mesma chance de ir para qualquer grupo;
+- ao usar uma tabela de números aleatórios e uma regra fixa de aceitação, reduz-se a interferência subjetiva do pesquisador, o que ajuda a evitar viés de alocação;
+- quando os $10$ primeiros códigos válidos são escolhidos aleatoriamente, cada corpo de prova tem a mesma chance inicial de ser selecionado para o Grupo 1;
 - isso ajuda a tornar os grupos comparáveis e reduz viés na etapa experimental.
 
 ### Exercício 5
 
-**Enunciado**
+#### Enunciado
 
 Selecione uma amostra estratificada uniforme, de tamanho $n = 12$, da população do Exercício 1.
 
-**Resposta**
+#### Resposta
 
 O enunciado não explicita a variável de estratificação. Portanto, **não existe uma única amostra correta** sem definir antes os estratos.
 
@@ -409,11 +436,17 @@ Se adotarmos, por exemplo, a variável $sexo$ como critério de estratificação
 - $6$ pessoas no estrato masculino;
 - $6$ pessoas no estrato feminino.
 
-**Observação metodológica**
+Uma possível amostra, sob esse critério, seria:
+
+- homens: $01$ Aristóteles, $03$ Arnaldo, $04$ Bartolomeu, $05$ Bernardino, $06$ Cardoso, $07$ Carlito;
+- mulheres: $02$ Anastácia, $21$ Joana, $23$ Joaquina, $26$ Josefa, $27$ Josefina, $28$ Maria José.
+
+#### Observação
 
 - essa alocação é uniforme, mas **não proporcional**, porque a população não tem a mesma quantidade de homens e mulheres.
+- a amostra acima é apenas um exemplo possível; em uma aplicação efetiva, os $6$ elementos de cada estrato deveriam ser sorteados aleatoriamente dentro de cada grupo.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - na amostragem estratificada uniforme, cada estrato recebe o mesmo tamanho amostral, independentemente de seu tamanho na população;
 - isso pode ser útil quando se deseja comparar estratos com o mesmo nível de detalhe;
@@ -421,11 +454,11 @@ Se adotarmos, por exemplo, a variável $sexo$ como critério de estratificação
 
 ### Exercício 6
 
-**Enunciado**
+#### Enunciado
 
 Considerando a população de funcionários do exercício 1, faça uma amostragem estratificada proporcional de tamanho $n = 8$, usando a variável sexo para a formação dos estratos.
 
-**Resposta**
+#### Resposta
 
 Adotando a variável $sexo$ e classificando os nomes da lista:
 
@@ -453,15 +486,21 @@ Resposta:
 
 - selecionar $6$ homens e $2$ mulheres, de modo aleatório dentro de cada estrato.
 
-**Explicação conceitual**
+Uma possível amostra estratificada proporcional seria:
+
+- homens: $01$ Aristóteles, $03$ Arnaldo, $04$ Bartolomeu, $05$ Bernardino, $06$ Cardoso, $07$ Carlito;
+- mulheres: $02$ Anastácia, $21$ Joana.
+
+#### Explicação conceitual
 
 - a vantagem da alocação proporcional é reproduzir, na amostra, a estrutura da população em relação à variável de estratificação;
 - isso tende a melhorar a representatividade global quando os estratos têm tamanhos muito diferentes;
-- além disso, a estratificação só é metodologicamente útil quando os sorteios dentro de cada estrato continuam sendo aleatórios.
+- além disso, a estratificação só é metodologicamente útil quando os sorteios dentro de cada estrato continuam sendo aleatórios;
+- a amostra listada acima é apenas um exemplo possível, já que outras seleções aleatórias dentro dos mesmos estratos também seriam válidas.
 
 ### Exercício 7
 
-**Enunciado**
+#### Enunciado
 
 Comente os seguintes planos de amostragens, apontando suas incoerências, quando for o caso.
 
@@ -471,7 +510,7 @@ Comente os seguintes planos de amostragens, apontando suas incoerências, quando
 - Para avaliar a qualidade dos itens que saem de uma linha de produção, observou-se um item a cada meia hora, durante todo o dia.
 - Para estimar a percentagem de empresas que investiram em novas tecnologias no último ano, enviou-se um questionário a todas as empresas. A amostra foi formada pelas empresas que responderam ao questionário.
 
-**Resposta**
+#### Resposta
 
 #### Item a
 
@@ -479,7 +518,7 @@ Plano inadequado. Observar apenas o primeiro sábado do mês induz viés tempora
 
 #### Item b
 
-Plano razoável. A coleta ao longo de um mês, em horários variados e em diferentes caixas, reduz viés de período e tende a aumentar a representatividade.
+Plano adequado com ressalvas. Distribui a coleta ao longo do mês, em horários variados e em diferentes caixas. Ainda assim, pode haver viés de seleção se a escolha do consumidor em cada fila não for aleatória.
 
 #### Item c
 
@@ -487,13 +526,13 @@ Plano inadequado. Observar todos os itens apenas das $14h$ às $14h30min$ pode c
 
 #### Item d
 
-Plano melhor que o anterior. A observação ao longo de todo o dia tende a captar variações temporais do processo.
+Plano adequado com ressalvas. A observação ao longo de todo o dia tende a captar variações temporais do processo, embora ainda possa deixar de detectar padrões mais complexos do processo produtivo.
 
 #### Item e
 
 Plano inadequado como amostra probabilística. A amostra final é formada por **auto-seleção** dos respondentes, com forte risco de viés de não resposta.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - nos itens acima, o ponto central é avaliar se a amostra consegue representar a população sem privilegiar certos períodos, perfis ou comportamentos;
 - sempre que a coleta fica concentrada em um único horário, dia ou condição operacional, surge risco de **viés de seleção**;
@@ -502,11 +541,11 @@ Plano inadequado como amostra probabilística. A amostra final é formada por **
 
 ### Exercício 8
 
-**Enunciado**
+#### Enunciado
 
 Apresente as 32 combinações de sinais em que os fatores $A$, $B$, $C$, $D$ e $E$ devem ser ensaiados em um projeto $2^5$ completo. Anote os ensaios que devem ser realizados em um projeto $2^{5-1}$, considerando a relação $I = ABCDE$. Repare que você pode construir o mesmo projeto fazendo, inicialmente, um projeto $2^4$ completo e, depois, inserindo a coluna $E$ com a relação $E = ABCD$.
 
-**Resposta**
+#### Resposta
 
 Um projeto $2^5$ completo possui $32$ combinações de sinais:
 
@@ -563,7 +602,7 @@ $$
 E = ABCD.
 $$
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - em um projeto fatorial completo $2^5$, todas as combinações possíveis dos níveis são observadas;
 - já na fração $2^{5-1}$, trabalha-se com apenas metade dos ensaios, escolhidos segundo uma relação geradora;
@@ -571,11 +610,11 @@ $$
 
 ### Exercício 9
 
-**Enunciado**
+#### Enunciado
 
 Calcule a variância agregada do experimento do Exemplo 2.4. Quantos graus de liberdade estão associados a essa medida?
 
-**Resposta**
+#### Resposta
 
 Pela fórmula da variância agregada:
 
@@ -599,7 +638,7 @@ Entretanto, a tabela transcrita do Exemplo 2.4 **não fornece as variâncias ou 
 - graus de liberdade: $8$
 - variância agregada numérica: **não determinável com os dados transcritos**
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - a variância agregada combina a variabilidade interna de todos os tratamentos em uma única medida;
 - os graus de liberdade indicam quanta informação independente sustenta essa estimativa;
@@ -607,9 +646,9 @@ Entretanto, a tabela transcrita do Exemplo 2.4 **não fornece as variâncias ou 
 
 ### Exercício 10
 
-**Enunciado**
+#### Enunciado
 
-Para avaliar o efeito dos fatores: $(A)$ tempo de hidratação ($14$ dias/$28$ dias), $(B)$ relação água/cimento ($0{,}38$ e $0{,}58$) e $(C)$ tipo de cimento (comum e pozolânico) na resistência à compressão de um concreto $(Y)$, realizou-se um experimento cujos resultados da resistência (em MPa) são apresentados a seguir. Calcule os efeitos principais e as interações de segunda ordem.
+Para avaliar o efeito dos fatores: $(A)$ tempo de hidratação ($14$ dias/$28$ dias), $(B)$ relação água/cimento ($0,38$ e $0,58$) e $(C)$ tipo de cimento (comum e pozolânico) na resistência à compressão de um concreto $(Y)$, realizou-se um experimento cujos resultados da resistência (em MPa) são apresentados a seguir. Calcule os efeitos principais e as interações de segunda ordem.
 
 | Tipo de cimento | Relação água/cimento | 14 dias | 28 dias |
 | --- | --- | ---: | ---: |
@@ -618,12 +657,12 @@ Para avaliar o efeito dos fatores: $(A)$ tempo de hidratação ($14$ dias/$28$ d
 | pozolânico | 0,38 | 24,3 | 39,5 |
 | pozolânico | 0,58 | 11,1 | 24,3 |
 
-**Resposta**
+#### Resposta
 
 Adotando:
 
 - $A$: tempo de hidratação ($14$ dias = $-$, $28$ dias = $+$);
-- $B$: relação água/cimento ($0{,}38$ = $-$, $0{,}58$ = $+$);
+- $B$: relação água/cimento ($0,38$ = $-$, $0,58$ = $+$);
 - $C$: tipo de cimento (comum = $-$, pozolânico = $+$).
 
 Pelo efeito
@@ -634,12 +673,12 @@ $$
 
 obtém-se:
 
-- $ef(A) = 15{,}85$
-- $ef(B) = -13{,}45$
-- $ef(C) = -1{,}50$
-- $ef(AB) = -1{,}30$
-- $ef(AC) = -1{,}65$
-- $ef(BC) = -0{,}75$
+- $ef(A) = 15,85$
+- $ef(B) = -13,45$
+- $ef(C) = -1,50$
+- $ef(AB) = -1,30$
+- $ef(AC) = -1,65$
+- $ef(BC) = -0,75$
 
 Interpretação:
 
@@ -648,7 +687,7 @@ Interpretação:
 - o tipo de cimento ($C$) tem efeito pequeno, na forma transcrita do exercício;
 - as interações de segunda ordem são pequenas em comparação com os efeitos principais de $A$ e $B$.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - um **efeito principal** mede a mudança média na resposta quando se altera um fator, mantendo-se a estrutura do experimento;
 - uma **interação** mede se o efeito de um fator depende do nível de outro;
@@ -656,7 +695,7 @@ Interpretação:
 
 ### Exercício 11
 
-**Enunciado**
+#### Enunciado
 
 Em *Applied Statistics*, $v.\ 42$, nº $4$, $p.\ 671\text{-}681$ ($1993$), M. G. Tuck e J. I. L. Cottrell realizaram vários experimentos para obter uma farinha de pão de melhor qualidade. Misturaram à farinha de trigo pequenas quantidades de ingredientes permitidos. Os fatores correspondem à quantidade de cada ingrediente adicionado à farinha, sendo que o nível inferior corresponde à ausência do ingrediente.
 
@@ -681,18 +720,18 @@ Parte de um dos experimentos foi realizada sob um projeto $2^{6-2}$, em que os f
 | 15 | + | + | + | + | - | - | 469,00 | 82,30 |
 | 16 | + | + | + | + | + | + | 471,50 | 75,11 |
 
-**Resposta**
+#### Resposta
 
 #### Item a
 
 Efeitos principais sobre a média $y$:
 
-- $ef(A) = 13{,}65625$
-- $ef(B) = 3{,}71875$
-- $ef(C) = 14{,}71875$
-- $ef(D) = 7{,}03125$
-- $ef(E) = -0{,}15625$
-- $ef(F) = -2{,}40625$
+- $ef(A) = 13,65625$
+- $ef(B) = 3,71875$
+- $ef(C) = 14,71875$
+- $ef(D) = 7,03125$
+- $ef(E) = -0,15625$
+- $ef(F) = -2,40625$
 
 Os fatores que mais alteram o nível médio da resposta são:
 
@@ -718,24 +757,24 @@ Observação importante de rigor:
 
 - como se trata de fração $2^{6-2}$, apenas parte desses fatores é independente;
 - pelas relações geradoras, a combinação acima é consistente e corresponde à condição $15$;
-- empiricamente, a maior média observada na tabela foi a condição $16$ ($471{,}50$), muito próxima da condição $15$ ($469{,}00$), o que sugere cautela na interpretação dos efeitos pequenos de $E$ e $F$.
+- empiricamente, a maior média observada na tabela foi a condição $16$ ($471,50$), muito próxima da condição $15$ ($469,00$), o que sugere cautela na interpretação dos efeitos pequenos de $E$ e $F$.
 
 #### Item b
 
 Efeitos principais sobre o desvio-padrão $s$:
 
-- $ef(A) = 6{,}80125$
-- $ef(B) = 0{,}33375$
-- $ef(C) = 2{,}76375$
-- $ef(D) = -3{,}58875$
-- $ef(E) = -2{,}07625$
-- $ef(F) = -3{,}77625$
+- $ef(A) = 6,80125$
+- $ef(B) = 0,33375$
+- $ef(C) = 2,76375$
+- $ef(D) = -3,58875$
+- $ef(E) = -2,07625$
+- $ef(F) = -3,77625$
 
 O fator que mais altera a variabilidade é $A$.
 
 Como $ef(A) > 0$, o nível $+$ aumenta o desvio-padrão. Logo, para **minimizar a variabilidade**, $A$ deve ser fixado no nível $-$.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - aqui aparecem dois objetivos experimentais distintos: elevar a média da resposta e reduzir sua variabilidade;
 - em problemas de engenharia, essas metas nem sempre apontam para a mesma configuração;
@@ -745,14 +784,14 @@ Como $ef(A) > 0$, o nível $+$ aumenta o desvio-padrão. Logo, para **minimizar 
 
 ### Exercício 3
 
-**Enunciado**
+#### Enunciado
 
 Dado o seguinte conjunto de dados: $\{7, 8, 6, 10, 5, 9, 4, 12, 7, 8\}$, calcule:
 
 - a média;
 - o desvio padrão.
 
-**Resposta**
+#### Resposta
 
 Dados:
 
@@ -763,29 +802,29 @@ $$
 Com $n = 10$:
 
 $$
-\bar{x} = \frac{76}{10} = 7{,}6
+\bar{x} = \frac{76}{10} = 7,6
 $$
 
 $$
-s^2 = 5{,}6
+s^2 = 5,6
 $$
 
 $$
-s = \sqrt{5{,}6} \approx 2{,}366
+s = \sqrt{5,6} \approx 2,366
 $$
 
 Resposta:
 
-- média: $7{,}6$
-- desvio-padrão amostral: $2{,}366$
+- média: $7,6$
+- desvio-padrão amostral: $2,366$
 
 ### Exercício 4
 
-**Enunciado**
+#### Enunciado
 
 Calcule a média e o desvio padrão da seguinte distribuição de frequências, a qual se refere ao número de defeitos encontrados em placas de circuito integrado.
 
-**Resposta**
+#### Resposta
 
 Distribuição:
 
@@ -808,65 +847,95 @@ Média:
 $$
 \bar{x} = \frac{0\cdot 30 + 1\cdot 25 + 2\cdot 10 + 3\cdot 5 + 4\cdot 2}{72}
 = \frac{68}{72}
-= 0{,}9444
+= 0,9444
 $$
 
 Variância amostral:
 
 $$
-s^2 \approx 1{,}0955
+s^2 \approx 1,0955
 $$
 
 Desvio-padrão amostral:
 
 $$
-s \approx 1{,}0466
+s \approx 1,0466
 $$
 
 Resposta:
 
-- média: $0{,}9444$
-- desvio-padrão amostral: $1{,}0466$
+- média: $0,9444$
+- desvio-padrão amostral: $1,0466$
 
 ### Exercício 5
 
-**Enunciado**
+#### Enunciado
 
-Considerando o Exercício 2 (seção 3.3), obtenha a mediana e os quartis.
+Considerando os dados do **Exemplo 3.2** sobre os 50 tempos de carga de um aplicativo em um sistema compartilhado, obtenha a mediana e os quartis.
 
-**Resposta**
+#### Resposta
 
-O enunciado remete ao **Exercício 2 (seção 3.3)**, mas esse exercício **não aparece no arquivo transcrito**. Portanto, não há dados suficientes para calcular a mediana e os quartis solicitados.
+Considerando os dados do **Exemplo 3.2** sobre os 50 tempos de carga do aplicativo, e usando a convenção de posições adotada no próprio material:
+
+$$
+\text{posição da mediana} = \frac{n+1}{2} = \frac{51}{2} = 25,5
+$$
+
+Logo,
+
+$$
+md = \frac{5,9 + 6,0}{2} = 5,95
+$$
+
+Para os quartis:
+
+$$
+\text{posição de } q_i = \frac{n+1}{4} = 12,75 \Rightarrow q_i = 5,175
+$$
+
+$$
+\text{posição de } q_s = \frac{3(n+1)}{4} = 38,25 \Rightarrow q_s = 6,925
+$$
+
+Resposta:
+
+- mediana: $5,95$
+- quartil inferior: $5,175$
+- quartil superior: $6,925$
+
+#### Observação
+
+- os quartis foram obtidos pela convenção de posições baseada em $p(n+1)$, adotada no próprio material, com interpolação linear quando a posição teórica do quantil não é inteira.
 
 ### Exercício 6
 
-**Enunciado**
+#### Enunciado
 
 Com o objetivo de direcionar campanhas de marketing, uma livraria virtual está registrando o número de acessos diários em algumas de suas páginas da Web, nos últimos três meses. A tabela a seguir mostra medidas descritivas desses registros, em páginas de três categorias de livros.
 
 | Livro | Média | Desvio padrão | Quartil inferior | Mediana | Quartil superior |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Romance | 910 | 690 | 412 | 650 | 1.500 |
-| Ficcao | 220 | 180 | 145 | 398 | 1.023 |
+| Ficção | 220 | 180 | 145 | 398 | 1.023 |
 | Técnico | 630 | 480 | 115 | 190 | 1.500 |
 
 - Quais as diferenças das três distribuições em termos de posição central e dispersão?
 - As medidas sugerem distribuições simétricas?
 
-**Resposta**
+#### Resposta
 
 #### Item a
 
 Em termos de posição central:
 
-- $Romance$ tem maior média e mediana que $Técnico$ e, pelos dados transcritos, média maior que $Ficcao$;
+- $Romance$ tem maior média e mediana que $Técnico$ e, pelos dados transcritos, média maior que $Ficção$;
 - $Técnico$ tem mediana baixa ($190$), mas média relativamente alta ($630$), o que indica forte influência de valores altos;
-- $Ficcao$ apresenta, na transcrição, média ($220$) bem abaixo da mediana ($398$).
+- $Ficção$ apresenta, na transcrição, média ($220$) bem abaixo da mediana ($398$).
 
 Em termos de dispersão:
 
 - $Romance$ tem alta dispersão: $s = 690$ e $DIQ = 1500 - 412 = 1088$;
-- $Ficcao$ também tem grande dispersão central: $DIQ = 1023 - 145 = 878$;
+- $Ficção$ também tem grande dispersão central: $DIQ = 1023 - 145 = 878$;
 - $Técnico$ apresenta $s = 480$ e $DIQ = 1500 - 115 = 1385$, indicando forte heterogeneidade.
 
 #### Item b
@@ -875,9 +944,9 @@ As medidas **não sugerem simetria**.
 
 - $Romance$: como média $910$ é maior que mediana $650$, há indício de assimetria à direita.
 - $Técnico$: a diferença entre média $630$ e mediana $190$, além do quartil superior muito alto, sugere assimetria acentuada à direita.
-- $Ficcao$: os valores transcritos sugerem **inconsistência ou forte assimetria**, porque a média é menor que a mediana, mas o quartil superior é muito elevado. Assim, não há suporte para supor simetria.
+- $Ficção$: os valores transcritos sugerem **inconsistência ou forte assimetria**, porque a média é menor que a mediana, mas o quartil superior é muito elevado. Assim, não há suporte para supor simetria.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - em distribuições aproximadamente simétricas, média e mediana tendem a assumir valores próximos;
 - quando a média fica muito acima da mediana, costuma haver cauda à direita, pois valores altos puxam a média para cima;
@@ -885,66 +954,66 @@ As medidas **não sugerem simetria**.
 
 ### Exercício 7
 
-**Enunciado**
+#### Enunciado
 
 Os dados a seguir são leituras da pressão do homogeneizador de um laticínio.
 
-**Leite tipo C**
+#### Leite tipo C
 
 $$
-3{,}0\ 3{,}1\ 3{,}0\ 3{,}0\ 3{,}0\ 2{,}9\ 2{,}9\ 3{,}0\ 3{,}1\ 2{,}9\ 3{,}0\ 3{,}0\ 3{,}0\ 3{,}0\ 3{,}0\ 3{,}0\ 3{,}0\ 3{,}0\ 3{,}0\ 3{,}0\ 2{,}9
+3,0\ 3,1\ 3,0\ 3,0\ 3,0\ 2,9\ 2,9\ 3,0\ 3,1\ 2,9\ 3,0\ 3,0\ 3,0\ 3,0\ 3,0\ 3,0\ 3,0\ 3,0\ 3,0\ 3,0\ 2,9
 $$
 
-**Leite UHT**
+#### Leite UHT
 
 $$
-2{,}2\ 2{,}2\ 2{,}3\ 2{,}2\ 2{,}2\ 2{,}2\ 2{,}4\ 2{,}4\ 2{,}2\ 2{,}4\ 2{,}6\ 2{,}6\ 2{,}4\ 2{,}2\ 2{,}2\ 2{,}8\ 2{,}6\ 2{,}2\ 2{,}6\ 2{,}4\ 2{,}0
+2,2\ 2,2\ 2,3\ 2,2\ 2,2\ 2,2\ 2,4\ 2,4\ 2,2\ 2,4\ 2,6\ 2,6\ 2,4\ 2,2\ 2,2\ 2,8\ 2,6\ 2,2\ 2,6\ 2,4\ 2,0
 $$
 
 Para cada conjunto de dados, calcule as medidas descritivas que você conhece. Com base nessas medidas, comente as principais diferenças entre os dois conjuntos de valores.
 
-**Resposta**
+#### Resposta
 
 #### Leite tipo C
 
 Medidas descritivas:
 
 - $n = 21$
-- média: $2{,}9905$
-- variância amostral: $0{,}0029$
-- desvio-padrão amostral: $0{,}0539$
-- mediana: $3{,}0$
-- $Q_1 = 3{,}0$
-- $Q_3 = 3{,}0$
-- mínimo: $2{,}9$
-- máximo: $3{,}1$
-- amplitude: $0{,}2$
-- coeficiente de variação: aproximadamente $1{,}80\%$
+- média: $2,9905$
+- variância amostral: $0,0029$
+- desvio-padrão amostral: $0,0539$
+- mediana: $3,0$
+- $Q_1 = 3,0$
+- $Q_3 = 3,0$
+- mínimo: $2,9$
+- máximo: $3,1$
+- amplitude: $0,2$
+- coeficiente de variação: aproximadamente $1,80\%$
 
 #### Leite UHT
 
 Medidas descritivas:
 
 - $n = 21$
-- média: $2{,}3476$
-- variância amostral: $0{,}0396$
-- desvio-padrão amostral: $0{,}1990$
-- mediana: $2{,}3$
-- $Q_1 = 2{,}2$
-- $Q_3 = 2{,}5$
-- mínimo: $2{,}0$
-- máximo: $2{,}8$
-- amplitude: $0{,}8$
-- coeficiente de variação: aproximadamente $8{,}48\%$
+- média: $2,3476$
+- variância amostral: $0,0396$
+- desvio-padrão amostral: $0,1990$
+- mediana: $2,3$
+- $Q_1 = 2,2$
+- $Q_3 = 2,5$
+- mínimo: $2,0$
+- máximo: $2,8$
+- amplitude: $0,8$
+- coeficiente de variação: aproximadamente $8,48\%$
 
 #### Comparação
 
-- o leite tipo $C$ tem nível central mais alto, concentrado em torno de $3{,}0$;
-- o $UHT$ tem nível central menor, em torno de $2{,}3$ a $2{,}4$;
+- o leite tipo $C$ tem nível central mais alto, concentrado em torno de $3,0$;
+- o $UHT$ tem nível central menor, em torno de $2,3$ a $2,4$;
 - o $UHT$ é muito mais variável;
-- o tipo $C$ é extremamente estável, com valores quase todos iguais a $3{,}0$.
+- o tipo $C$ é extremamente estável, com valores quase todos iguais a $3,0$.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - essa comparação mostra que duas distribuições podem diferir ao mesmo tempo em **posição** e **dispersão**;
 - posição descreve o nível típico da variável, enquanto dispersão informa o grau de oscilação em torno desse nível;
@@ -952,7 +1021,7 @@ Medidas descritivas:
 
 ### Exercício 8
 
-**Enunciado**
+#### Enunciado
 
 Bernardin (Mestrado Engenharia Mecânica/UFSC, 1994) realizou um experimento que tinha o objetivo de melhorar a qualidade do processo de formulação de massa cerâmica para pavimento. Os corpos de prova eram “biscoitos” que saíam do processo de queima e a qualidade era avaliada por três variáveis:
 
@@ -984,7 +1053,7 @@ O experimento foi realizado sob 8 condições diferentes (no estudo original era
 - Construa um diagrama em caixas para $X_1$.
 - Considere o objetivo de verificar qual das variáveis ($X_1$, $X_2$ e $X_3$) apresenta maior variabilidade. Qual medida de dispersão você deve usar?
 
-**Resposta**
+#### Resposta
 
 #### Item a
 
@@ -1016,7 +1085,7 @@ Comentário:
 - há concentração em faixas distintas, refletindo a mistura de várias condições experimentais;
 - visualmente, trata-se de uma distribuição **heterogênea e multimodal**.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - quando os dados são produzidos sob várias condições experimentais, a distribuição conjunta pode deixar de representar uma única população homogênea;
 - nesse caso, picos em diferentes regiões sugerem a presença de **subgrupos** com comportamentos distintos;
@@ -1027,7 +1096,7 @@ Comentário:
 Sem construir as figuras, a leitura dos dados indica:
 
 - $X_2$: distribuição ampla e heterogênea, com concentrações em regiões distintas, também sugerindo multimodalidade;
-- $X_3$: distribuição ainda mais claramente multimodal, com grupos próximos de $0$, outro em torno de $3$ a $6$ e outro próximo de $9$ a $10{,}6$.
+- $X_3$: distribuição ainda mais claramente multimodal, com grupos próximos de $0$, outro em torno de $3$ a $6$ e outro próximo de $9$ a $10,6$.
 
 Logo, os histogramas de $X_2$ e $X_3$ tenderiam a mostrar **mistura de subpopulações**, e não uma única distribuição simples.
 
@@ -1037,9 +1106,9 @@ Para $X_3$:
 
 | Condição | Média | Desvio-padrão |
 | ---: | ---: | ---: |
-| 1 | $5{,}54$ | $0{,}503$ |
-| 4 | $9{,}92$ | $0{,}726$ |
-| 8 | $4{,}14$ | $0{,}207$ |
+| 1 | $5,54$ | $0,503$ |
+| 4 | $9,92$ | $0,726$ |
+| 8 | $4,14$ | $0,207$ |
 
 Interpretação:
 
@@ -1047,7 +1116,7 @@ Interpretação:
 - a condição $8$ tem média intermediária, mas é a mais estável;
 - a condição $1$ tem média mais alta que a $8$, porém menor que a $4$, com variabilidade intermediária.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - a média resume o nível típico da resposta em cada condição;
 - o desvio-padrão mede o grau de oscilação entre as repetições;
@@ -1062,7 +1131,7 @@ Não. Os diagramas de pontos não fornecem exatamente as mesmas informações da
 
 Portanto, os diagramas de pontos **complementam** as medidas numéricas.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - medidas-resumo comprimem a informação em poucos números;
 - gráficos preservam aspectos estruturais como agrupamentos, assimetria, lacunas e valores atípicos;
@@ -1072,37 +1141,37 @@ Portanto, os diagramas de pontos **complementam** as medidas numéricas.
 
 Usando as $40$ observações transcritas de $X_1$:
 
-- mediana: $9{,}4$
-- quartil inferior $Q_1$: $8{,}7$
-- quartil superior $Q_3$: $12{,}55$
+- mediana: $9,4$
+- quartil inferior $Q_1$: $8,7$
+- quartil superior $Q_3$: $12,55$
 
 Logo,
 
 $$
-DIQ = Q_3 - Q_1 = 12{,}55 - 8{,}7 = 3{,}85
+DIQ = Q_3 - Q_1 = 12,55 - 8,7 = 3,85
 $$
 
 #### Item g
 
 Resumo de cinco números para o boxplot de $X_1$:
 
-- mínimo: $5{,}9$
-- $Q_1 = 8{,}7$
-- mediana: $9{,}4$
-- $Q_3 = 12{,}55$
-- máximo: $13{,}6$
+- mínimo: $5,9$
+- $Q_1 = 8,7$
+- mediana: $9,4$
+- $Q_3 = 12,55$
+- máximo: $13,6$
 
 Limites para discrepantes:
 
 $$
-LI = 8{,}7 - 1{,}5(3{,}85) = 2{,}925
+LI = 8,7 - 1,5(3,85) = 2,925
 $$
 
 $$
-LS = 12{,}55 + 1{,}5(3{,}85) = 18{,}325
+LS = 12,55 + 1,5(3,85) = 18,325
 $$
 
-Como todos os valores estão entre $5{,}9$ e $13{,}6$, **não há outliers pelo critério $1{,}5\,DIQ$**.
+Como todos os valores estão entre $5,9$ e $13,6$, **não há outliers pelo critério $1,5\,DIQ$**.
 
 #### Item h
 
@@ -1113,13 +1182,13 @@ Para comparar variabilidade entre $X_1$, $X_2$ e $X_3$, a medida mais apropriada
 
 Com os dados transcritos:
 
-- $CV(X_1) \approx 23{,}28\%$
-- $CV(X_2) \approx 23{,}90\%$
-- $CV(X_3) \approx 98{,}12\%$
+- $CV(X_1) \approx 23,28\%$
+- $CV(X_2) \approx 23,90\%$
+- $CV(X_3) \approx 98,12\%$
 
 Assim, $X_3$ é a variável relativamente mais variável.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - quando as variáveis estão em escalas diferentes, comparar apenas desvios-padrão absolutos pode ser enganoso;
 - o coeficiente de variação corrige isso ao relacionar a dispersão com o tamanho médio da variável;
@@ -1127,13 +1196,13 @@ Assim, $X_3$ é a variável relativamente mais variável.
 
 ### Exercício 9
 
-**Enunciado**
+#### Enunciado
 
 Com respeito ao exercício anterior, o estudo da variabilidade natural do processo, em termos das 50 observações de $X_1$, $X_2$ e $X_3$, fica prejudicado, pois os ensaios foram feitos sob 8 condições experimentais diferentes. Considerando, porém, que, para cada variável, a média $X_j$ corresponde a uma estimativa da $j$-ésima condição experimental ($j = 1, 2, \ldots, 8$), então os desvios $d_{ij} = X_{ij} - X_j$ ($i = 1, 2, \ldots, 5$) fornecem informações da variabilidade natural do processo.
 
 Apresente as distribuições de frequências de $d_1$, $d_2$ e $d_3$ através de histogramas ou ramo-e-folhas. O que você pode dizer da dispersão dessas distribuições comparadas às distribuições construídas no exercício anterior, itens $(b)$ e $(c)$?
 
-**Resposta**
+#### Resposta
 
 Usando os desvios dentro de condição,
 
@@ -1145,15 +1214,15 @@ obtém-se:
 
 | Variável | Média dos desvios | Desvio-padrão |
 | --- | ---: | ---: |
-| $d_1$ | aproximadamente $0$ | $0{,}629$ |
-| $d_2$ | aproximadamente $0$ | $4{,}893$ |
-| $d_3$ | aproximadamente $0$ | $0{,}397$ |
+| $d_1$ | aproximadamente $0$ | $0,629$ |
+| $d_2$ | aproximadamente $0$ | $4,893$ |
+| $d_3$ | aproximadamente $0$ | $0,397$ |
 
 Distribuições resumidas:
 
-- $d_1$: muito concentrada em torno de zero, com maior parte entre $-0{,}5$ e $0{,}5$;
+- $d_1$: muito concentrada em torno de zero, com maior parte entre $-0,5$ e $0,5$;
 - $d_2$: também centrada em zero, mas com dispersão maior que $d_1$ e $d_3$;
-- $d_3$: fortemente concentrada em torno de zero, com a maior parte entre $-0{,}2$ e $0{,}2$.
+- $d_3$: fortemente concentrada em torno de zero, com a maior parte entre $-0,2$ e $0,2$.
 
 Comparação com o exercício anterior:
 
@@ -1161,7 +1230,7 @@ Comparação com o exercício anterior:
 - isso ocorre porque a variação entre condições experimentais foi removida;
 - portanto, os desvios refletem melhor a **variabilidade natural intrínseca** do processo em cada condição.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - os dados originais misturam duas fontes de variação: diferenças entre condições experimentais e flutuações naturais dentro de cada condição;
 - ao centralizar cada observação pela média da sua condição, elimina-se a componente de nível entre grupos;
@@ -1169,24 +1238,24 @@ Comparação com o exercício anterior:
 
 ### Exercício 10
 
-**Enunciado**
+#### Enunciado
 
 Os dados abaixo apresentam a distância (em km) entre a residência e o local de trabalho dos funcionários da empresa AAA.
 
 $$
-1{,}8\ 2{,}5\ 0{,}4\ 1{,}9\ 4{,}4\ 2{,}2\ 3{,}5\ 0{,}2\ 0{,}9\ 1{,}4\ 1{,}1\ 1{,}7\ 1{,}2\ 2{,}3\ 1{,}9\ 0{,}8\ 1{,}5\ 1{,}7\ 1{,}4\ 2{,}1\ 3{,}2\ 15{,}1\ 2{,}1\ 1{,}4\ 0{,}5\ 0{,}9\ 1{,}7\ 0{,}5\ 0{,}8\ 3{,}7\ 1{,}4\ 1{,}8\ 2{,}0\ 1{,}1\ 1{,}0\ 0{,}8
+1,8\ 2,5\ 0,4\ 1,9\ 4,4\ 2,2\ 3,5\ 0,2\ 0,9\ 1,4\ 1,1\ 1,7\ 1,2\ 2,3\ 1,9\ 0,8\ 1,5\ 1,7\ 1,4\ 2,1\ 3,2\ 15,1\ 2,1\ 1,4\ 0,5\ 0,9\ 1,7\ 0,5\ 0,8\ 3,7\ 1,4\ 1,8\ 2,0\ 1,1\ 1,0\ 0,8
 $$
 
 - Apresente esses dados em ramo-e-folhas.
 - Na empresa BBB, a distância (em km) até a residência de seus 300 funcionários apresenta as seguintes medidas descritivas:
 
 $$
-\text{Mediana} = 2{,}8,\quad Q_1 = 1{,}6,\quad Q_3 = 4{,}2,\quad \text{Extremo inferior} = 0{,}4,\quad \text{Extremo superior} = 8{,}8
+\text{Mediana} = 2,8,\quad Q_1 = 1,6,\quad Q_3 = 4,2,\quad \text{Extremo inferior} = 0,4,\quad \text{Extremo superior} = 8,8
 $$
 
 Quais as principais diferenças entre as empresas AAA e BBB, em termos da distância entre a residência e o local de trabalho dos funcionários?
 
-**Resposta**
+#### Resposta
 
 #### Item a
 
@@ -1205,30 +1274,30 @@ Ramo-e-folhas das distâncias da empresa AAA:
 
 Para a empresa AAA, a partir dos dados:
 
-- mínimo: $0{,}2$
-- $Q_1 = 0{,}925$
-- mediana: $1{,}6$
-- $Q_3 = 2{,}1$
-- máximo: $15{,}1$
-- $DIQ = 1{,}175$
+- mínimo: $0,2$
+- $Q_1 = 0,925$
+- mediana: $1,6$
+- $Q_3 = 2,1$
+- máximo: $15,1$
+- $DIQ = 1,175$
 
 Para a empresa BBB, o enunciado fornece:
 
-- mínimo: $0{,}4$
-- $Q_1 = 1{,}6$
-- mediana: $2{,}8$
-- $Q_3 = 4{,}2$
-- máximo: $8{,}8$
-- $DIQ = 2{,}6$
+- mínimo: $0,4$
+- $Q_1 = 1,6$
+- mediana: $2,8$
+- $Q_3 = 4,2$
+- máximo: $8,8$
+- $DIQ = 2,6$
 
 Comparação:
 
 - a empresa $BBB$ tem funcionários, em geral, morando mais longe do trabalho, pois seus quartis e mediana são maiores;
-- a empresa $BBB$ também tem maior dispersão na faixa central ($DIQ = 2{,}6$ contra $1{,}175$);
-- a empresa $AAA$ apresenta forte assimetria à direita, causada principalmente pelo valor extremo $15{,}1$;
+- a empresa $BBB$ também tem maior dispersão na faixa central ($DIQ = 2,6$ contra $1,175$);
+- a empresa $AAA$ apresenta forte assimetria à direita, causada principalmente pelo valor extremo $15,1$;
 - a empresa $BBB$ também pode ter assimetria à direita, mas menos acentuada no resumo fornecido.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - a mediana e os quartis são especialmente úteis quando há assimetria ou valores extremos;
 - isso ocorre porque eles são medidas **resistentes**, menos sensíveis a observações muito afastadas;
@@ -1236,7 +1305,7 @@ Comparação:
 
 ### Exercício 11
 
-**Enunciado**
+#### Enunciado
 
 Apresentam-se, abaixo, algumas medidas descritivas da distribuição de salários, em $R\$$, de três empresas do mesmo ramo.
 
@@ -1248,7 +1317,7 @@ Apresentam-se, abaixo, algumas medidas descritivas da distribuição de salário
 
 O que se pode dizer sobre a distribuição dos salários nas três empresas? Quais as diferenças em termos da posição central, dispersão e assimetria?
 
-**Resposta**
+#### Resposta
 
 #### Posição central
 
@@ -1288,7 +1357,7 @@ Conclusão:
 - $B$ tem centro mais alto e dispersão maior que $A$, ainda sem assimetria severa;
 - $C$ apresenta forte desigualdade salarial, grande dispersão e cauda longa à direita.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - esse exercício reúne três dimensões clássicas da análise exploratória: **posição central**, **dispersão** e **assimetria**;
 - duas distribuições podem ter médias parecidas e, ainda assim, diferir muito no formato e na desigualdade interna;
@@ -1296,23 +1365,23 @@ Conclusão:
 
 ### Exercício 12
 
-**Enunciado**
+#### Enunciado
 
 Cada diagrama em caixas da figura do livro foi construído com 95 leituras da pressão do homogeneizador. Discuta as diferenças.
 
-**Resposta**
+#### Resposta
 
 Pelo boxplot da figura:
 
-- o leite tipo $C$ tem mediana e média mais altas, em torno de $3{,}0$;
-- o $UHT$ tem centro mais baixo, em torno de $2{,}4$;
+- o leite tipo $C$ tem mediana mais alta, em torno de $3,0$;
+- o $UHT$ tem mediana mais baixa, em torno de $2,4$;
 - a variabilidade do $UHT$ é maior, pois seu boxplot é mais largo e os whiskers cobrem faixa mais extensa;
 - o tipo $C$ é mais estável, mas apresenta dois valores baixos discrepantes;
 - o $UHT$ não mostra outliers tão evidentes na figura, embora apresente maior dispersão total;
-- em termos de processo, o leite tipo $C$ parece mais bem centrado e mais consistente, enquanto o $UHT$ é menos estável.
+- em termos de processo, o leite tipo $C$ parece mais consistente, enquanto o $UHT$ é menos estável.
 
-**Explicação conceitual**
+#### Explicação conceitual
 
 - o boxplot resume simultaneamente mediana, quartis, dispersão central e possíveis outliers;
 - por isso, ele é especialmente útil para comparar grupos de forma rápida e resistente a valores extremos;
-- neste caso, a leitura visual reforça a diferença entre **nível do processo** e **estabilidade do processo**.
+- neste caso, a leitura visual reforça a diferença entre **nível mediano do processo** e **estabilidade do processo**.
