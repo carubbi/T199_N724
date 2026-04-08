@@ -1,6 +1,4 @@
 .venv/
 .DS_Store
-T1/
-livros/
 AGENTS.md
-AVs/
+aulas/notebooks/local
