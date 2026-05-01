@@ -3,7 +3,7 @@
 Fonte: `livros/Barbetta_2010  Estatística  para cursos de engenharia e informática.pdf`
 
 ## Exemplos
-de OCR 
+
 ### Exemplo 5.1 - Lançamento de um dado comum
 
 Seja a variável aleatória $X =$ número obtido no lançamento de um dado comum. Se assumirmos o dado perfeitamente equilibrado e o lançamento imparcial, podemos alocar as seguintes probabilidades aos valores possíveis de $X$:

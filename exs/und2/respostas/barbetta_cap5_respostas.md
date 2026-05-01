@@ -2,6 +2,14 @@
 
 Fonte dos enunciados: `exs/und2/barbetta_cap5.md`
 
+Conferência com o gabarito extraído do livro: `exs/und2/respostas/barbetta_livro.md`.
+
+Observação de conferência: as respostas coincidem com o gabarito do livro. As únicas diferenças são de arredondamento/tabela:
+
+- Exercício 7(c): este arquivo usa $0{,}0755$; o livro registra $0{,}0754$.
+- Exercício 11(a): este arquivo usa $0{,}0842$; o livro registra $0{,}0843$.
+- Exercício 15(c): este arquivo usa $0{,}1887$; o livro registra $0{,}1886$.
+
 ## Fórmulas usadas
 
 ### Bernoulli
