@@ -177,11 +177,11 @@ Cada dupla deverá entregar:
 
 ## Cronograma
 
-- **04/05/2026 - Apresentação do trabalho e preparação dos dados.** Apresentação do enunciado, da pergunta de pesquisa, das variáveis obrigatórias, da estrutura mínima do notebook e dos critérios de avaliação. Início da preparação dos dados, incluindo carregamento do dataset, criação de `jogador_temporada` e organização das colunas necessárias.
-- **06/05/2026 - Associação quantitativa.** A dupla deverá concluir a análise com correlação/covariância, matriz ou heatmap e interpretação da associação entre `pontos`, `minutos_totais`, `jogos_disputados` e `salario_usd`.
-- **11/05/2026 - Probabilidade e variável aleatória discreta.** A dupla deverá concluir a construção de $X$, PMF, CDF, média, desvio padrão e comparação entre $P(S \mid B)$ e $P(S \mid \neg B)$.
-- **13/05/2026 - Revisão para AV2.** Revisão dos conceitos centrais da Unidade 2 e esclarecimento de dúvidas finais.
-- **18/05/2026 - AV2.** Avaliação da Unidade 2.
+- **04/05/2026 - Apresentação do trabalho e revisão para AV2.** Apresentação do enunciado, da pergunta de pesquisa, das variáveis obrigatórias, da estrutura mínima do notebook e dos critérios de avaliação. Revisão dos conceitos centrais da Unidade 2 e esclarecimento de dúvidas para a AV2.
+- **06/05/2026 - Preparação dos dados e associação quantitativa.** A dupla deverá iniciar a preparação dos dados, incluindo carregamento do dataset, criação de `jogador_temporada` e organização das colunas necessárias, e concluir a análise com correlação/covariância, matriz ou heatmap e interpretação da associação entre `pontos`, `minutos_totais`, `jogos_disputados` e `salario_usd`.
+- **11/05/2026 - AV2.** Avaliação da Unidade 2.
+- **13/05/2026 - Probabilidade e variável aleatória discreta.** A dupla deverá concluir a construção de $X$, PMF, CDF, média, desvio padrão e comparação entre $P(S \mid B)$ e $P(S \mid \neg B)$.
+- **18/05/2026 - Entrega do trabalho.** Entrega do notebook documentado, executável e com interpretações curtas, além do vídeo explicativo com síntese dos resultados e limitações.
 
 ## Critérios de Avaliação
 
