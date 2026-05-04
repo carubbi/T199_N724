@@ -1,0 +1,173 @@
+<h1>Trabalho da Unidade 2</h1>
+
+<h2>Tema</h2>
+<p>Neste trabalho, cada dupla deverá aplicar conceitos de <strong>associação estatística</strong> e <strong>probabilidade com variáveis aleatórias discretas</strong> ao dataset completo <code>dataset/nba_stats_preprocessed.csv</code>.</p>
+<p>O objetivo é investigar, no nível <code>jogador-temporada</code>, se há associação observacional entre <strong>desempenho</strong>, <strong>uso em quadra</strong>, <strong>salário</strong> e <strong>não permanência observada no mesmo time</strong> na temporada seguinte.</p>
+<p>Diferentemente do T1, esta atividade não deve se limitar à descrição de uma equipe entre duas temporadas. O avanço esperado é usar medidas formais de associação e probabilidades no dataset completo.</p>
+
+<h2>Pergunta de Pesquisa</h2>
+<p><strong>Há associação observacional entre baixo desempenho, baixa utilização em quadra e não permanência observada no mesmo time na temporada seguinte?</strong></p>
+
+<h2>Conceitos Obrigatórios</h2>
+<p>A análise deve usar apenas o núcleo conceitual abaixo:</p>
+<ul>
+    <li>covariância;</li>
+    <li>correlação de Pearson;</li>
+    <li>matriz ou heatmap de correlação;</li>
+    <li>evento probabilístico;</li>
+    <li>probabilidade condicional;</li>
+    <li>variável aleatória discreta;</li>
+    <li>distribuição empírica de probabilidade, incluindo PMF e CDF.</li>
+</ul>
+
+<h2>Unidade de Análise</h2>
+<ul>
+    <li>Cada linha do dataset deve ser tratada como um caso <code>jogador-temporada</code>.</li>
+    <li>A análise deve usar o dataset completo <code>nba_stats_preprocessed.csv</code>.</li>
+    <li>As probabilidades devem ser interpretadas sobre casos <code>jogador-temporada</code>, e não sobre jogadores únicos.</li>
+    <li>As associações observadas não devem ser interpretadas como causalidade.</li>
+</ul>
+
+<h2>Variável de Resultado: Não Permanência Observada</h2>
+<p>A dupla deverá construir o evento:</p>
+<p><code>S = jogador não permanece observado no mesmo time na temporada seguinte</code></p>
+<p>Operacionalmente, para cada caso <code>jogador-temporada</code>, verifique se o mesmo <code>id_jogador</code> aparece no mesmo <code>sigla_time</code> na temporada seguinte.</p>
+<ul>
+    <li>Se aparece no mesmo time na temporada seguinte: <code>nao_permanencia = False</code>.</li>
+    <li>Se não aparece no mesmo time na temporada seguinte: <code>nao_permanencia = True</code>.</li>
+    <li>Casos da última temporada disponível não devem entrar no cálculo de <code>nao_permanencia</code>, porque não há temporada seguinte observável.</li>
+</ul>
+<p>Essa variável mede <strong>não permanência observada no mesmo time</strong>, não dispensa, venda, troca, aposentadoria ou fim de contrato.</p>
+
+<h2>Variáveis Obrigatórias</h2>
+<p>Use obrigatoriamente:</p>
+<ul>
+    <li><code>pontos</code>;</li>
+    <li><code>minutos_totais</code>;</li>
+    <li><code>jogos_disputados</code>;</li>
+    <li><code>salario_usd</code>;</li>
+    <li><code>id_jogador</code>;</li>
+    <li><code>sigla_time</code>;</li>
+    <li>temporada.</li>
+</ul>
+
+<h2>Preparação dos Dados</h2>
+<p>A dupla deve:</p>
+<ul>
+    <li>carregar o dataset completo;</li>
+    <li>criar uma coluna identificadora <code>jogador_temporada</code>, combinando <code>id_jogador</code> e temporada;</li>
+    <li>construir <code>nao_permanencia</code>;</li>
+    <li>criar um subconjunto de análise para <code>nao_permanencia</code>, removendo apenas os casos sem temporada seguinte observável;</li>
+    <li>criar os indicadores baixos usados em <code>X</code>;</li>
+    <li>criar a variável aleatória discreta <code>X</code>;</li>
+    <li>criar o evento <code>baixo_desempenho</code>, definido por <code>X &gt;= 2</code>.</li>
+</ul>
+<p>A coluna <code>jogador_temporada</code> é apenas um identificador auxiliar. As análises continuam sendo feitas sobre casos <code>jogador-temporada</code>, isto é, sobre linhas do dataset.</p>
+
+<h2>Parte 1: Associação Quantitativa</h2>
+<p>Usando <code>pontos</code>, <code>minutos_totais</code>, <code>jogos_disputados</code> e <code>salario_usd</code>, apresente:</p>
+<ul>
+    <li>uma matriz ou heatmap de correlação;</li>
+    <li>um gráfico de dispersão para um par de variáveis escolhido;</li>
+    <li>a covariância desse par;</li>
+    <li>a correlação de Pearson desse par;</li>
+    <li>uma interpretação curta do sinal e da intensidade da associação.</li>
+</ul>
+<p>A interpretação deve deixar claro que correlação indica associação linear, não causalidade.</p>
+
+<h2>Parte 2: Variável Aleatória Discreta</h2>
+<p>A dupla deverá construir:</p>
+<p><code>X = número de indicadores baixos observados no caso jogador-temporada</code></p>
+<p>Use três indicadores:</p>
+<ul>
+    <li><code>pontos</code> no quartil inferior do dataset;</li>
+    <li><code>minutos_totais</code> no quartil inferior do dataset;</li>
+    <li><code>jogos_disputados</code> no quartil inferior do dataset.</li>
+</ul>
+<p>Assim:</p>
+<p><code>X &isin; {0, 1, 2, 3}</code></p>
+<p>Defina:</p>
+<p><code>B = (X &gt;= 2)</code></p>
+<p>em que <code>B</code> representa baixo desempenho ou baixa utilização.</p>
+<p>Para <code>X</code>, apresente:</p>
+<ul>
+    <li>tabela com <code>P(X = x)</code>;</li>
+    <li>tabela com <code>P(X &lt;= x)</code>;</li>
+    <li>média;</li>
+    <li>desvio padrão;</li>
+    <li>interpretação substantiva dos valores de <code>X</code>.</li>
+</ul>
+
+<h2>Parte 3: Associação Entre Eventos</h2>
+<p>Calcule:</p>
+<p><code>P(S | B)</code></p>
+<p>e compare com:</p>
+<p><code>P(S | não B)</code></p>
+<p>Também apresente a diferença:</p>
+<p><code>P(S | B) - P(S | não B)</code></p>
+<p>A interpretação deve responder diretamente à pergunta de pesquisa:</p>
+<blockquote>
+    <p>A não permanência observada no mesmo time é mais frequente entre casos classificados como baixo desempenho ou baixa utilização?</p>
+</blockquote>
+<p>Use linguagem associativa. Não afirme que o jogador saiu <strong>por causa</strong> do baixo desempenho, da baixa utilização ou do salário.</p>
+
+<h2>Conclusão</h2>
+<p>A conclusão deve ter de 8 a 12 linhas e integrar:</p>
+<ul>
+    <li>o que a correlação sugere sobre desempenho, uso em quadra e salário;</li>
+    <li>o que <code>X</code> mostra sobre o perfil de baixo desempenho ou baixa utilização;</li>
+    <li>o que <code>P(S | B)</code> e <code>P(S | não B)</code> sugerem sobre não permanência observada;</li>
+    <li>as principais limitações da análise.</li>
+</ul>
+
+<h2>Entrega</h2>
+<p>Cada dupla deverá entregar:</p>
+<ul>
+    <li>um notebook documentado, executável e com interpretações curtas;</li>
+    <li>um vídeo explicativo com síntese dos resultados e das limitações.</li>
+</ul>
+
+<h2>Estrutura Mínima do Notebook</h2>
+<ul>
+    <li>identificação da dupla;</li>
+    <li>pergunta de pesquisa;</li>
+    <li>carregamento do dataset;</li>
+    <li>criação de <code>jogador_temporada</code>;</li>
+    <li>construção de <code>nao_permanencia</code>;</li>
+    <li>associação quantitativa com correlação/covariância;</li>
+    <li>construção e distribuição de <code>X</code>;</li>
+    <li>cálculo de <code>P(S | B)</code> e <code>P(S | não B)</code>;</li>
+    <li>conclusão.</li>
+</ul>
+
+<h2>Cronograma</h2>
+<ul>
+    <li><strong>04/05/2026 - Apresentação do trabalho e revisão para AV2.</strong> Apresentação do enunciado, da pergunta de pesquisa, das variáveis obrigatórias, da estrutura mínima do notebook e dos critérios de avaliação. Revisão dos conceitos centrais da Unidade 2 e esclarecimento de dúvidas para a AV2.</li>
+    <li><strong>06/05/2026 - Preparação dos dados e associação quantitativa.</strong> A dupla deverá iniciar a preparação dos dados, incluindo carregamento do dataset, criação de <code>jogador_temporada</code> e organização das colunas necessárias, e concluir a análise com correlação/covariância, matriz ou heatmap e interpretação da associação entre <code>pontos</code>, <code>minutos_totais</code>, <code>jogos_disputados</code> e <code>salario_usd</code>.</li>
+    <li><strong>11/05/2026 - AV2.</strong> Avaliação da Unidade 2.</li>
+    <li><strong>13/05/2026 - Probabilidade e variável aleatória discreta.</strong> A dupla deverá concluir a construção de <code>X</code>, PMF, CDF, média, desvio padrão e comparação entre <code>P(S | B)</code> e <code>P(S | não B)</code>.</li>
+    <li><strong>18/05/2026 - Entrega do trabalho.</strong> Entrega do notebook documentado, executável e com interpretações curtas, além do vídeo explicativo com síntese dos resultados e limitações.</li>
+</ul>
+
+<h2>Critérios de Avaliação</h2>
+<p>O trabalho vale <strong>3,0 pontos</strong>.</p>
+
+<h3>Notebook (1,0 ponto)</h3>
+<ul>
+    <li><strong>Preparação dos dados (0,20 ponto):</strong> carregamento, <code>jogador_temporada</code>, <code>nao_permanencia</code> e tratamento da última temporada.</li>
+    <li><strong>Associação quantitativa (0,20 ponto):</strong> matriz ou heatmap, dispersão, covariância, correlação e interpretação.</li>
+    <li><strong>Variável aleatória discreta <code>X</code> (0,20 ponto):</strong> construção dos indicadores baixos, PMF, CDF, média, desvio padrão e interpretação.</li>
+    <li><strong>Probabilidade condicional (0,20 ponto):</strong> cálculo e comparação de <code>P(S | B)</code> e <code>P(S | não B)</code>.</li>
+    <li><strong>Clareza e conclusão (0,20 ponto):</strong> código executável, organização, interpretação e conclusão sem causalidade.</li>
+</ul>
+
+<h3>Apresentação (2,0 pontos)</h3>
+<ul>
+    <li><strong>Síntese dos resultados (0,60 ponto):</strong> apresentação objetiva dos principais achados.</li>
+    <li><strong>Interpretação estatística (0,80 ponto):</strong> explicação correta de associação, <code>X</code> e probabilidades condicionais.</li>
+    <li><strong>Limitações e rigor conceitual (0,40 ponto):</strong> ausência de causalidade e uso correto de “não permanência observada”.</li>
+    <li><strong>Participação e domínio (0,20 ponto):</strong> todos os integrantes devem participar e demonstrar domínio do notebook.</li>
+</ul>
+
+<h2>Observação Final</h2>
+<p>O foco do trabalho é aprender a transformar uma pergunta observacional em evidências estatísticas simples: associação entre variáveis quantitativas, construção de uma variável aleatória discreta e comparação de probabilidades condicionais. A análise pode sugerir associação, mas não permite concluir motivo de saída, dispensa, venda ou troca de jogadores.</p>
