@@ -2,7 +2,7 @@
 
 Fonte: `livros/Pinheiro_2009.pdf`
 
-Observação: os enunciados abaixo foram reorganizados e parafraseados para uso didático. Os exercícios resolvidos são mantidos apenas como referência de padrão de raciocínio; as respostas detalhadas são dadas somente para os exercícios propostos.
+Observação: os enunciados abaixo foram reorganizados e parafraseados para uso didático. Os exemplos têm respostas sintéticas no arquivo de respostas. Os exercícios resolvidos são mantidos apenas como referência de padrão de raciocínio; as respostas detalhadas são dadas somente para os exercícios propostos.
 
 ## Fórmulas úteis
 
@@ -64,6 +64,88 @@ em que:
 - $b$ é a inclinação da reta;
 - $a$ é o intercepto;
 - $\hat{y}$ é o valor previsto de $Y$ para um dado valor de $X$.
+
+## Exemplos
+
+### 2.1 - Categoria versus classe de IMC
+
+Usa dados antropométricos de uma amostra de idosas para cruzar duas variáveis qualitativas: categoria de atividade física, ativa ou sedentária, e classe do índice de massa corporal, normal ou sobrepeso.
+
+Tabela de contingência:
+
+| Categoria | IMC normal | Sobrepeso | Total |
+| --- | ---: | ---: | ---: |
+| Ativa | 18 | 4 | 22 |
+| Sedentária | 9 | 14 | 23 |
+| **Total** | **27** | **18** | **45** |
+
+O objetivo é calcular percentuais por linha e por coluna e interpretar a associação entre atividade física e classe de IMC.
+
+### 2.2 - Consumo cultural por faixa etária
+
+Analisa uma pesquisa com $n=499$ pessoas sobre faixa etária e programa cultural preferido. A tabela original tinha as opções cinema, exposições, teatro, dança e shows musicais. Como a coluna de exposições tinha poucas observações, o exemplo funde dança e exposições para obter uma tabela mais estável.
+
+Tabela após a fusão:
+
+| Faixa etária | Cinema | Teatro | Shows musicais | Dança/Exposições | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 18 a 21 | 68 | 15 | 45 | 10 | 138 |
+| 22 a 25 | 66 | 21 | 42 | 15 | 144 |
+| 26 a 30 | 66 | 24 | 25 | 19 | 134 |
+| 31 a 40 | 39 | 16 | 17 | 11 | 83 |
+| **Total** | **239** | **76** | **129** | **55** | **499** |
+
+O objetivo é comparar percentuais por linha e por coluna e discutir a relação entre idade e preferência cultural.
+
+### 2.3 - Telefonia fixa per capita versus renda per capita
+
+Usa dados de 2001 dos estados brasileiros para estudar a relação entre:
+
+- $x$: renda per capita, em milhares de reais;
+- $y$: telefonia fixa per capita.
+
+O exemplo constrói o diagrama de dispersão, calcula a correlação e interpreta a associação linear entre renda e telefonia fixa.
+
+### 2.4 - Hotelaria no estado do Rio de Janeiro
+
+Usa dados municipais de hotelaria do estado do Rio de Janeiro em 2001, comparando:
+
+- $x$: número de estabelecimentos hoteleiros;
+- $y$: número de acomodações.
+
+Como há forte assimetria à direita e o município do Rio de Janeiro destoa muito dos demais, o exemplo aplica a transformação:
+
+$$
+u=\ln(x), \qquad v=\ln(y).
+$$
+
+O objetivo é analisar a correlação entre $u$ e $v$ e discutir o papel da transformação logarítmica.
+
+### 2.5 - Regressão para telefonia fixa
+
+Retoma os dados de telefonia fixa e renda per capita do Exemplo 2.3. O objetivo é ajustar a reta:
+
+$$
+y = a + bx + erro
+$$
+
+em que $y$ é telefonia fixa per capita e $x$ é renda per capita, em milhares de reais. Depois, usa a reta ajustada para estimar a telefonia fixa per capita quando a renda per capita é de R$ 2.000.
+
+### 2.6 - Regressão logarítmica para hotelaria
+
+Retoma os dados de hotelaria do Exemplo 2.4. O objetivo é ajustar a reta:
+
+$$
+v = a + bu + erro
+$$
+
+em que:
+
+$$
+u=\ln(x), \qquad v=\ln(y).
+$$
+
+Depois, usa a reta ajustada para estimar o número de acomodações em um município com 30 estabelecimentos hoteleiros.
 
 ## Exercícios Resolvidos
 

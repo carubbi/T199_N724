@@ -6,6 +6,191 @@ Conferência com o gabarito extraído do livro: o livro fornece respostas numér
 
 Observação de rigor: no Exercício 2.1_P, o enunciado menciona a Tabela 8.5, mas essa tabela contém frequências esperadas sob independência. Para analisar a associação observada entre diagnóstico e sexo, foi usada a Tabela 8.4, que contém os dados observados.
 
+## Respostas dos Exemplos
+
+### Exemplo 2.1
+
+Tabela observada:
+
+| Categoria | IMC normal | Sobrepeso | Total |
+| --- | ---: | ---: | ---: |
+| Ativa | 18 | 4 | 22 |
+| Sedentária | 9 | 14 | 23 |
+| **Total** | **27** | **18** | **45** |
+
+Percentuais por linha:
+
+| Categoria | IMC normal | Sobrepeso | Total |
+| --- | ---: | ---: | ---: |
+| Ativa | 81,82% | 18,18% | 100,00% |
+| Sedentária | 39,13% | 60,87% | 100,00% |
+| **Total** | **60,00%** | **40,00%** | **100,00%** |
+
+Percentuais por coluna:
+
+| Categoria | IMC normal | Sobrepeso | Global |
+| --- | ---: | ---: | ---: |
+| Ativa | 66,67% | 22,22% | 48,89% |
+| Sedentária | 33,33% | 77,78% | 51,11% |
+| **Total** | **100,00%** | **100,00%** | **100,00%** |
+
+Interpretação: o percentual de IMC normal é muito maior entre as mulheres ativas do que entre as sedentárias. A tabela sugere associação entre atividade física e classe de IMC, sem estabelecer causalidade.
+
+### Exemplo 2.2
+
+Após fundir dança e exposições, a tabela fica:
+
+| Faixa etária | Cinema | Teatro | Shows musicais | Dança/Exposições | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 18 a 21 | 68 | 15 | 45 | 10 | 138 |
+| 22 a 25 | 66 | 21 | 42 | 15 | 144 |
+| 26 a 30 | 66 | 24 | 25 | 19 | 134 |
+| 31 a 40 | 39 | 16 | 17 | 11 | 83 |
+| **Total** | **239** | **76** | **129** | **55** | **499** |
+
+Percentuais por linha:
+
+| Faixa etária | Cinema | Teatro | Shows musicais | Dança/Exposições | Total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 18 a 21 | 49,28% | 10,87% | 32,61% | 7,25% | 100,00% |
+| 22 a 25 | 45,83% | 14,58% | 29,17% | 10,42% | 100,00% |
+| 26 a 30 | 49,25% | 17,91% | 18,66% | 14,18% | 100,00% |
+| 31 a 40 | 46,99% | 19,28% | 20,48% | 13,25% | 100,00% |
+| **Global** | **47,90%** | **15,23%** | **25,85%** | **11,02%** | **100,00%** |
+
+Percentuais por coluna:
+
+| Faixa etária | Cinema | Teatro | Shows musicais | Dança/Exposições | Global |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 18 a 21 | 28,45% | 19,74% | 34,88% | 18,18% | 27,66% |
+| 22 a 25 | 27,62% | 27,63% | 32,56% | 27,27% | 28,86% |
+| 26 a 30 | 27,62% | 31,58% | 19,38% | 34,55% | 26,85% |
+| 31 a 40 | 16,32% | 21,05% | 13,18% | 20,00% | 16,63% |
+| **Total** | **100,00%** | **100,00%** | **100,00%** | **100,00%** | **100,00%** |
+
+Interpretação: cinema aparece perto de metade das preferências em todas as faixas; shows musicais são relativamente mais frequentes até 25 anos; teatro cresce com a idade. A fusão de categorias evita interpretar percentuais instáveis baseados em contagens muito pequenas.
+
+### Exemplo 2.3
+
+Para telefonia fixa per capita ($y$) e renda per capita ($x$), o livro fornece:
+
+$$
+\bar{x}=2{,}256,\quad \bar{y}=0{,}200,
+$$
+
+$$
+\sum (x_i-\bar{x})(y_i-\bar{y})=2{,}684,
+$$
+
+$$
+\sum (x_i-\bar{x})^2=42{,}112,\quad
+\sum (y_i-\bar{y})^2=0{,}185.
+$$
+
+Logo:
+
+$$
+r_{xy}=
+\frac{2{,}684}{\sqrt{42{,}112\cdot0{,}185}}
+=0{,}961.
+$$
+
+Interpretação: há forte associação linear positiva entre renda per capita e telefonia fixa per capita.
+
+### Exemplo 2.4
+
+Para hotelaria, a escala original é muito assimétrica e o município do Rio de Janeiro domina o gráfico. Com:
+
+$$
+u=\ln(x),\qquad v=\ln(y),
+$$
+
+o livro fornece:
+
+$$
+\sum u=226{,}2816,\quad \sum v=607{,}2678,
+$$
+
+$$
+\sum u^2=685{,}6929,\quad \sum v^2=3982{,}63,\quad \sum uv=1579{,}351,
+$$
+
+com $n=98$.
+
+Assim:
+
+$$
+r_{uv}=
+\frac{1579{,}351-\frac{226{,}2816\cdot607{,}2678}{98}}
+{\sqrt{\left(685{,}6929-\frac{226{,}2816^2}{98}\right)
+\left(3982{,}63-\frac{607{,}2678^2}{98}\right)}}
+=0{,}936.
+$$
+
+Interpretação: após a transformação logarítmica, há forte associação linear positiva entre número de estabelecimentos e número de acomodações.
+
+### Exemplo 2.5
+
+Para telefonia fixa per capita em função da renda per capita:
+
+$$
+b=\frac{2{,}684}{42{,}112}=0{,}0637.
+$$
+
+Como:
+
+$$
+\bar{x}=2{,}256,\quad \bar{y}=0{,}200,
+$$
+
+o intercepto é:
+
+$$
+a=0{,}200-0{,}0637\cdot2{,}256=0{,}0564.
+$$
+
+Reta ajustada:
+
+$$
+\hat{y}=0{,}0564+0{,}0637x.
+$$
+
+Interpretação de $b$: a cada aumento de R$ 1.000 na renda per capita, estima-se aumento médio de aproximadamente 63,7 linhas telefônicas para cada 1.000 habitantes.
+
+Para renda per capita de R$ 2.000, isto é, $x=2$:
+
+$$
+\hat{y}=0{,}0564+0{,}0637\cdot2=0{,}1838.
+$$
+
+Isso equivale a pouco mais de 18 linhas telefônicas para cada 100 habitantes.
+
+### Exemplo 2.6
+
+Para hotelaria, com $u=\ln(x)$ e $v=\ln(y)$, a reta ajustada é:
+
+$$
+\hat{v}=3{,}6901+1{,}0855u.
+$$
+
+Interpretação de $b$: em escala logarítmica, aumentos proporcionais no número de estabelecimentos estão associados a aumentos proporcionais no número de acomodações.
+
+No exemplo de Teresópolis, passar de 44 para 49 estabelecimentos representa acréscimo de 5 estabelecimentos. A variação prevista em acomodações é aproximadamente:
+
+$$
+1{,}0855\cdot\frac{5}{44}\cdot2876\approx355.
+$$
+
+Assim, a previsão passaria de 2.876 para cerca de 3.231 acomodações.
+
+Para um município com 30 estabelecimentos:
+
+$$
+\hat{y}=\exp(3{,}6901+1{,}0855\ln(30))\approx1607.
+$$
+
+Resposta: cerca de 1.607 acomodações.
+
 ## Exercício 2.1_P
 
 Tabela observada:

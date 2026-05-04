@@ -379,13 +379,13 @@ Valores fora desses limites são tratados como discrepantes pelo critério resis
 
 **Figura 1 - Box plots das variáveis idade e IMC**
 
-![Figura 1.12 do livro de Pinheiro: box plots das variáveis idade e IMC](imagens/pinheiro_2009_cap_1/figura_1_12_boxplots_idade_imc.png)
+![Figura 1.12 do livro de Pinheiro: box plots das variáveis idade e IMC](imgs/pinheiro_2009_cap_1/figura_1_12_boxplots_idade_imc.png)
 
 Fonte: Pinheiro et al. (2009).
 
 **Figura 2 - Box plot da telefonia fixa per capita**
 
-![Figura 1.13 do livro de Pinheiro: box plot do número de linhas telefônicas por 1.000 habitantes, com valor discrepante à direita](imagens/pinheiro_2009_cap_1/figura_1_13_boxplot_telefonia_fixa.png)
+![Figura 1.13 do livro de Pinheiro: box plot do número de linhas telefônicas por 1.000 habitantes, com valor discrepante à direita](imgs/pinheiro_2009_cap_1/figura_1_13_boxplot_telefonia_fixa.png)
 
 Fonte: Pinheiro et al. (2009).
 
@@ -563,7 +563,7 @@ b) Faça um gráfico, como o da Figura 1.11, localizando no eixo horizontal, gra
 
 **Figura 3 - Gráfico simultâneo das variáveis X, Y e Z**
 
-![Gráfico do exercício resolvido 1.1_R do livro de Pinheiro: comparação simultânea das variáveis X, Y e Z](imagens/pinheiro_2009_cap_1/exercicio_1_1_r_grafico_variaveis_x_y_z.png)
+![Gráfico do exercício resolvido 1.1_R do livro de Pinheiro: comparação simultânea das variáveis X, Y e Z](imgs/pinheiro_2009_cap_1/exercicio_1_1_r_grafico_variaveis_x_y_z.png)
 
 Fonte: Pinheiro et al. (2009).
 
@@ -633,7 +633,7 @@ b) Faça um box plot simultâneo para todas as variáveis e extraia conclusões.
 
 **Figura 4 - Box plots simultâneos do consumo de proteínas**
 
-![Box plots do exercício resolvido 1.3_R do livro de Pinheiro: consumo diário de proteínas por tipo de alimento](imagens/pinheiro_2009_cap_1/exercicio_1_3_r_boxplots_consumo_proteinas.png)
+![Box plots do exercício resolvido 1.3_R do livro de Pinheiro: consumo diário de proteínas por tipo de alimento](imgs/pinheiro_2009_cap_1/exercicio_1_3_r_boxplots_consumo_proteinas.png)
 
 Fonte: Pinheiro et al. (2009).
 

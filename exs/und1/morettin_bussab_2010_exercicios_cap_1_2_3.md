@@ -30,7 +30,7 @@ O ponto central do exemplo é que a parte suave $M$ representa a estrutura previ
 
 **Figura 1 - Relação entre consumo e rendimento**
 
-![Figura 1.1 do livro de Morettin e Bussab: relação entre consumo e rendimento](imagens/morettin_bussab_2010_cap_1_2_3/figura_1_1_consumo_rendimento.png)
+![Figura 1.1 do livro de Morettin e Bussab: relação entre consumo e rendimento](imgs/morettin_bussab_2010_cap_1_2_3/figura_1_1_consumo_rendimento.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -172,13 +172,13 @@ O objetivo é ilustrar gráficos para variáveis qualitativas.
 
 **Figura 2 - Gráfico em barras para o grau de instrução**
 
-![Figura 2.2 do livro de Morettin e Bussab: gráfico em barras para grau de instrução](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_2_barras_grau_instrucao.png)
+![Figura 2.2 do livro de Morettin e Bussab: gráfico em barras para grau de instrução](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_2_barras_grau_instrucao.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 3 - Gráfico em setores para o grau de instrução**
 
-![Figura 2.3 do livro de Morettin e Bussab: gráfico em setores para grau de instrução](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_3_setores_grau_instrucao.png)
+![Figura 2.3 do livro de Morettin e Bussab: gráfico em setores para grau de instrução](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_3_setores_grau_instrucao.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -207,13 +207,13 @@ As porcentagens correspondentes são:
 
 **Figura 4 - Gráfico em barras para o número de filhos**
 
-![Figura 2.4 do livro de Morettin e Bussab: gráfico em barras para número de filhos](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_4_barras_numero_filhos.png)
+![Figura 2.4 do livro de Morettin e Bussab: gráfico em barras para número de filhos](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_4_barras_numero_filhos.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 5 - Gráficos de dispersão unidimensionais para o número de filhos**
 
-![Figura 2.5 do livro de Morettin e Bussab: gráficos de dispersão unidimensionais para número de filhos](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_5_dispersao_unidimensional_filhos.png)
+![Figura 2.5 do livro de Morettin e Bussab: gráficos de dispersão unidimensionais para número de filhos](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_5_dispersao_unidimensional_filhos.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -239,7 +239,7 @@ Os pontos médios das classes são:
 
 **Figura 6 - Gráfico em barras para os salários por pontos médios das classes**
 
-![Figura 2.6 do livro de Morettin e Bussab: gráfico em barras para os salários por pontos médios das classes](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_6_barras_salarios.png)
+![Figura 2.6 do livro de Morettin e Bussab: gráfico em barras para os salários por pontos médios das classes](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_6_barras_salarios.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -253,7 +253,7 @@ Construção do histograma da variável `salário`. O texto destaca que:
 
 **Figura 7 - Histograma da variável salário**
 
-![Figura 2.7 do livro de Morettin e Bussab: histograma da variável salário](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_7_histograma_salarios.png)
+![Figura 2.7 do livro de Morettin e Bussab: histograma da variável salário](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_7_histograma_salarios.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -267,7 +267,7 @@ Construção do diagrama ramo-e-folhas para os salários dos 36 empregados da Co
 
 **Figura 8 - Ramo-e-folhas para a variável salário**
 
-![Figura 2.9 do livro de Morettin e Bussab: ramo-e-folhas para a variável salário](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_9_ramo_e_folhas_salarios.png)
+![Figura 2.9 do livro de Morettin e Bussab: ramo-e-folhas para a variável salário](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_9_ramo_e_folhas_salarios.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -289,13 +289,13 @@ O ramo-e-folhas reproduzido no livro concentra observações sobretudo entre $5$
 
 **Figura 9 - Histograma do CD-Notas**
 
-![Figura 2.12 do livro de Morettin e Bussab: histograma do CD-Notas](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_12_histograma_cd_notas.png)
+![Figura 2.12 do livro de Morettin e Bussab: histograma do CD-Notas](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_12_histograma_cd_notas.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 10 - Gráfico de dispersão unidimensional e ramo-e-folhas do CD-Notas**
 
-![Figuras 2.13 e 2.14 do livro de Morettin e Bussab: gráfico de dispersão unidimensional e ramo-e-folhas do CD-Notas](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_13_2_14_cd_notas.png)
+![Figuras 2.13 e 2.14 do livro de Morettin e Bussab: gráfico de dispersão unidimensional e ramo-e-folhas do CD-Notas](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_13_2_14_cd_notas.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -314,13 +314,13 @@ O ramo-e-folhas mostrado no livro concentra temperaturas entre $16^\circ$C e $19
 
 **Figura 11 - Série temporal das temperaturas de São Paulo**
 
-![Figura 2.15 do livro de Morettin e Bussab: série temporal das temperaturas de São Paulo](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_15_temperatura_sao_paulo_serie.png)
+![Figura 2.15 do livro de Morettin e Bussab: série temporal das temperaturas de São Paulo](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_15_temperatura_sao_paulo_serie.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 12 - Histograma, gráfico de dispersão unidimensional e ramo-e-folhas das temperaturas**
 
-![Figuras 2.16 a 2.18 do livro de Morettin e Bussab: histogramas e gráficos das temperaturas de São Paulo](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_16_2_18_temperaturas.png)
+![Figuras 2.16 a 2.18 do livro de Morettin e Bussab: histogramas e gráficos das temperaturas de São Paulo](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_16_2_18_temperaturas.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -348,7 +348,7 @@ O gráfico correspondente é apresentado para os salários individuais da Tabela
 
 **Figura 13 - Função de distribuição empírica dos salários**
 
-![Figura 2.22 do livro de Morettin e Bussab: função de distribuição empírica dos salários](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_22_fde_salarios.png)
+![Figura 2.22 do livro de Morettin e Bussab: função de distribuição empírica dos salários](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_22_fde_salarios.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -372,7 +372,7 @@ $$
 
 **Figura 14 - Função de distribuição empírica do número de filhos**
 
-![Figura 2.23 do livro de Morettin e Bussab: função de distribuição empírica do número de filhos](imagens/morettin_bussab_2010_cap_1_2_3/figura_2_23_fde_numero_filhos.png)
+![Figura 2.23 do livro de Morettin e Bussab: função de distribuição empírica do número de filhos](imgs/morettin_bussab_2010_cap_1_2_3/figura_2_23_fde_numero_filhos.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -649,7 +649,7 @@ O argumento é geométrico: os quantis são localizados pela divisão proporcion
 
 **Figura 15 - Determinação geométrica de quantis pelo histograma**
 
-![Figura do exemplo 3.6 do livro de Morettin e Bussab: determinação geométrica de quantis pelo histograma](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_6_quantis_histograma_salarios.png)
+![Figura do exemplo 3.6 do livro de Morettin e Bussab: determinação geométrica de quantis pelo histograma](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_6_quantis_histograma_salarios.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -708,13 +708,13 @@ O livro destaca que, nesse caso, os pontos exteriores não correspondem a erro d
 
 **Figura 16 - Construção do box plot**
 
-![Figura 3.4 do livro de Morettin e Bussab: construção do box plot](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_4_boxplot_construcao.png)
+![Figura 3.4 do livro de Morettin e Bussab: construção do box plot](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_4_boxplot_construcao.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 17 - Box plot para os quinze maiores municípios do Brasil**
 
-![Figura 3.6 do livro de Morettin e Bussab: box plot para os quinze maiores municípios do Brasil](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_6_boxplot_municipios.png)
+![Figura 3.6 do livro de Morettin e Bussab: box plot para os quinze maiores municípios do Brasil](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_6_boxplot_municipios.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -724,19 +724,19 @@ Exemplo de gráfico de simetria com dados aproximadamente simétricos. São calc
 
 **Figura 18 - Distribuições assimétricas**
 
-![Figura 3.9 do livro de Morettin e Bussab: distribuições assimétricas](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_9_assimetrias.png)
+![Figura 3.9 do livro de Morettin e Bussab: distribuições assimétricas](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_9_assimetrias.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 19 - Dados aproximadamente simétricos**
 
-![Figura 3.10 do livro de Morettin e Bussab: dados aproximadamente simétricos](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_10_dados_aproximadamente_simetricos.png)
+![Figura 3.10 do livro de Morettin e Bussab: dados aproximadamente simétricos](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_10_dados_aproximadamente_simetricos.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 20 - Gráfico de simetria para o CD-Municípios**
 
-![Figura 3.11 do livro de Morettin e Bussab: gráfico de simetria para o CD-Municípios](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_11_grafico_simetria_municipios.png)
+![Figura 3.11 do livro de Morettin e Bussab: gráfico de simetria para o CD-Municípios](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_11_grafico_simetria_municipios.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -757,7 +757,7 @@ Conclusão: a transformação logarítmica ($p=0$) e a raiz cúbica ($p=1/3$) to
 
 **Figura 21 - Histogramas e box plots para os dados transformados**
 
-![Figuras 3.12 e 3.13 do livro de Morettin e Bussab: histogramas e box plots para os dados transformados](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_12_3_13_transformacoes.png)
+![Figuras 3.12 e 3.13 do livro de Morettin e Bussab: histogramas e box plots para os dados transformados](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_12_3_13_transformacoes.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -779,13 +779,13 @@ O box plot e o gráfico de simetria indicam distribuição aproximadamente simé
 
 **Figura 22 - Box plot para o CD-Notas**
 
-![Figura 3.14 do livro de Morettin e Bussab: box plot para o CD-Notas](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_14_boxplot_cd_notas.png)
+![Figura 3.14 do livro de Morettin e Bussab: box plot para o CD-Notas](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_14_boxplot_cd_notas.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 23 - Gráfico de simetria para o CD-Notas**
 
-![Figura 3.15 do livro de Morettin e Bussab: gráfico de simetria para o CD-Notas](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_15_grafico_simetria_cd_notas.png)
+![Figura 3.15 do livro de Morettin e Bussab: gráfico de simetria para o CD-Notas](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_15_grafico_simetria_cd_notas.png)
 
 Fonte: Morettin e Bussab (2010).
 
@@ -806,13 +806,13 @@ O box plot e o gráfico de simetria confirmam assimetria à esquerda e ausência
 
 **Figura 24 - Box plot para as temperaturas de São Paulo**
 
-![Figura 3.16 do livro de Morettin e Bussab: box plot para as temperaturas de São Paulo](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_16_boxplot_temperaturas.png)
+![Figura 3.16 do livro de Morettin e Bussab: box plot para as temperaturas de São Paulo](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_16_boxplot_temperaturas.png)
 
 Fonte: Morettin e Bussab (2010).
 
 **Figura 25 - Gráfico de simetria para as temperaturas de São Paulo**
 
-![Figura 3.17 do livro de Morettin e Bussab: gráfico de simetria para as temperaturas de São Paulo](imagens/morettin_bussab_2010_cap_1_2_3/figura_3_17_grafico_simetria_temperaturas.png)
+![Figura 3.17 do livro de Morettin e Bussab: gráfico de simetria para as temperaturas de São Paulo](imgs/morettin_bussab_2010_cap_1_2_3/figura_3_17_grafico_simetria_temperaturas.png)
 
 Fonte: Morettin e Bussab (2010).
 

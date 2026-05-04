@@ -228,7 +228,7 @@ O exemplo utiliza áreas de barras do histograma, interpretadas como proporçõe
 
 **Figura 1 - Histograma das emissões em grande altitude com classes de mesma largura**
 
-![Figura 1.8 do livro de Navidi: histograma das emissões em grande altitude com classes de mesma largura](imagens/navidi_2024_cap_1/figura_1_8_histograma_emissoes_altitude_elevada.png)
+![Figura 1.8 do livro de Navidi: histograma das emissões em grande altitude com classes de mesma largura](imgs/navidi_2024_cap_1/figura_1_8_histograma_emissoes_altitude_elevada.png)
 
 Fonte: Navidi (2024).
 
@@ -249,7 +249,7 @@ Como as amplitudes de classe são desiguais, a proporção é obtida pela área 
 
 **Figura 2 - Histograma das emissões em grande altitude com classes de larguras desiguais**
 
-![Figura 1.9 do livro de Navidi: histograma das emissões em grande altitude com classes de larguras desiguais](imagens/navidi_2024_cap_1/figura_1_9_histograma_emissoes_classes_desiguais.png)
+![Figura 1.9 do livro de Navidi: histograma das emissões em grande altitude com classes de larguras desiguais](imgs/navidi_2024_cap_1/figura_1_9_histograma_emissoes_classes_desiguais.png)
 
 Fonte: Navidi (2024).
 
@@ -589,7 +589,7 @@ $$
 
 **Figura 3 - Diagrama de caule e folhas das emissões em grande altitude**
 
-![Figura 1.6 do livro de Navidi: diagrama de caule e folhas das emissões em grande altitude](imagens/navidi_2024_cap_1/figura_1_6_caule_folhas_hi_altitude.png)
+![Figura 1.6 do livro de Navidi: diagrama de caule e folhas das emissões em grande altitude](imgs/navidi_2024_cap_1/figura_1_6_caule_folhas_hi_altitude.png)
 
 Fonte: Navidi (2024).
 
@@ -643,7 +643,7 @@ $$
 
 **Figura 4 - Histogramas ilustrando assimetria à esquerda, simetria e assimetria à direita**
 
-![Figura 1.10 do livro de Navidi: histogramas ilustrando assimetria à esquerda, simetria e assimetria à direita](imagens/navidi_2024_cap_1/figura_1_10_assimetria_histogramas.png)
+![Figura 1.10 do livro de Navidi: histogramas ilustrando assimetria à esquerda, simetria e assimetria à direita](imgs/navidi_2024_cap_1/figura_1_10_assimetria_histogramas.png)
 
 Fonte: Navidi (2024).
 
@@ -651,7 +651,7 @@ Fonte: Navidi (2024).
 
 **Figura 5 - Histograma do nível sérico de colesterol**
 
-![Histograma do exercício 7 da Seção 1.3 do livro de Navidi: distribuição do nível sérico de colesterol](imagens/navidi_2024_cap_1/exercicio_1_3_7_histograma_colesterol.png)
+![Histograma do exercício 7 da Seção 1.3 do livro de Navidi: distribuição do nível sérico de colesterol](imgs/navidi_2024_cap_1/exercicio_1_3_7_histograma_colesterol.png)
 
 Fonte: Navidi (2024).
 
@@ -824,7 +824,7 @@ Logo, pelo critério do boxplot, $470$ é outlier; $384$ não é outlier por ess
 
 **Figura 6 - Histograma com barra ausente para resistência à compressão de blocos de concreto**
 
-![Histograma do exercício 8 da Seção 1.3 do livro de Navidi: resistência à compressão de blocos de concreto com uma barra ausente](imagens/navidi_2024_cap_1/exercicio_1_3_8_histograma_blocos_concreto.png)
+![Histograma do exercício 8 da Seção 1.3 do livro de Navidi: resistência à compressão de blocos de concreto com uma barra ausente](imgs/navidi_2024_cap_1/exercicio_1_3_8_histograma_blocos_concreto.png)
 
 Fonte: Navidi (2024).
 
@@ -891,7 +891,7 @@ Fonte: Navidi (2024).
 
 **Figura 7 - Boxplots comparativos da absorção de nitrato de econazol**
 
-![Boxplots do exercício 14 da Seção 1.3 do livro de Navidi: absorção de nitrato de econazol para pomadas de marca e genérica](imagens/navidi_2024_cap_1/exercicio_1_3_14_boxplots_econazol.png)
+![Boxplots do exercício 14 da Seção 1.3 do livro de Navidi: absorção de nitrato de econazol para pomadas de marca e genérica](imgs/navidi_2024_cap_1/exercicio_1_3_14_boxplots_econazol.png)
 
 Fonte: Navidi (2024).
 
@@ -927,7 +927,7 @@ Fonte: Navidi (2024).
 
 **Figura 8 - Associação entre histogramas e boxplots**
 
-![Figura do exercício 16 da Seção 1.3 do livro de Navidi: associação entre histogramas e boxplots](imagens/navidi_2024_cap_1/exercicio_1_3_16_histogramas_boxplots_associacao.png)
+![Figura do exercício 16 da Seção 1.3 do livro de Navidi: associação entre histogramas e boxplots](imgs/navidi_2024_cap_1/exercicio_1_3_16_histogramas_boxplots_associacao.png)
 
 Fonte: Navidi (2024).
 
@@ -959,6 +959,6 @@ $$
 
 **Figura 9 - Associação entre diagramas de dispersão e padrões de relação**
 
-![Figura do exercício 20 da Seção 1.3 do livro de Navidi: associação entre diagramas de dispersão e padrões de relação](imagens/navidi_2024_cap_1/exercicio_1_3_20_graficos_dispersao_associacao.png)
+![Figura do exercício 20 da Seção 1.3 do livro de Navidi: associação entre diagramas de dispersão e padrões de relação](imgs/navidi_2024_cap_1/exercicio_1_3_20_graficos_dispersao_associacao.png)
 
 Fonte: Navidi (2024).

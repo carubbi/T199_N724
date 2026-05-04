@@ -568,13 +568,13 @@ Tabela 3.2 transcrita:
 
 **Figura 1 - Histograma do tempo de carga de um aplicativo**
 
-![Figura 3.9 do livro de Barbetta: histograma do tempo de carga de um aplicativo](imagens/barbetta_2010_cap_1_2_3/figura_3_9_histograma_tempo_carga.png)
+![Figura 3.9 do livro de Barbetta: histograma do tempo de carga de um aplicativo](imgs/barbetta_2010_cap_1_2_3/figura_3_9_histograma_tempo_carga.png)
 
 Fonte: Barbetta et al. (2010).
 
 **Figura 2 - Diagrama ramo-e-folhas para os dados do tempo de carga**
 
-![Figura 3.11 do livro de Barbetta: diagrama ramo-e-folhas do tempo de carga](imagens/barbetta_2010_cap_1_2_3/figura_3_11_ramo_e_folhas_tempo_carga.png)
+![Figura 3.11 do livro de Barbetta: diagrama ramo-e-folhas do tempo de carga](imgs/barbetta_2010_cap_1_2_3/figura_3_11_ramo_e_folhas_tempo_carga.png)
 
 Fonte: Barbetta et al. (2010).
 
@@ -612,7 +612,7 @@ Dados brutos apresentados no texto:
 
 **Figura 3 - Médias aritméticas e desvios padrões do rendimento por temperatura e tempo de reação**
 
-![Figura 3.16 do livro de Barbetta: médias aritméticas e desvios padrões do rendimento](imagens/barbetta_2010_cap_1_2_3/figura_3_16_medias_desvios_rendimento.png)
+![Figura 3.16 do livro de Barbetta: médias aritméticas e desvios padrões do rendimento](imgs/barbetta_2010_cap_1_2_3/figura_3_16_medias_desvios_rendimento.png)
 
 Fonte: Barbetta et al. (2010).
 
@@ -651,7 +651,7 @@ Tabela 3.4 de cálculo auxiliar para a turma A:
 
 **Figura 4 - Distribuições das notas de três turmas e posições das médias aritméticas**
 
-![Figura 3.15 do livro de Barbetta: distribuições das notas de três turmas e posições das médias](imagens/barbetta_2010_cap_1_2_3/figura_3_15_notas_tres_turmas_media.png)
+![Figura 3.15 do livro de Barbetta: distribuições das notas de três turmas e posições das médias](imgs/barbetta_2010_cap_1_2_3/figura_3_15_notas_tres_turmas_media.png)
 
 Fonte: Barbetta et al. (2010).
 
@@ -669,7 +669,7 @@ Conclusão descrita no texto:
 
 **Figura 5 - Distribuições do peso de litros de leite por boca de ensacamento**
 
-![Figura 3.24 do livro de Barbetta: boxplots do peso de litros de leite por boca de ensacamento](imagens/barbetta_2010_cap_1_2_3/figura_3_24_boxplots_leite_bocas.png)
+![Figura 3.24 do livro de Barbetta: boxplots do peso de litros de leite por boca de ensacamento](imgs/barbetta_2010_cap_1_2_3/figura_3_24_boxplots_leite_bocas.png)
 
 Fonte: Barbetta et al. (2010).
 
@@ -857,7 +857,7 @@ $$
 
 **Figura 6 - Posição da média e da mediana no histograma do tempo de carga**
 
-![Figura 3.18 do livro de Barbetta: posição da média e da mediana no histograma](imagens/barbetta_2010_cap_1_2_3/figura_3_18_media_mediana_histograma.png)
+![Figura 3.18 do livro de Barbetta: posição da média e da mediana no histograma](imgs/barbetta_2010_cap_1_2_3/figura_3_18_media_mediana_histograma.png)
 
 Fonte: Barbetta et al. (2010).
 
@@ -888,13 +888,13 @@ Isso é a base conceitual dos exercícios sobre box plot, assimetria e observaç
 
 **Figura 7 - Construção de um diagrama em caixas e boxplot do tempo de carga**
 
-![Figura 3.22 do livro de Barbetta: construção de um diagrama em caixas e boxplot do tempo de carga](imagens/barbetta_2010_cap_1_2_3/figura_3_22_diagrama_em_caixas.png)
+![Figura 3.22 do livro de Barbetta: construção de um diagrama em caixas e boxplot do tempo de carga](imgs/barbetta_2010_cap_1_2_3/figura_3_22_diagrama_em_caixas.png)
 
 Fonte: Barbetta et al. (2010).
 
 **Figura 8 - Diagrama em caixas e forma da distribuição**
 
-![Figura 3.23 do livro de Barbetta: diagrama em caixas e forma da distribuição](imagens/barbetta_2010_cap_1_2_3/figura_3_23_boxplot_forma_distribuicao.png)
+![Figura 3.23 do livro de Barbetta: diagrama em caixas e forma da distribuição](imgs/barbetta_2010_cap_1_2_3/figura_3_23_boxplot_forma_distribuicao.png)
 
 Fonte: Barbetta et al. (2010).
 
@@ -904,7 +904,7 @@ Observação: na extração do PDF, a lista do capítulo 3 aparece iniciando no 
 
 **Figura 9 - Esquema geral para a análise exploratória de dados**
 
-![Figura 3.26 do livro de Barbetta: esquema geral para a análise exploratória de dados](imagens/barbetta_2010_cap_1_2_3/figura_3_26_esquema_analise_exploratoria.png)
+![Figura 3.26 do livro de Barbetta: esquema geral para a análise exploratória de dados](imgs/barbetta_2010_cap_1_2_3/figura_3_26_esquema_analise_exploratoria.png)
 
 Fonte: Barbetta et al. (2010).
 
@@ -1023,6 +1023,6 @@ Fonte: Barbetta et al. (2010).
 
 **Figura 10 - Diagramas em caixas da pressão do homogeneizador por tipo de leite**
 
-![Figura do exercício 12 do livro de Barbetta: diagramas em caixas da pressão do homogeneizador](imagens/barbetta_2010_cap_1_2_3/figura_exercicio_12_pressao_homogeneizador.png)
+![Figura do exercício 12 do livro de Barbetta: diagramas em caixas da pressão do homogeneizador](imgs/barbetta_2010_cap_1_2_3/figura_exercicio_12_pressao_homogeneizador.png)
 
 Fonte: Barbetta et al. (2010).

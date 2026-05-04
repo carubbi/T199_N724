@@ -757,7 +757,7 @@ No boxplot:
 
 **Figura 1 - Boxplot de populações por estado**
 
-![Figura 1-2. Boxplot de populações por estado](imagens/bruce_2019_cap1/figura_1_2_boxplot_populacoes_por_estado.png)
+![Figura 1-2. Boxplot de populações por estado](imgs/bruce_2019_cap1/figura_1_2_boxplot_populacoes_por_estado.png)
 
 Fonte: Bruce et al. (2019).
 
@@ -827,7 +827,7 @@ O histograma traduz a tabela de frequências em barras contíguas e permite perc
 
 **Figura 2 - Histograma de populações estaduais**
 
-![Figura 1-3. Histograma de populações estaduais](imagens/bruce_2019_cap1/figura_1_3_histograma_populacoes_estaduais.png)
+![Figura 1-3. Histograma de populações estaduais](imgs/bruce_2019_cap1/figura_1_3_histograma_populacoes_estaduais.png)
 
 Fonte: Bruce et al. (2019).
 
@@ -856,7 +856,7 @@ O gráfico de densidade é uma suavização do histograma. Em vez de classes rí
 
 **Figura 3 - Densidade das taxas de homicídio estaduais**
 
-![Figura 1-4. Densidade das taxas de homicídio estaduais](imagens/bruce_2019_cap1/figura_1_4_densidade_taxas_homicidio_estaduais.png)
+![Figura 1-4. Densidade das taxas de homicídio estaduais](imgs/bruce_2019_cap1/figura_1_4_densidade_taxas_homicidio_estaduais.png)
 
 Fonte: Bruce et al. (2019).
 
@@ -933,7 +933,7 @@ Percentual de atrasos por causa no aeroporto Dallas/Fort Worth:
 
 **Figura 4 - Gráfico de barras de atrasos aéreos no DFW por causador**
 
-![Figura 1-5. Gráfico de barras de atrasos aéreos no DFW por causador](imagens/bruce_2019_cap1/figura_1_5_grafico_barras_atrasos_dfw_por_causador.png)
+![Figura 1-5. Gráfico de barras de atrasos aéreos no DFW por causador](imgs/bruce_2019_cap1/figura_1_5_grafico_barras_atrasos_dfw_por_causador.png)
 
 Fonte: Bruce et al. (2019).
 
