@@ -6,7 +6,7 @@
 <p>Diferentemente do T1, esta atividade não deve se limitar à descrição de uma equipe entre duas temporadas. O avanço esperado é usar medidas formais de associação e probabilidades no dataset completo.</p>
 
 <h2>Pergunta de Pesquisa</h2>
-<p><strong>Há associação observacional entre baixo desempenho, baixa utilização em quadra e não permanência observada no mesmo time na temporada seguinte?</strong></p>
+<p><strong>Há associação observacional entre baixo desempenho em quadra e não permanência observada no mesmo time na temporada seguinte?</strong></p>
 
 <h2>Conceitos Obrigatórios</h2>
 <p>A análise deve usar apenas o núcleo conceitual abaixo:</p>
@@ -58,7 +58,7 @@
     <li>criar uma coluna identificadora <code>jogador_temporada</code>, combinando <code>id_jogador</code> e temporada;</li>
     <li>construir <code>nao_permanencia</code>;</li>
     <li>criar um subconjunto de análise para <code>nao_permanencia</code>, removendo apenas os casos sem temporada seguinte observável;</li>
-    <li>criar os indicadores baixos usados em <code>X</code>;</li>
+    <li>criar os indicadores de baixo desempenho usados em <code>X</code>;</li>
     <li>criar a variável aleatória discreta <code>X</code>;</li>
     <li>criar o evento <code>baixo_desempenho</code>, definido por <code>X &gt;= 2</code>.</li>
 </ul>
@@ -77,7 +77,7 @@
 
 <h2>Parte 2: Variável Aleatória Discreta</h2>
 <p>A dupla deverá construir:</p>
-<p><code>X = número de indicadores baixos observados no caso jogador-temporada</code></p>
+<p><code>X = número de indicadores de baixo desempenho observados no caso jogador-temporada</code></p>
 <p>Use três indicadores:</p>
 <ul>
     <li><code>pontos</code> no quartil inferior do dataset;</li>
@@ -85,10 +85,10 @@
     <li><code>jogos_disputados</code> no quartil inferior do dataset.</li>
 </ul>
 <p>Assim:</p>
-<p><code>X &isin; {0, 1, 2, 3}</code></p>
+<p><code>X ∈ {0, 1, 2, 3}</code></p>
 <p>Defina:</p>
 <p><code>B = (X &gt;= 2)</code></p>
-<p>em que <code>B</code> representa baixo desempenho ou baixa utilização.</p>
+<p>em que <code>B</code> representa baixo desempenho.</p>
 <p>Para <code>X</code>, apresente:</p>
 <ul>
     <li>tabela com <code>P(X = x)</code>;</li>
@@ -107,7 +107,7 @@
 <p><code>P(S | B) - P(S | não B)</code></p>
 <p>A interpretação deve responder diretamente à pergunta de pesquisa:</p>
 <blockquote>
-    <p>A não permanência observada no mesmo time é mais frequente entre casos classificados como baixo desempenho ou baixa utilização?</p>
+    <p>A não permanência observada no mesmo time é mais frequente entre casos classificados como baixo desempenho?</p>
 </blockquote>
 <p>Use linguagem associativa. Não afirme que o jogador saiu <strong>por causa</strong> do baixo desempenho, da baixa utilização ou do salário.</p>
 
@@ -115,7 +115,7 @@
 <p>A conclusão deve ter de 8 a 12 linhas e integrar:</p>
 <ul>
     <li>o que a correlação sugere sobre desempenho, uso em quadra e salário;</li>
-    <li>o que <code>X</code> mostra sobre o perfil de baixo desempenho ou baixa utilização;</li>
+    <li>o que <code>X</code> mostra sobre o perfil de baixo desempenho;</li>
     <li>o que <code>P(S | B)</code> e <code>P(S | não B)</code> sugerem sobre não permanência observada;</li>
     <li>as principais limitações da análise.</li>
 </ul>
@@ -142,11 +142,11 @@
 
 <h2>Cronograma</h2>
 <ul>
-    <li><strong>04/05/2026 - Apresentação do trabalho e revisão para AV2.</strong> Apresentação do enunciado, da pergunta de pesquisa, das variáveis obrigatórias, da estrutura mínima do notebook e dos critérios de avaliação. Revisão dos conceitos centrais da Unidade 2 e esclarecimento de dúvidas para a AV2.</li>
-    <li><strong>06/05/2026 - Preparação dos dados e associação quantitativa.</strong> A dupla deverá iniciar a preparação dos dados, incluindo carregamento do dataset, criação de <code>jogador_temporada</code> e organização das colunas necessárias, e concluir a análise com correlação/covariância, matriz ou heatmap e interpretação da associação entre <code>pontos</code>, <code>minutos_totais</code>, <code>jogos_disputados</code> e <code>salario_usd</code>.</li>
+    <li><strong>04/05/2026 - Apresentação do trabalho e Preparação dos dados.</strong> Apresentação do enunciado, da pergunta de pesquisa, das variáveis obrigatórias, da estrutura mínima do notebook e dos critérios de avaliação.&nbsp;&nbsp;A dupla deverá iniciar a preparação dos dados, incluindo carregamento do dataset, criação de&nbsp;<code>jogador_temporada</code>&nbsp;e organização das colunas necessárias</li>
+    <li><strong>06/05/2026 -Associação quantitativa e&nbsp;revisão para AV2.&nbsp;&nbsp;</strong>A dupla deverá&nbsp;concluir a análise com correlação/covariância, matriz ou heatmap e interpretação da associação entre <code>pontos</code>, <code>minutos_totais</code>, <code>jogos_disputados</code> e <code>salario_usd</code>. Aula de revisão dos conceitos centrais da Unidade 2 e esclarecimento de dúvidas para a AV2.</li>
     <li><strong>11/05/2026 - AV2.</strong> Avaliação da Unidade 2.</li>
     <li><strong>13/05/2026 - Probabilidade e variável aleatória discreta.</strong> A dupla deverá concluir a construção de <code>X</code>, PMF, CDF, média, desvio padrão e comparação entre <code>P(S | B)</code> e <code>P(S | não B)</code>.</li>
-    <li><strong>18/05/2026 - Entrega do trabalho.</strong> Entrega do notebook documentado, executável e com interpretações curtas, além do vídeo explicativo com síntese dos resultados e limitações.</li>
+    <li><strong>14/05/2026 - Entrega do trabalho.</strong> Entrega do notebook documentado, executável e com interpretações curtas, além do vídeo explicativo com síntese dos resultados e limitações.</li>
 </ul>
 
 <h2>Critérios de Avaliação</h2>
@@ -156,7 +156,7 @@
 <ul>
     <li><strong>Preparação dos dados (0,20 ponto):</strong> carregamento, <code>jogador_temporada</code>, <code>nao_permanencia</code> e tratamento da última temporada.</li>
     <li><strong>Associação quantitativa (0,20 ponto):</strong> matriz ou heatmap, dispersão, covariância, correlação e interpretação.</li>
-    <li><strong>Variável aleatória discreta <code>X</code> (0,20 ponto):</strong> construção dos indicadores baixos, PMF, CDF, média, desvio padrão e interpretação.</li>
+    <li><strong>Variável aleatória discreta <code>X</code> (0,20 ponto):</strong> construção dos indicadores de baixo desempenho, PMF, CDF, média, desvio padrão e interpretação.</li>
     <li><strong>Probabilidade condicional (0,20 ponto):</strong> cálculo e comparação de <code>P(S | B)</code> e <code>P(S | não B)</code>.</li>
     <li><strong>Clareza e conclusão (0,20 ponto):</strong> código executável, organização, interpretação e conclusão sem causalidade.</li>
 </ul>
