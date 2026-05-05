@@ -1,7 +1,7 @@
 # Materiais de Métodos Quantitativos
 
 ## Objetivo
-Este repositório reúne materiais da disciplina **Métodos Quantitativos para Computação**, com foco em estatística descritiva, análise exploratória de dados, exercícios comentados e notebooks de apoio.
+Este repositório reúne materiais da disciplina **Métodos Quantitativos**, com foco em estatística descritiva, análise exploratória de dados, exercícios comentados e notebooks de apoio.
 
 ## Estrutura do projeto
 - `aulas/notebooks/`: notebooks de aula e os respectivos recursos visuais (`imgs/` e `figs/`).
