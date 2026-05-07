@@ -17,13 +17,13 @@ O foco do material é combinar rigor estatístico com leitura didática para est
 - `trabalhos/`: orientações dos trabalhos por turma e unidade.
 - `scripts/`: scripts de apoio à geração e manutenção dos materiais.
 
-## Revisão AV2
+## Associação e regressão
 
-A revisão da AV2 está organizada em planilha e em versões Markdown.
+O material de associação, correlação, regressão linear simples e ANOVA da regressão está organizado em planilha e em versões Markdown.
 
 Fonte operacional:
 
-- [`aulas/planilhas/Revisao_AV2.xlsx`](aulas/planilhas/Revisao_AV2.xlsx)
+- [`aulas/planilhas/Associacao_Regressao.xlsx`](aulas/planilhas/Associacao_Regressao.xlsx)
 
 Versões Markdown para leitura:
 
@@ -39,12 +39,6 @@ Os arquivos Markdown não são uma cópia bruta da planilha. Eles organizam o co
 - desenvolvimento com uso de planilha;
 - validação com funções do Google Planilhas;
 - interpretação crítica.
-
-Para regenerar os Markdown da revisão AV2:
-
-```bash
-/home/carubbi/Documents/REPOS/T199_N724/.venv/bin/python -B scripts/export_revisao_av2_md.py
-```
 
 ## Ambiente
 
