@@ -9,7 +9,7 @@ O foco do material é combinar rigor estatístico com leitura didática para est
 - `aulas/slides/`: slides em PDF usados nas aulas.
 - `aulas/notebooks/`: notebooks de aula e recursos visuais.
 - `aulas/planilhas/`: planilhas de apoio, revisão e resolução.
-- `aulas/planilhas/exports/`: versões Markdown geradas a partir das planilhas, para leitura sem Excel/Google Planilhas.
+- `aulas/resolucoes_manuais/`: versões Markdown com resoluções manuais e leituras didáticas das planilhas.
 - `dataset/`: bases de dados utilizadas nas aulas, notebooks e trabalhos.
 - `exs/und1/`: exercícios da Unidade 1.
 - `exs/und2/`: exercícios da Unidade 2.
@@ -27,9 +27,9 @@ Fonte operacional:
 
 Versões Markdown para leitura:
 
-- [`Revisao_AV2__revisao_conceitual.md`](aulas/planilhas/exports/Revisao_AV2__revisao_conceitual.md)
-- [`Revisao_AV2__ex_1_e_resolucao.md`](aulas/planilhas/exports/Revisao_AV2__ex_1_e_resolucao.md)
-- [`Revisao_AV2__ex_2_e_resolucao.md`](aulas/planilhas/exports/Revisao_AV2__ex_2_e_resolucao.md)
+- [`Revisao_AV2__revisao_conceitual.md`](aulas/resolucoes_manuais/Revisao_AV2__revisao_conceitual.md)
+- [`Revisao_AV2__ex_1_e_resolucao.md`](aulas/resolucoes_manuais/Revisao_AV2__ex_1_e_resolucao.md)
+- [`Revisao_AV2__ex_2_e_resolucao.md`](aulas/resolucoes_manuais/Revisao_AV2__ex_2_e_resolucao.md)
 
 Os arquivos Markdown não são uma cópia bruta da planilha. Eles organizam o conteúdo em:
 

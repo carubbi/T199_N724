@@ -240,13 +240,13 @@ Esse gráfico verifica se os erros do modelo ainda têm relação com $x$. Se ho
 Para comparar resíduos em escala comum, pode-se usar o resíduo padronizado:
 
 $$
-z_{e_i} = \frac{e_i}{s_e}
+z_{e_i} = \frac{e_i}{\text{Erro-padrão residual}}
 $$
 
-em que $s_e$ é o erro-padrão da estimativa:
+em que o erro-padrão residual é:
 
 $$
-s_e = \sqrt{\frac{\mathrm{SQ}_{Res}}{n-2}}
+\text{Erro-padrão residual} = \sqrt{\frac{\mathrm{SQ}_{Res}}{n-2}}
 $$
 
 Valores de $z_{e_i}$ com magnitude alta indicam observações que merecem inspeção. Em aplicações introdutórias, uma regra prática é investigar resíduos padronizados com:

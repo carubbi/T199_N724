@@ -245,6 +245,8 @@ Tabela ANOVA final:
 | `b` | Inclinação da reta; variação prevista em `y` para aumento de 1 unidade em `x`. |
 | `ŷ` | Valor previsto pela reta de regressão. |
 | `resíduo` | Erro de previsão: valor observado menos valor previsto, isto é, `y - ŷ`. |
+| `Erro-padrão residual` | Medida da escala típica dos resíduos: `RAIZ(SQRes / glRes)`. |
+| `z_resíduo` | Resíduo padronizado: `resíduo / Erro-padrão residual`. |
 | `SQ` | Soma de quadrados; medida de variação acumulada. |
 | `SQReg` | Soma de quadrados da regressão; parte da variação de `y` explicada pela reta. |
 | `SQRes` | Soma de quadrados dos resíduos; parte da variação de `y` não explicada pela reta. |
@@ -268,6 +270,8 @@ Tabela ANOVA final:
 | Intercepto | `a = ȳ - b*x̄` | Completa a equação da reta. |
 | Reta de regressão | `ŷ = a + b*x` | Gera o valor previsto de `y`. |
 | Resíduo | `e = y - ŷ` | Diferença entre valor observado e valor previsto. |
+| Erro-padrão residual | `Erro-padrão residual = RAIZ(SQRes / glRes)` | Escala típica dos resíduos. |
+| Resíduo padronizado | `z_e = e / Erro-padrão residual` | Ajuda a comparar resíduos em escala comum. |
 | SQTotal | `SQTot = SOMA((y - ȳ)^2)` | Variação total de `y`. |
 | SQResíduos | `SQRes = SOMA((y - ŷ)^2)` | Variação que a reta não explicou. |
 | SQRegressão | `SQReg = SOMA((ŷ - ȳ)^2)` | Variação explicada pela reta. |
@@ -310,6 +314,66 @@ Tabela ANOVA final:
 
 - Conferência SQTot - (SQReg + SQRes): -0
 - R2 pela ANOVA: 0.700421
+
+### Resíduos padronizados e diagnóstico visual
+
+Além do resíduo bruto, a planilha calcula:
+
+$$
+\text{Erro-padrão residual}=\sqrt{\frac{SQRes}{glRes}}
+$$
+
+e:
+
+$$
+z_{e_i}=\frac{e_i}{\text{Erro-padrão residual}}
+$$
+
+Como regra prática inicial, resíduos padronizados com:
+
+$$
+|z_{e_i}|>2
+$$
+
+devem ser investigados. Isso não implica exclusão automática; indica apenas que a instituição merece análise.
+
+A planilha também lista os intervalos-base para construir gráficos diagnósticos:
+
+| Gráfico | Eixo X | Eixo Y | Objetivo |
+| --- | --- | --- | --- |
+| Dispersão | alunos | professores | Ver se instituições com mais alunos tendem a ter mais professores e se a relação parece aproximadamente linear. |
+| Reta ajustada | alunos | valor previsto | Ver se a reta representa bem a tendência geral ou se algumas instituições influenciam demais o ajuste. |
+| Resíduos vs previsto | valor previsto | resíduo | Ver se os erros ficam espalhados ao redor de zero; padrão, curva ou funil indicam limitação do modelo. |
+| Resíduos vs alunos | alunos | resíduo | Ver se o erro muda conforme o número de alunos aumenta; isso ajuda a detectar viés por porte da instituição. |
+| Resíduos padronizados | alunos | resíduo padronizado | Identificar instituições com erro de previsão grande em escala comum; valores com `|z| > 2` merecem investigação. |
+
+Conclusões diagnósticas esperadas:
+
+| Gráfico | Conclusão diagnóstica |
+| --- | --- |
+| Dispersão | A relação entre alunos e professores é positiva e aproximadamente linear, embora haja instituições afastadas da tendência geral. |
+| Reta ajustada | A reta representa uma tendência geral forte, mas algumas instituições ficam bem acima ou abaixo do esperado. |
+| Resíduos vs previsto | Os resíduos indicam que Univ. do Vale do Rio dos Sinos e Univ. Mackenzie têm menos professores que o previsto para seu porte. |
+| Resíduos vs alunos | Há indícios de erros relevantes em instituições de maior porte; isso sugere verificar possível viés por porte ou diferenças institucionais. |
+| Resíduos padronizados | Univ. do Vale do Rio dos Sinos e Univ. Mackenzie têm `|z| > 2` e devem ser investigadas como possíveis casos atípicos, sem exclusão automática. |
+
+Para criar cada gráfico no Google Planilhas:
+
+1. selecione o intervalo do eixo X e, mantendo a tecla de seleção múltipla, selecione o intervalo do eixo Y;
+2. use **Inserir > Gráfico**;
+3. escolha gráfico de dispersão;
+4. no gráfico de dispersão principal, adicione a série dos valores previstos para visualizar a reta ajustada;
+5. nos gráficos de resíduos, observe se há padrão sistemático, curvatura, mudança de variância ou instituições isoladas.
+
+No gráfico de dispersão principal, também é possível usar a linha de tendência do Google Planilhas:
+
+1. clique no gráfico;
+2. abra **Editar gráfico > Personalizar > Série**;
+3. marque **Linha de tendência**;
+4. em **Rótulo**, escolha **Usar equação**;
+5. marque **Mostrar R²**.
+
+Use a equação e o R² exibidos no gráfico apenas como conferência. Eles devem ser compatíveis com os valores calculados na planilha para o intercepto, a inclinação e o coeficiente de determinação.
 
 ### Validação com LINEST completo da planilha
 
