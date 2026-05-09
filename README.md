@@ -15,21 +15,31 @@ O foco do material é combinar rigor estatístico com leitura didática para est
 - `exs/und2/`: exercícios da Unidade 2.
 - `exs/*/respostas/`: respostas e resoluções quando disponíveis.
 - `trabalhos/`: orientações dos trabalhos por turma e unidade.
-- `scripts/`: scripts de apoio à geração e manutenção dos materiais.
 
-## Associação e regressão
+## Planilhas e resoluções manuais
 
-O material de associação, correlação, regressão linear simples e ANOVA da regressão está organizado em planilha e em versões Markdown.
+Os materiais de planilha estão organizados em arquivos `.xlsx`, com versões Markdown em `aulas/resolucoes_manuais/` para leitura, resolução manual e acompanhamento didático.
 
-Fonte operacional:
+Planilhas principais:
 
+- [`aulas/planilhas/Fundamentos_de_Estatistica.xlsx`](aulas/planilhas/Fundamentos_de_Estatistica.xlsx)
+- [`aulas/planilhas/Probabilidade_Condicional.xlsx`](aulas/planilhas/Probabilidade_Condicional.xlsx)
+- [`aulas/planilhas/Variaveis_Aleatorias_Discretas.xlsx`](aulas/planilhas/Variaveis_Aleatorias_Discretas.xlsx)
 - [`aulas/planilhas/Associacao_Regressao.xlsx`](aulas/planilhas/Associacao_Regressao.xlsx)
 
-Versões Markdown para leitura:
+Resoluções e revisões manuais:
 
-- [`Revisao_AV2__revisao_conceitual.md`](aulas/resolucoes_manuais/Revisao_AV2__revisao_conceitual.md)
-- [`Revisao_AV2__ex_1_e_resolucao.md`](aulas/resolucoes_manuais/Revisao_AV2__ex_1_e_resolucao.md)
-- [`Revisao_AV2__ex_2_e_resolucao.md`](aulas/resolucoes_manuais/Revisao_AV2__ex_2_e_resolucao.md)
+- [`Probabilidade_Condicional_Rev.md`](aulas/resolucoes_manuais/Probabilidade_Condicional_Rev.md)
+- [`Probabilidade_Condicional_Ex1.md`](aulas/resolucoes_manuais/Probabilidade_Condicional_Ex1.md)
+- [`Probabilidade_Condicional_Ex2.md`](aulas/resolucoes_manuais/Probabilidade_Condicional_Ex2.md)
+- [`Variaveis_Aleatorias_Discretas_Rev.md`](aulas/resolucoes_manuais/Variaveis_Aleatorias_Discretas_Rev.md)
+- [`Variaveis_Aleatorias_Discretas_Ex1.md`](aulas/resolucoes_manuais/Variaveis_Aleatorias_Discretas_Ex1.md)
+- [`Variaveis_Aleatorias_Discretas_Ex2.md`](aulas/resolucoes_manuais/Variaveis_Aleatorias_Discretas_Ex2.md)
+- [`Variaveis_Aleatorias_Discretas_Ex3.md`](aulas/resolucoes_manuais/Variaveis_Aleatorias_Discretas_Ex3.md)
+- [`Variaveis_Aleatorias_Discretas_Ex4.md`](aulas/resolucoes_manuais/Variaveis_Aleatorias_Discretas_Ex4.md)
+- [`Associacao_Regressao_Rev.md`](aulas/resolucoes_manuais/Associacao_Regressao_Rev.md)
+- [`Associacao_Regressao_Ex1.md`](aulas/resolucoes_manuais/Associacao_Regressao_Ex1.md)
+- [`Associacao_Regressao_Ex2.md`](aulas/resolucoes_manuais/Associacao_Regressao_Ex2.md)
 
 Os arquivos Markdown não são uma cópia bruta da planilha. Eles organizam o conteúdo em:
 
@@ -37,7 +47,7 @@ Os arquivos Markdown não são uma cópia bruta da planilha. Eles organizam o co
 - observações e perguntas orientadoras;
 - desenvolvimento sem uso de planilha;
 - desenvolvimento com uso de planilha;
-- validação com funções do Google Planilhas;
+- validação com funções nativas do Google Planilhas;
 - interpretação crítica.
 
 ## Ambiente
@@ -61,7 +71,7 @@ venv.sh
 Neste ambiente local, o interpretador usado nos scripts está em:
 
 ```bash
-/home/carubbi/Documents/REPOS/T199_N724/.venv/bin/python
+.venv/bin/python
 ```
 
 ## Notebooks
