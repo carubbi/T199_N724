@@ -1,0 +1,992 @@
+<?xml version='1.0' encoding='utf-8'?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/AV2</text>
+    </category>
+  </question>
+  <question type="description">
+    <name>
+      <text>00 - Fórmulas</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h2&gt;Fórmulas da AV2&lt;/h2&gt;&lt;p&gt;As fórmulas estão agrupadas por tema. Nem todas serão necessárias em todas as questões; cabe ao estudante selecionar a ferramenta adequada ao problema.&lt;/p&gt;&lt;h4&gt;Medidas De Associação&lt;/h4&gt;&lt;p&gt;\[
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
+\tag{F1}
+\]&lt;/p&gt;&lt;p&gt;\[
+\bar{y}=\frac{1}{n}\sum_{i=1}^{n}y_i
+\tag{F2}
+\]&lt;/p&gt;&lt;p&gt;\[
+d_{x_i}=x_i-\bar{x}
+\tag{F3}
+\]&lt;/p&gt;&lt;p&gt;\[
+d_{y_i}=y_i-\bar{y}
+\tag{F4}
+\]&lt;/p&gt;&lt;p&gt;\[
+s_{xy}=\frac{\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})}{n-1}
+\tag{F5}
+\]&lt;/p&gt;&lt;p&gt;\[
+s_x=\sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}
+\tag{F6}
+\]&lt;/p&gt;&lt;p&gt;\[
+s_y=\sqrt{\frac{\sum_{i=1}^{n}(y_i-\bar{y})^2}{n-1}}
+\tag{F7}
+\]&lt;/p&gt;&lt;p&gt;\[
+r=\frac{s_{xy}}{s_xs_y}
+\tag{F8}
+\]&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Legenda&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\(F1\): média amostral de \(x\), usada para resumir a primeira variável quantitativa.&lt;/li&gt;&lt;li&gt;\(F2\): média amostral de \(y\), usada para resumir a segunda variável quantitativa.&lt;/li&gt;&lt;li&gt;\(F3\): desvio de \(x_i\) em relação à média de \(x\).&lt;/li&gt;&lt;li&gt;\(F4\): desvio de \(y_i\) em relação à média de \(y\).&lt;/li&gt;&lt;li&gt;\(F5\): covariância amostral (\(s_{xy}\)), usada para indicar a direção da variação conjunta entre \(x\) e \(y\).&lt;/li&gt;&lt;li&gt;\(F6\): desvio-padrão amostral de \(x\), usado para padronizar a covariância.&lt;/li&gt;&lt;li&gt;\(F7\): desvio-padrão amostral de \(y\), usado para padronizar a covariância.&lt;/li&gt;&lt;li&gt;\(F8\): coeficiente de correlação de Pearson (\(r\)), calculado como covariância padronizada pelos desvios-padrão amostrais (\(s_x\) e \(s_y\)).&lt;/li&gt;&lt;li&gt;Símbolos gerais do bloco: \(x_i\) e \(y_i\) são os valores observados no par \(i\); \(n\) é o número de pares; \(s_x\) e \(s_y\) são os desvios-padrão amostrais de \(x\) e \(y\); \(s_{xy}\) é a covariância amostral.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Probabilidade, Probabilidade Condicional E Bayes&lt;/h4&gt;&lt;p&gt;\[
+P(A)=\frac{n(A)}{n(\Omega)}
+\tag{F9}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(A^c)=1-P(A)
+\tag{F10}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(A\cup B)=P(A)+P(B)-P(A\cap B)
+\tag{F11}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(A\cap B)=0
+\quad \text{se } A \text{ e } B \text{ são mutuamente exclusivos}
+\tag{F12}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(A\cup B)=P(A)+P(B)
+\quad \text{se } A \text{ e } B \text{ são mutuamente exclusivos}
+\tag{F13}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(A\mid B)=\frac{P(A\cap B)}{P(B)},\quad P(B)&amp;gt;0
+\tag{F14}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(B\mid A)=\frac{P(A\cap B)}{P(A)},\quad P(A)&amp;gt;0
+\tag{F15}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(A\cap B)=P(A\mid B)P(B)
+\tag{F16}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(A\cap B)=P(B\mid A)P(A)
+\tag{F17}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(B)=\sum_i P(B\mid A_i)P(A_i)
+\tag{F18}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(A_i\mid B)=\frac{P(B\mid A_i)P(A_i)}{\sum_j P(B\mid A_j)P(A_j)}
+\tag{F19}
+\]&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Legenda&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\(F9\): probabilidade clássica, usada quando os resultados são finitos e equiprováveis.&lt;/li&gt;&lt;li&gt;\(F10\): regra do complementar.&lt;/li&gt;&lt;li&gt;\(F11\): regra geral da união.&lt;/li&gt;&lt;li&gt;\(F12\): interseção de eventos mutuamente exclusivos.&lt;/li&gt;&lt;li&gt;\(F13\): união de eventos mutuamente exclusivos.&lt;/li&gt;&lt;li&gt;\(F14\): probabilidade condicional de \(A\) dado \(B\).&lt;/li&gt;&lt;li&gt;\(F15\): probabilidade condicional de \(B\) dado \(A\).&lt;/li&gt;&lt;li&gt;\(F16\): regra do produto escrita a partir de \(P(A\mid B)\).&lt;/li&gt;&lt;li&gt;\(F17\): regra do produto escrita a partir de \(P(B\mid A)\).&lt;/li&gt;&lt;li&gt;\(F18\): probabilidade total, usada quando \(B\) pode ocorrer por grupos ou caminhos \(A_i\).&lt;/li&gt;&lt;li&gt;\(F19\): Teorema de Bayes, usado para inverter uma probabilidade condicional.&lt;/li&gt;&lt;li&gt;Símbolos gerais do bloco: \(A\) e \(B\) são eventos; \(A_i\) representa um grupo ou parte de uma partição; \(\Omega\) é o espaço amostral.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Variáveis Aleatórias Discretas&lt;/h4&gt;&lt;p&gt;\[
+p(x)=P(X=x)
+\tag{F20}
+\]&lt;/p&gt;&lt;p&gt;\[
+p(x)\ge 0
+\tag{F21}
+\]&lt;/p&gt;&lt;p&gt;\[
+\sum_x p(x)=1
+\tag{F22}
+\]&lt;/p&gt;&lt;p&gt;\[
+F(x)=P(X\le x)
+\tag{F23}
+\]&lt;/p&gt;&lt;p&gt;\[
+E(X)=\sum_x xp(x)
+\tag{F24}
+\]&lt;/p&gt;&lt;p&gt;\[
+E[h(X)]=\sum_x h(x)p(x)
+\tag{F25}
+\]&lt;/p&gt;&lt;p&gt;\[
+\operatorname{Var}(X)=\sum_x (x-E(X))^2p(x)
+\tag{F26}
+\]&lt;/p&gt;&lt;p&gt;\[
+E(X^2)=\sum_x x^2p(x)
+\tag{F27}
+\]&lt;/p&gt;&lt;p&gt;\[
+\operatorname{Var}(X)=E(X^2)-[E(X)]^2
+\tag{F28}
+\]&lt;/p&gt;&lt;p&gt;\[
+DP(X)=\sqrt{\operatorname{Var}(X)}
+\tag{F29}
+\]&lt;/p&gt;&lt;p&gt;\[
+CV(X)=\frac{DP(X)}{E(X)},\quad E(X)\ne 0
+\tag{F30}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(X=k)=\binom{n}{k}p^k(1-p)^{n-k}
+\tag{F31}
+\]&lt;/p&gt;&lt;p&gt;\[
+E(X)=np
+\tag{F32}
+\]&lt;/p&gt;&lt;p&gt;\[
+\operatorname{Var}(X)=np(1-p)
+\tag{F33}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(X=k)=
+\frac{\binom{K}{k}\binom{N-K}{n-k}}
+{\binom{N}{n}}
+\tag{F34}
+\]&lt;/p&gt;&lt;p&gt;\[
+P(X=k)=\frac{e^{-\lambda}\lambda^k}{k!}
+\tag{F35}
+\]&lt;/p&gt;&lt;p&gt;\[
+E(X)=\lambda,\quad \operatorname{Var}(X)=\lambda
+\tag{F36}
+\]&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Legenda&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;\(F20\): função de probabilidade discreta.&lt;/li&gt;&lt;li&gt;\(F21\): condição de não negatividade das probabilidades.&lt;/li&gt;&lt;li&gt;\(F22\): condição de soma total igual a \(1\).&lt;/li&gt;&lt;li&gt;\(F23\): função acumulada.&lt;/li&gt;&lt;li&gt;\(F24\): esperança de \(X\).&lt;/li&gt;&lt;li&gt;\(F25\): esperança de uma função de \(X\).&lt;/li&gt;&lt;li&gt;\(F26\): variância pela soma dos desvios quadráticos ponderados.&lt;/li&gt;&lt;li&gt;\(F27\): segundo momento.&lt;/li&gt;&lt;li&gt;\(F28\): variância pela diferença entre segundo momento e quadrado da esperança.&lt;/li&gt;&lt;li&gt;\(F29\): desvio-padrão.&lt;/li&gt;&lt;li&gt;\(F30\): coeficiente de variação.&lt;/li&gt;&lt;li&gt;\(F31\): função de probabilidade binomial.&lt;/li&gt;&lt;li&gt;\(F32\): esperança da distribuição binomial.&lt;/li&gt;&lt;li&gt;\(F33\): variância da distribuição binomial.&lt;/li&gt;&lt;li&gt;\(F34\): função de probabilidade hipergeométrica.&lt;/li&gt;&lt;li&gt;\(F35\): função de probabilidade de Poisson.&lt;/li&gt;&lt;li&gt;\(F36\): esperança e variância da distribuição de Poisson.&lt;/li&gt;&lt;li&gt;Símbolos gerais do bloco: \(X\) é uma variável aleatória discreta; \(x\) é um valor possível de \(X\); \(p\) é a probabilidade de sucesso; \(k\) é o número de sucessos ou ocorrências; \(n\) é o número de tentativas ou o tamanho da amostra; \(N\) é o tamanho da população; \(K\) é o número de sucessos na população; \(\lambda\) é a média da distribuição de Poisson.&lt;/li&gt;&lt;/ul&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+  </question>
+  <question type="description">
+    <name>
+      <text>01 - Problema 1</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Problema 1 - Medidas de associação&lt;/h3&gt;&lt;p&gt;Um artigo publicado no &lt;em&gt;Journal of the Environmental Engineering Division&lt;/em&gt; [“Least Squares Estimates of BOD Parameters” (1980, Vol. 106, pp. 1197–1202)] coletou uma amostra do rio Holston a jusante de Kingsport, Tennessee, durante agosto de 1977. O teste de demanda bioquímica de oxigênio (BOD) é conduzido ao longo de um período de tempo, medido em dias. Os dados resultantes são apresentados a seguir. Fonte: Adaptado de Montgomery (2018), Exercício 11.2.9.&lt;/p&gt;&lt;table border="1" cellspacing="0" cellpadding="6"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Observação&lt;/th&gt;&lt;th&gt;Tempo (\(x\)) em dias&lt;/th&gt;&lt;th&gt;BOD (\(y\)) em mg/liter&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0,6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;1,5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;1,9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;2,1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;2,6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;2,9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;td&gt;3,7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;3,5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;td&gt;3,7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;3,8&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Notas da tabela:&lt;/strong&gt; Observação identifica o par de dados; tempo (\(x\)) é o tempo do teste, em dias; BOD (\(y\)) é o BOD observado, em mg/liter.&lt;/em&gt;&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q01</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 1&lt;/h3&gt;&lt;p&gt;Antes de calcular as medidas de associação, é necessário reconhecer as variáveis tempo (\(x\)) e BOD (\(y\)) e o padrão visual esperado no gráfico de dispersão. Qual alternativa descreve corretamente a análise inicial?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A análise de associação entre duas variáveis quantitativas começa pela identificação das variáveis e pela inspeção visual do gráfico de dispersão. O coeficiente de Pearson (\(r\)) resume associação linear, mas não prova causalidade.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Tempo (\(x\)) e BOD (\(y\)) são variáveis quantitativas; por isso, basta calcular o coeficiente de Pearson (\(r\)), pois o gráfico de dispersão não acrescenta informação relevante.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O gráfico de dispersão continua necessário para verificar padrão visual, possíveis pontos discrepantes e limitações do resumo numérico.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;Tempo (\(x\)) e BOD (\(y\)) são variáveis quantitativas; o gráfico de dispersão permite avaliar visualmente direção, intensidade e possíveis pontos discrepantes da associação.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. O gráfico de dispersão é a etapa inicial adequada para avaliar padrão de associação entre variáveis quantitativas.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Tempo (\(x\)) e BOD (\(y\)) são variáveis quantitativas; o gráfico de dispersão permite avaliar apenas a direção da associação, enquanto intensidade e pontos discrepantes só podem ser avaliados depois do cálculo do coeficiente de Pearson (\(r\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O gráfico de dispersão também ajuda a avaliar intensidade visual, pontos discrepantes e padrões não lineares.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Como tempo (\(x\)) representa uma ordem temporal, a análise inicial deve ser feita por sequência temporal, e não por gráfico de dispersão entre pares observados (\((x_i,y_i)\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Embora tempo (\(x\)) tenha ordem natural, a questão avalia associação bivariada entre pares observados (\((x_i,y_i)\)).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Se o gráfico de dispersão sugerir tendência crescente, então a associação positiva fica estabelecida como relação causal entre tempo (\(x\)) e BOD (\(y\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Tendência visual ou correlação positiva não prova causalidade.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q02</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 2&lt;/h3&gt;&lt;p&gt;Usando os dados do Problema 1, calcule a covariância amostral (\(s_{xy}\)) entre tempo (\(x\)) e BOD (\(y\)). Qual alternativa apresenta corretamente o valor aproximado e sua interpretação?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A covariância amostral (\(s_{xy}\)) mede a variação conjunta entre duas variáveis quantitativas e é obtida dividindo a soma dos produtos dos desvios por \(n-1\). Seu sinal indica a direção da associação, mas sua magnitude depende das unidades de medida.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(s_{xy}\approx 74,9455\); o sinal positivo indica variação conjunta na mesma direção, mas esse valor ainda é a soma dos produtos dos desvios, não a covariância amostral (\(s_{xy}\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Embora o sinal esteja correto, \(74,9455\) é o somatório dos produtos dos desvios, não a covariância amostral (\(s_{xy}\)).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(s_{xy}\approx 6,8132\); o sinal positivo indica variação conjunta na mesma direção, mas o cálculo foi feito dividindo por \(n\), não por \(n-1\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Divide por \(n\); a covariância amostral (\(s_{xy}\)) deve dividir por \(n-1\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(s_{xy}\approx -7,4945\); a magnitude está correta, mas o sinal indica que valores maiores de tempo tendem a ocorrer com valores menores de BOD.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. A magnitude corresponde ao valor correto, mas o sinal foi invertido.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(s_{xy}\approx 7,4945\); o sinal positivo indica que tempo (\(x\)) e BOD (\(y\)) tendem a variar na mesma direção, mas a magnitude depende das unidades de medida.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. \(s_{xy}=74,9455/(11-1)=7,4945\), com sinal positivo.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(s_{xy}\approx 0,9733\); por ser uma medida padronizada, indica associação linear positiva forte.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Confunde covariância amostral (\(s_{xy}\)) com coeficiente de Pearson (\(r\)); a covariância não é padronizada.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q03</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 3&lt;/h3&gt;&lt;p&gt;Usando os dados do Problema 1, calcule o coeficiente de correlação de Pearson (\(r\)) entre tempo (\(x\)) e BOD (\(y\)). Qual alternativa apresenta corretamente o valor aproximado e sua interpretação?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;O coeficiente de correlação de Pearson (\(r\)) é uma medida padronizada da força e da direção da associação linear entre duas variáveis quantitativas. O coeficiente de Pearson (\(r\)) varia entre \(-1\) e \(1\). O sinal indica a direção, e o valor absoluto indica a intensidade da associação linear.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(r\approx 0,973\); a associação linear é forte e positiva, pois valores maiores de tempo (\(x\)) tendem a estar associados a valores maiores de BOD (\(y\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. Como \(r\approx 0,973\), a associação linear é positiva e forte.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(r\approx -0,973\); a intensidade é forte, mas o sinal negativo indicaria que valores maiores de tempo (\(x\)) tendem a estar associados a valores menores de BOD (\(y\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O sinal de \(r\) é positivo, não negativo.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(r\approx 1,155\); a associação linear seria muito forte, mas esse valor resulta de dividir a covariância amostral (\(s_{xy}\)) apenas pelo desvio-padrão amostral de \(x\) (\(s_x\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Divide a covariância amostral (\(s_{xy}\)) apenas por \(s_x\); o coeficiente de Pearson (\(r\)) usa o produto \(s_xs_y\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(r\approx 7,495\); a associação é forte e positiva, mas esse valor corresponde à covariância amostral (\(s_{xy}\)), que ainda depende das unidades de medida.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Confunde coeficiente de Pearson (\(r\)) com covariância amostral (\(s_{xy}\)); a correlação é padronizada e deve ficar entre \(-1\) e \(1\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(r\approx 0,973\); a associação linear é forte e positiva, e por isso fica demonstrado que o tempo causa aumento no BOD.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O valor de \(r\) está correto, mas a interpretação causal é inadequada.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q04</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 4&lt;/h3&gt;&lt;p&gt;A correlação de Pearson (\(r\)) também pode ser calculada pela relação entre covariância amostral (\(s_{xy}\)) e desvios-padrão amostrais (\(s_x\) e \(s_y\)). Qual alternativa interpreta corretamente essa relação?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A correlação de Pearson (\(r\)) padroniza a covariância amostral (\(s_{xy}\)) pelos desvios-padrão amostrais (\(s_x\) e \(s_y\)) das duas variáveis. Essa padronização remove as unidades de medida e produz uma medida limitada entre \(-1\) e \(1\), adequada para comparar a força e a direção da associação linear.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(r=s_{xy}/(s_xs_y)\); a correlação de Pearson (\(r\)) padroniza a covariância amostral (\(s_{xy}\)) pelos desvios-padrão amostrais (\(s_x\) e \(s_y\)), ficando sem unidade e limitada ao intervalo de \(-1\) a \(1\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. A relação \(r=s_{xy}/(s_xs_y)\) mostra que o coeficiente de Pearson (\(r\)) é uma covariância padronizada.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(r=s_{xy}\); a correlação de Pearson (\(r\)) e a covariância amostral (\(s_{xy}\)) são a mesma medida quando as duas variáveis são quantitativas.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Covariância amostral (\(s_{xy}\)) e correlação de Pearson (\(r\)) são relacionadas, mas não são a mesma medida.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(r=s_xs_y/s_{xy}\); quanto maior o produto dos desvios-padrão, maior necessariamente será a correlação.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. A fórmula está invertida e não representa a correlação de Pearson (\(r\)).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(r=s_{xy}/(s_x+s_y)\); a correlação de Pearson (\(r\)) é obtida dividindo a covariância amostral (\(s_{xy}\)) pela soma das dispersões das duas variáveis.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. A padronização usa o produto dos desvios-padrão, não a soma.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(r=s_{xy}/(s_xs_y)\); por isso, a correlação de Pearson (\(r\)) mantém a unidade conjunta de tempo (\(x\)) e BOD (\(y\)) e pode assumir valores maiores que \(1\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. A correlação não mantém unidade e não pode assumir valores fora do intervalo de \(-1\) a \(1\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q05</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 5&lt;/h3&gt;&lt;p&gt;Para avaliar a sensibilidade da associação linear, recalcule o coeficiente de Pearson (\(r\)) sem o ponto \(x=14\), \(y=3,7\). Qual alternativa apresenta corretamente o resultado e a interpretação?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A análise de sensibilidade verifica como uma medida de associação muda quando um ponto potencialmente discrepante é retirado. O coeficiente de Pearson (\(r\)) não é robusto à presença de pontos discrepantes. Por isso, é adequado comparar \(r\) com e sem um ponto que possa influenciar a leitura da associação.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;Sem esse ponto, \(r\approx 0,984\); a associação permanece positiva e forte, com leve aumento da intensidade linear.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. Sem \(x=14\), \(y=3,7\), obtém-se \(r\approx 0,984\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Sem esse ponto, \(r\approx 0,973\); a retirada do ponto não altera o coeficiente de Pearson (\(r\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Repete os valores calculados com todos os dados.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Sem esse ponto, \(r\approx -0,984\); a associação passa a ser forte e negativa.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O sinal da associação permanece positivo.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Sem esse ponto, \(r\approx 7,732\); a associação permanece positiva, mas esse valor corresponde à covariância amostral (\(s_{xy}\)) sem o ponto, não ao coeficiente de Pearson (\(r\)).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Confunde a covariância amostral (\(s_{xy}\)) sem o ponto com o coeficiente de Pearson (\(r\)) sem o ponto.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Sem esse ponto, \(r\approx 0,492\); a associação passa a ser moderada positiva.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Reduz indevidamente a força da associação.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="description">
+    <name>
+      <text>02 - Problema 2</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Problema 2 - Probabilidade condicional, total e Bayes&lt;/h3&gt;&lt;p&gt;Uma empresa que acompanha o uso de seu site observou que, quanto mais páginas um visitante visualiza, maior tende a ser a chance de ele solicitar mais informações, evento indicado por \(\mathrm{RMI}\). A tabela mostra a distribuição dos visitantes por número de páginas vistas, tratado como grupo, e a probabilidade condicional de solicitação de mais informação \(\mathrm{RMI}\) dentro de cada grupo. Fonte: Adaptado de Montgomery (2018), Exercício 2.S26.&lt;/p&gt;&lt;table border="1" cellspacing="0" cellpadding="6"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Páginas vistas (grupo)&lt;/th&gt;&lt;th&gt;Proporção de visitantes \(P(\text{grupo})\)&lt;/th&gt;&lt;th&gt;Probabilidade condicional \(P(\mathrm{RMI}\mid \text{grupo})\)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;40%&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;30%&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;20%&lt;/td&gt;&lt;td&gt;20%&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4 ou mais&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;td&gt;40%&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Notas da tabela:&lt;/strong&gt; páginas vistas define o grupo de visitantes; proporção de visitantes \(P(\text{grupo})\) representa a probabilidade de um visitante pertencer ao grupo; \(\mathrm{RMI}\) significa solicitação de mais informação; probabilidade condicional \(P(\mathrm{RMI}\mid \text{grupo})\) representa a probabilidade de solicitação de mais informação dentro do grupo.&lt;/em&gt;&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q06</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 6&lt;/h3&gt;&lt;p&gt;No Problema 2, considere o evento \(\mathrm{RMI}\) e os grupos definidos pelo número de páginas vistas. Qual alternativa identifica corretamente o evento, os grupos e o universo de referência de \(P(4\text{ ou mais páginas}\mid \mathrm{RMI})\)?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;Em probabilidade condicional, o evento depois da barra vertical define o universo de referência da probabilidade. Aqui \(\mathrm{RMI}\) é o evento de solicitar mais informação, e os grupos são as categorias de páginas vistas.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(\mathrm{RMI}\) é o evento “visitante solicita mais informação”; os grupos são definidos por páginas vistas; em \(P(4\text{ ou mais páginas}\mid \mathrm{RMI})\), o universo é o conjunto dos visitantes que solicitaram mais informação.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. Define corretamente o evento, os grupos e o universo condicionado.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(\mathrm{RMI}\) é o grupo “visitantes com 4 ou mais páginas”; em \(P(4\text{ ou mais páginas}\mid \mathrm{RMI})\), o universo é o conjunto de todos os visitantes.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Troca o evento \(\mathrm{RMI}\) com um grupo de páginas vistas e ignora a condição.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(\mathrm{RMI}\) é o evento “visitante solicita mais informação”; em \(P(4\text{ ou mais páginas}\mid \mathrm{RMI})\), o universo é o conjunto dos visitantes que viram 4 ou mais páginas.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O universo de \(P(4\text{ ou mais páginas}\mid \mathrm{RMI})\) é quem solicitou mais informação.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;Os grupos são definidos por solicitar ou não solicitar informação; em \(P(\mathrm{RMI}\mid 4\text{ ou mais páginas})\), o universo é o conjunto dos visitantes que solicitaram mais informação.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Os grupos da tabela são definidos por páginas vistas, não por solicitar informação.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(P(\mathrm{RMI}\mid 4\text{ ou mais páginas})\) e \(P(4\text{ ou mais páginas}\mid \mathrm{RMI})\) têm o mesmo universo de referência, pois envolvem os mesmos dois eventos.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Condicionais invertidas usam universos de referência diferentes.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q07</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 7&lt;/h3&gt;&lt;p&gt;Ao montar a tabela conjunta, os valores de \(P(\text{grupo}\cap \mathrm{RMI})\) para os grupos \(1\), \(2\), \(3\) e \(4\) ou mais páginas são, respectivamente:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A probabilidade conjunta mede a ocorrência simultânea de um grupo e de um evento. A probabilidade conjunta é obtida por \(P(\text{grupo}\cap \mathrm{RMI})=P(\text{grupo})\cdot P(\mathrm{RMI}\mid \text{grupo})\). Não se somam probabilidades condicionais de grupos diferentes sem ponderação.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,40\), \(0,30\), \(0,20\), \(0,10\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Lista apenas as proporções de visitantes por grupo.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,10\), \(0,10\), \(0,20\), \(0,40\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Lista apenas as probabilidades condicionais de \(\mathrm{RMI}\) dentro dos grupos.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(0,04\), \(0,03\), \(0,04\), \(0,04\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. \(0,40\cdot 0,10=0,04\); \(0,30\cdot 0,10=0,03\); \(0,20\cdot 0,20=0,04\); \(0,10\cdot 0,40=0,04\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,36\), \(0,27\), \(0,16\), \(0,06\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Calcula conjuntas com o complemento de \(\mathrm{RMI}\), não com \(\mathrm{RMI}\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,04\), \(0,03\), \(0,04\), \(0,40\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Calcula corretamente as três primeiras conjuntas, mas usa a probabilidade condicional \(0,40\) no último grupo em vez da conjunta \(0,10\cdot 0,40\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q08</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 8&lt;/h3&gt;&lt;p&gt;Calcule a probabilidade total \(P(\mathrm{RMI})\) de um visitante solicitar mais informação e assinale a interpretação correta.&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A probabilidade total combina as probabilidades de um evento ao longo de grupos que formam uma partição. A probabilidade total de \(\mathrm{RMI}\) é a soma das probabilidades conjuntas dos grupos: \(0,04 + 0,03 + 0,04 + 0,04 = 0,15\).&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,40\); é a probabilidade total porque é a maior probabilidade condicional da tabela.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. A maior probabilidade condicional não é a probabilidade total.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(1,00\); é a probabilidade total porque os grupos de páginas vistas cobrem todos os visitantes.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Os grupos cobrirem todos os visitantes não significa que todos solicitaram informação.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,20\); é a probabilidade total obtida pela média simples das probabilidades condicionais.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Probabilidades condicionais de grupos diferentes não devem ser combinadas por média simples sem ponderação.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,22\); é a probabilidade total obtida ao somar as probabilidades de não solicitar informação apenas nos grupos de 3 e 4 ou mais páginas.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Usa apenas parte dos grupos e ainda soma probabilidades de não solicitar informação, não de \(\mathrm{RMI}\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(0,15\); é a probabilidade total obtida pela soma das probabilidades conjuntas de \(\mathrm{RMI}\) em todos os grupos.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. A soma das conjuntas é \(0,15\), ou 15% dos visitantes.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q09</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 9&lt;/h3&gt;&lt;p&gt;Sabendo que um visitante solicitou mais informação, qual é a probabilidade de que ele tenha visto 4 ou mais páginas?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;O Teorema de Bayes permite inverter uma probabilidade condicional usando a probabilidade conjunta e a probabilidade total. A probabilidade pedida é \(P(4\text{ ou mais páginas}\mid \mathrm{RMI})\). O numerador é \(P(4\text{ ou mais páginas}\cap \mathrm{RMI})=0,04\); o denominador é \(P(\mathrm{RMI})=0,15\). Logo, \(0,04/0,15 \approx 0,267\).&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,04\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. É a probabilidade conjunta, não a condicional final.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,10\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. É a proporção de visitantes que viu 4 ou mais páginas.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,15\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. É \(P(\mathrm{RMI})\), o denominador.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(0,267\), aproximadamente.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. \(0,04/0,15 \approx 0,267\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(0,40\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. É \(P(\mathrm{RMI}\mid 4\text{ ou mais páginas})\), a condicional invertida.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="description">
+    <name>
+      <text>03 - Problema 3</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Problema 3 - Variáveis aleatórias discretas&lt;/h3&gt;&lt;p&gt;A variável aleatória discreta \(X\) tem a seguinte distribuição de probabilidade \(P(X=x)\). Fonte: Adaptado de Montgomery (2018), Exercício 3.S30.&lt;/p&gt;&lt;table border="1" cellspacing="0" cellpadding="6"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;\(x\)&lt;/th&gt;&lt;th&gt;2&lt;/th&gt;&lt;th&gt;3&lt;/th&gt;&lt;th&gt;5&lt;/th&gt;&lt;th&gt;8&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;\(P(X=x)\)&lt;/td&gt;&lt;td&gt;0,2&lt;/td&gt;&lt;td&gt;0,4&lt;/td&gt;&lt;td&gt;0,3&lt;/td&gt;&lt;td&gt;0,1&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Notas da tabela:&lt;/strong&gt; \(X\) é a variável aleatória discreta; \(x\) representa um valor possível de \(X\); \(P(X=x)\) é a probabilidade de a variável aleatória assumir o valor \(x\).&lt;/em&gt;&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q10</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 10&lt;/h3&gt;&lt;p&gt;Sobre a validade da função de probabilidade e o suporte da variável aleatória \(X\), assinale a alternativa correta.&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;Uma função de probabilidade discreta é válida quando todas as probabilidades são não negativas e sua soma é igual a 1. O suporte de \(X\) pode ter valores não consecutivos.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;A distribuição é válida apenas se os valores ausentes entre \(2\) e \(8\) tiverem probabilidade zero explicitamente informada na tabela.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Valores não listados simplesmente não pertencem ao suporte informado.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;A distribuição é inválida, pois os valores possíveis de \(X\) não são equiprováveis.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Uma função de probabilidade discreta não precisa ser uniforme.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;A distribuição é válida, pois todas as probabilidades são não negativas e somam \(1\); os valores possíveis de \(X\) não precisam ser consecutivos.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. \(0,2 + 0,4 + 0,3 + 0,1 = 1\), e o suporte pode ser \(\{2,3,5,8\}\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;A distribuição é inválida, pois os valores possíveis de \(X\) não são consecutivos e a função acumulada ficaria indefinida nos valores ausentes.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O suporte de uma variável aleatória discreta não precisa ser consecutivo; valores ausentes simplesmente não pertencem ao suporte informado.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;A distribuição é válida, mas os valores não consecutivos impedem o cálculo de probabilidades acumuladas.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. A função acumulada pode ser calculada mesmo quando o suporte não é consecutivo.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q11</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 11&lt;/h3&gt;&lt;p&gt;Com base na distribuição de \(X\), assinale a alternativa correta.&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;Probabilidades de eventos com variável aleatória discreta são calculadas somando as probabilidades dos valores de \(X\) que satisfazem a condição. Em \(P(2,7&amp;lt;X&amp;lt;5,1)\), entram \(x=3\) e \(x=5\).&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(P(X\le 3) = 0,6\), \(P(X&amp;gt;2,5) = 0,8\) e \(P(2,7&amp;lt;X&amp;lt;5,1) = 0,4\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Erra o intervalo aberto, pois \(x=5\) também satisfaz \(2,7&amp;lt;X&amp;lt;5,1\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(P(X\le 3) = 0,6\), \(P(X&amp;gt;2,5) = 0,8\) e \(P(2,7&amp;lt;X&amp;lt;5,1) = 0,3\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Erra o intervalo aberto ao incluir apenas \(x=5\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(P(X\le 3) = 0,4\), \(P(X&amp;gt;2,5) = 0,8\) e \(P(2,7&amp;lt;X&amp;lt;5,1) = 0,7\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Erra \(P(X\le 3)\) ao omitir \(x=2\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(P(X\le 3) = 0,6\), \(P(X&amp;gt;2,5) = 0,8\) e \(P(2,7&amp;lt;X&amp;lt;5,1) = 0,7\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. \(P(X\le 3)=0,2+0,4=0,6\); \(P(X&amp;gt;2,5)=0,4+0,3+0,1=0,8\); \(P(2,7&amp;lt;X&amp;lt;5,1)=0,4+0,3=0,7\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(P(X\le 3) = 0,6\), \(P(X&amp;gt;2,5) = 0,4\) e \(P(2,7&amp;lt;X&amp;lt;5,1) = 0,7\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Erra \(P(X&amp;gt;2,5)\) ao considerar apenas parte dos valores maiores que \(2,5\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q12</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 12&lt;/h3&gt;&lt;p&gt;Qual alternativa apresenta corretamente a função acumulada \(F(x)=P(X\le x)\) nos pontos do suporte?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A função acumulada \(F(x)\) representa a probabilidade de a variável aleatória assumir valor menor ou igual a \(x\). A função acumulada soma as probabilidades até o valor considerado. Ela deve ser não decrescente e chegar a 1 no maior valor possível da variável.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(F(2)=0,2\), \(F(3)=0,6\), \(F(5)=0,8\), \(F(8)=1,0\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Erra apenas o acumulado em \(x=5\), pois deveria somar \(0,2+0,4+0,3=0,9\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(F(2)=0,2\), \(F(3)=0,6\), \(F(5)=0,9\), \(F(8)=1,0\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. Os acumulados são \(0,2\), \(0,6\), \(0,9\) e \(1,0\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(F(2)=0,2\), \(F(3)=0,5\), \(F(5)=0,9\), \(F(8)=1,0\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Erra o acumulado em \(x=3\), pois deveria ser \(0,2+0,4=0,6\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(F(2)=0,0\), \(F(3)=0,6\), \(F(5)=0,9\), \(F(8)=1,0\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Erra o valor inicial: como \(P(X=2)=0,2\), então \(F(2)=0,2\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(F(2)=0,2\), \(F(3)=0,6\), \(F(5)=1,0\), \(F(8)=1,0\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Erra o acumulado em \(x=5\), antecipando o total \(1,0\) antes do maior valor do suporte.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q13</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 13&lt;/h3&gt;&lt;p&gt;O valor esperado \(E(X)\) de \(X\) e sua interpretação correta são:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A esperança \(E(X)\) é a média teórica de longo prazo de uma variável aleatória discreta. A esperança é calculada por \(E(X)=\sum_x xP(X=x)\). Ela representa uma média teórica de longo prazo e não precisa ser um valor possível da variável.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(E(X)=4,5\); é a média simples dos valores possíveis de \(X\), sem ponderação pelas probabilidades.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Usa média não ponderada dos valores possíveis, ignorando probabilidades.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(E(X)=3,1\); é obtido usando apenas os valores \(x=2\), \(x=3\) e \(x=5\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Omite o valor \(x=8\) no cálculo da esperança.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(E(X)=3\); é o valor mais provável de \(X\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. \(3\) é o valor mais provável, mas não a esperança.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(E(X)=3,9\); é o valor mais provável da distribuição.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O valor esperado é \(3,9\), mas ele não é o valor mais provável nem precisa pertencer ao suporte.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(E(X)=3,9\); é a média teórica de longo prazo, não necessariamente um valor possível de \(X\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. \(2\cdot 0,2 + 3\cdot 0,4 + 5\cdot 0,3 + 8\cdot 0,1 = 3,9\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>T199 Q14</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;h3&gt;Questão 14&lt;/h3&gt;&lt;p&gt;Com base na distribuição de \(X\), calcule \(E(X)\), \(E(X^2)\) e a variância \(\operatorname{Var}(X)\).&lt;/p&gt;&lt;p&gt;Qual alternativa apresenta corretamente a variância \(\operatorname{Var}(X)\) e sua interpretação?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Feedback Geral&lt;/h3&gt;&lt;p&gt;A variância mede a dispersão dos valores de uma variável aleatória em torno de sua esperança. A variância pode ser calculada por \(\operatorname{Var}(X)=E(X^2)-[E(X)]^2\). Aqui, \(18,3 - 3,9^2 = 18,3 - 15,21 = 3,09\). O desvio-padrão seria a raiz quadrada da variância.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>0.5000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber />
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Resposta correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Resposta incorreta.</text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(\operatorname{Var}(X)=18,3\); ela é obtida pela soma de \(x^2P(X=x)\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Esse é \(E(X^2)\), não a variância.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(\operatorname{Var}(X)=14,4\); ela é obtida por \(E(X^2)-E(X)\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. Subtrai \(E(X)\) em vez de subtrair \([E(X)]^2\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>&lt;p&gt;\(\operatorname{Var}(X)=3,09\); ela mede dispersão em torno da esperança, em unidade ao quadrado.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Correta. A variância é \(3,09\) e mede dispersão em torno da esperança.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(\operatorname{Var}(X)=3,09\); ela mede dispersão em torno da esperança, na mesma unidade de \(X\).&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. O valor da variância está correto, mas sua unidade é quadrática, não a mesma unidade de \(X\).&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>&lt;p&gt;\(\operatorname{Var}(X)=1,76\); ela mede dispersão em torno da esperança, em unidade ao quadrado.&lt;/p&gt;</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Incorreta. \(1,76\) é aproximadamente o desvio-padrão, não a variância.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+</quiz>
