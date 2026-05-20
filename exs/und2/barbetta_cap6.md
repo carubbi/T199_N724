@@ -391,7 +391,7 @@ Historicamente, 10% dos pisos cerâmicos de uma linha de produção apresentam d
 Então:
 
 $$
-Y \sim \operatorname{Binomial}(1000,0{,}1)
+Y \sim \mathrm{Binomial}(1000,0{,}1)
 $$
 
 Como $np=100$ e $n(1-p)=900$, a aproximação normal é adequada:
@@ -413,7 +413,7 @@ Para estimar $P(Y>120)$, usa-se uma normal com média $100$ e variância $90$.
 Se $Y$ é o número de caras em 10 lançamentos de uma moeda honesta, então:
 
 $$
-Y \sim \operatorname{Binomial}(10,0{,}5)
+Y \sim \mathrm{Binomial}(10,0{,}5)
 $$
 
 Para aproximar $P(Y=4)$ pela normal, não se usa apenas o ponto $4$, pois a normal é contínua. Usa-se o intervalo:

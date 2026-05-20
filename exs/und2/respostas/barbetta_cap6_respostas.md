@@ -31,7 +31,7 @@ $$
 
 ### Distribuição exponencial
 
-Se $T \sim \operatorname{Exponencial}(\lambda)$:
+Se $T \sim \mathrm{Exponencial}(\lambda)$:
 
 $$
 P(T>t)=e^{-\lambda t}
@@ -59,7 +59,7 @@ $$
 
 ### Aproximação normal
 
-Para $Y \sim \operatorname{Binomial}(n,p)$:
+Para $Y \sim \mathrm{Binomial}(n,p)$:
 
 $$
 \mu=np
@@ -69,7 +69,7 @@ $$
 \sigma=\sqrt{np(1-p)}
 $$
 
-Para $Y \sim \operatorname{Poisson}(\lambda)$:
+Para $Y \sim \mathrm{Poisson}(\lambda)$:
 
 $$
 \mu=\lambda
@@ -123,7 +123,7 @@ $$
 
 ![Exemplo 6.3 - Tempo de resposta exponencial](imgs/barbetta_cap6_exemplo_6_3_exponencial_tempo_resposta.png)
 
-Temos $T \sim \operatorname{Exponencial}(2)$.
+Temos $T \sim \mathrm{Exponencial}(2)$.
 
 $$
 P(T>3)=e^{-2\cdot 3}=e^{-6}=0{,}002479
@@ -199,7 +199,7 @@ $$
 
 ![Exemplo 6.7 - Aproximação normal à binomial](imgs/barbetta_cap6_exemplo_6_7_aproximacao_binomial.png)
 
-Para $Y \sim \operatorname{Binomial}(1000,0{,}1)$:
+Para $Y \sim \mathrm{Binomial}(1000,0{,}1)$:
 
 $$
 \mu=np=100
@@ -223,7 +223,7 @@ $$
 
 ![Exemplo 6.8 - Correção de continuidade](imgs/barbetta_cap6_exemplo_6_8_correcao_continuidade.png)
 
-Para $Y \sim \operatorname{Binomial}(10,0{,}5)$:
+Para $Y \sim \mathrm{Binomial}(10,0{,}5)$:
 
 $$
 \mu=5
@@ -697,7 +697,7 @@ $$
 
 ![Exercício 11 - Aproximação normal à binomial](imgs/barbetta_cap6_ex_11_binomial_normal.png)
 
-Seja $Y$ o número de defeituosos. Temos $Y \sim \operatorname{Binomial}(100,0{,}1)$.
+Seja $Y$ o número de defeituosos. Temos $Y \sim \mathrm{Binomial}(100,0{,}1)$.
 
 Como:
 
@@ -932,7 +932,7 @@ $$
 Se $p=0{,}0071$ é a probabilidade de uma utilização ficar abaixo de 70°C, em 500 utilizações:
 
 $$
-Y \sim \operatorname{Binomial}(500,p)
+Y \sim \mathrm{Binomial}(500,p)
 $$
 
 Usando aproximação normal:
@@ -996,7 +996,7 @@ Pela tabela, $p\approx 0{,}2389$.
 Se $Y$ é o número de execuções acima de 325 segundos em 200 repetições:
 
 $$
-Y \sim \operatorname{Binomial}(200,0{,}2389)
+Y \sim \mathrm{Binomial}(200,0{,}2389)
 $$
 
 O gabarito registra:
@@ -1022,7 +1022,7 @@ $$
 Para 10 questões, aprovação exige pelo menos 5 acertos:
 
 $$
-Y \sim \operatorname{Binomial}(10,0{,}25)
+Y \sim \mathrm{Binomial}(10,0{,}25)
 $$
 
 $$
@@ -1038,7 +1038,7 @@ $$
 Para 100 questões, aprovação exige pelo menos 50 acertos:
 
 $$
-Y \sim \operatorname{Binomial}(100,0{,}25)
+Y \sim \mathrm{Binomial}(100,0{,}25)
 $$
 
 $$
@@ -1049,7 +1049,7 @@ $$
 
 ![Exercício 20 - Requisições por minuto](imgs/barbetta_cap6_ex_20_requisicoes_banco.png)
 
-Temos $Y \sim \operatorname{Poisson}(100)$.
+Temos $Y \sim \mathrm{Poisson}(100)$.
 
 Usando aproximação normal:
 
