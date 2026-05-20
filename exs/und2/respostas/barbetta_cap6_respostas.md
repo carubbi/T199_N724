@@ -521,6 +521,8 @@ $$
 
 ![Exercício 7 - Falta de memória da exponencial](imgs/barbetta_cap6_ex_07_falta_memoria.png)
 
+### Demonstração
+
 Pela definição de probabilidade condicional:
 
 $$
@@ -559,7 +561,29 @@ $$
 P(T>s+t \mid T>s)=P(T>t)
 $$
 
-Essa propriedade é chamada de falta de memória porque o tempo já transcorrido não altera a probabilidade restante. Isso pode ser inadequado para itens sujeitos à fadiga, pois nesses casos o risco tende a mudar com o envelhecimento.
+### Interpretação da falta de memória
+
+A falta de memória diz que, se $T$ representa o tempo até ocorrer um evento, então o fato de já termos esperado certo tempo não altera a distribuição do tempo restante.
+
+Em palavras:
+
+> Se o evento ainda não aconteceu até o tempo $s$, a probabilidade de esperar mais $t$ unidades é igual à probabilidade inicial de esperar $t$ unidades.
+
+Por isso, a distribuição exponencial é chamada de "sem memória". O modelo não guarda informação sobre quanto tempo já passou.
+
+Por exemplo, se o tempo até a próxima consulta a um servidor segue uma distribuição exponencial, então esperar 5 minutos sem nenhuma consulta não muda a probabilidade de ainda esperar mais 2 minutos:
+
+$$
+P(T>5+2 \mid T>5)=P(T>2)
+$$
+
+Isso ocorre porque a taxa de chegada é considerada constante. A próxima ocorrência não fica "mais provável" ou "menos provável" apenas porque já se esperou algum tempo.
+
+### Limitação do modelo
+
+Essa propriedade é útil quando o fenômeno realmente pode ser descrito por uma taxa constante, como chegadas aleatórias a um servidor ou chamadas a uma central telefônica.
+
+Mas ela pode ser inadequada para tempo de vida de itens sujeitos a desgaste. Um componente mecânico, por exemplo, pode ter risco de falha maior depois de muitas horas de uso. Nesse caso, o passado importa, e a hipótese de falta de memória pode distorcer a interpretação.
 
 ## Exercício 8
 

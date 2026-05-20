@@ -186,6 +186,8 @@ P(T>s+t \mid T>s)=P(T>t)
 \tag{6.21}
 $$
 
+Em termos didáticos, isso significa que, se o evento ainda não ocorreu até o tempo $s$, a probabilidade de esperar mais $t$ unidades é a mesma de esperar $t$ unidades desde o início. Essa hipótese só é adequada quando a taxa de ocorrência pode ser considerada constante ao longo do tempo.
+
 ### Distribuição normal
 
 Se $X \sim N(\mu,\sigma^2)$, então:
