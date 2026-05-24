@@ -7,5 +7,7 @@ aulas/notebooks/local
 livros/
 _local
 planos/
-scripts/
 AVs/
+.env
+trabalhos/T199/und2/correcao_T2/_saida/
+correcao_T2/
