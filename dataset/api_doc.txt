@@ -1,0 +1,58 @@
+Performance estudantil em escolas da California
+
+Descrição
+O API é um índice numérico na escala de 200 a 1.000 que indica o desempenho estudantil de uma escola ou distrito em testes anuais. O API é calculado para toda a escola, incluindo alunos desfavorecidos socioeconômicos, alunos com deficiência físico-motora e não proficientes em inglês [1].
+
+As pontuações do API para escolas de mesma graduação (ensino fundamental, médio e superior) são classificadas em "decis", com 1 representando os 10% de escolas com desempenho mais baixo e 10 os 10% de desempenho mais alto. As escolas têm dois rankings: (1) um ranking estadual que compara cada escola com todas as outras escolas do mesmo tipo no estado e (2) um ranking de escolas semelhantes que compara cada escola com 100 outras com populações de alunos similares e outras características [1].
+
+O Conselho Estadual de Educação da California* definiu a meta de API estadual em 800 de 1.000. A Lei de responsabilidade das escolas públicas exige que a maioria das escolas melhore seu desempenho a cada ano em 5% da diferença entre sua API e a meta estadual de 800, com uma meta mínima de crescimento de cinco pontos [1].
+
+Formato
+Dataframe com 6194 observações (linhas) e 37 variáveis (colunas).
+
+id: Identificação única da escola.
+tipo: Nível de ensino da escola (fundamental, medio e superior).
+nm: Nome da escola (15 caracteres).
+nmc: Nome completo da escola (40 caracteres).
+num: Número da escola.
+dst_nm: Nome do distrito que a escola pertence.
+dst_num: Número do distrito da escola.
+cdd_nm: Nome do condado que pertence a escola.
+cdd_num: Número do condado.
+flag: Indicador de dados ausentes.
+di_pt: porcentagem de alunos testados.
+api00: Índice de desempenho acadêmico em 2000.
+api99: Índice de desempenho acadêmico em 1999.
+api_mt: Meta de crescimento no API.
+api_dif: Diferença entre os API.
+api_mr1: Indicação de meta de crescimento atingida por tipo no API (ranking 1).
+api_mr2: Indicação de meta de crescimento atingida por semelhança no API (ranking 2).
+api_mrs: Indicação de ambas as metas atingidas no API.
+api_prm: Indicação para o programa de prêmio.
+di_prf: Porcentagem de alunos elegíveis para refeição subsidiada.
+di_pni: Porcentagem de alunos não proficientes em inglês.
+cal_dif: Indicação de escola com calendário escolar diferenciado
+di_pnv: Porcentagem de novatos na escola.
+di_mk3: Média de alunos por classe do fundamental até 3a série.
+di_m46: Média de alunos por classe da 4a a 6a série.
+dsc_num: Número de disciplinas básicas.
+edu_ped (pct.resp): Porcentagem dos pais com nível de educação conhecida.
+edu_pmi (some.col): Porcentagem dos pais com ensino médio incompleto.
+edu_pmc (col.grad): Porcentagem dos pais com ensino médio completo.
+edu_psi (not.hsg): Porcentagem dos pais com superior incompleto.
+edu_psc (hsg): Porcentagem dos pais com superior completo.
+edu_ppg (grad.sch): Porcentagem dos pais com pós-graduação.
+edu_med: Média do nível de educação dos pais.
+do_pqt: Porcentagem de professores totalmente qualificados.
+do_pqe: Porcentagem de professores não qualificados (qualificação emergencial).
+di_nai: número de alunos inscritos.
+di_nat: número de alunos testados para o API.
+
+Fonte
+Os dados foram obtidos pela pesquisa do setor acadêmico da Universidade da Califórnia em Los Angeles (UCLA).
+[1] https://www.ed-data.org/article/Understanding-the-Academic-Performance-Index-(API)
+
+Referência
+O programa API foi descontinuado no final de 2018 e demais informações estão em https://www.cde.ca.gov/re/pr/api.asp
+
+* Califórnia é um dos 50 estados dos Estados Unidos, localizado na região dos estados do Pacífico. É o estado mais populoso do país, com 39.538.223 habitantes e o terceiro em extensão territorial, superado apenas pelo Alasca e pelo Texas (Wikipedia, 2021).
