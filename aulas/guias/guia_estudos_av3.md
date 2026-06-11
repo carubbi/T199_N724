@@ -1,3 +1,15 @@
+<img src="imgs/unifor_logo.png" width="400"><br>
+<b>
+<font size="4" face="arial">
+    Disciplina: Métodos Quantitativos
+</font>
+</b>
+
+**Orientador: Prof. Me. Ricardo Carubbi** <br>
+*Docente da Graduação e Pós-Graduação em Ciência de Dados e Inteligência Artificial*<br>
+*Laboratório de Ciência de Dados e Inteligência Artificial*<br>
+*Universidade de Fortaleza*<br>
+
 # Guia de estudos para a AV3
 
 Este guia orienta sua preparação para uma avaliação objetiva com tabelas, distribuições discretas, dados pareados e interpretações estatísticas. O foco não é decorar fórmulas isoladas, mas reconhecer o tipo de dado apresentado, escolher o procedimento correto e interpretar alternativas.
